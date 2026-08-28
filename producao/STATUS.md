@@ -14,15 +14,19 @@
 - Visual de Patrícia: `APROVADO / CANON VISUAL` na V01; MASTER definitiva (V02) `PENDENTE DE IMPORTAÇÃO DA FONTE APROVADA`.
 - Vozes: `A DEFINIR`.
 - Assets MASTER no repositório: as sete imagens do elenco inicial foram versionadas e catalogadas pela [DEC-014](../docs/DECISOES.md#dec-014).
-- Cenários, episódios e temporadas: `A DEFINIR`.
+- Episódios: `S01E001` ("A Greve da Patrícia") `SOURCE_AVAILABLE — IMPORTED` em `2026-08-28` — roteiro completo, 12 cenas, 29 clipes, prompts originais e bíblia visual do episódio disponíveis; produção em vídeo clipe a clipe ainda não registrada (exceto Cena 2B, parcialmente documentada em `ERR-007`/`SOL-007`).
+- Cenários: casa principal descrita em nível de episódio (S01E001), `PENDENTE DE PROMOÇÃO A CENÁRIO CANÔNICO REUTILIZÁVEL` em `cenarios/oficiais/`.
+- Temporadas: `A DEFINIR`.
 
 ## Próximas ações necessárias
 
 1. Produzir e aprovar uma referência neutra adicional de Dudu para uso futuro (sem gimbal/celular, boca fechada, tênis sem marca) — ver `ERR-006`/`SOL-006`; isso não é bloqueante para uso da MASTER já aprovada.
 2. Obter o arquivo definitivo da nova interpretação visual de Patrícia (V02), hoje `PENDENTE DE IMPORTAÇÃO DA FONTE APROVADA`.
-3. Recuperar, quando disponíveis, prompts exatos e arquivos de mídia dos testes históricos para completar os registros sem reconstrução por suposição.
-4. Aprovar e registrar a voz de cada personagem separadamente.
-5. Definir cidade, casa principal, duração dos episódios, plataforma e público.
+3. Obter a versão revisada/aprovada exata do prompt da Cena 2B (S01E001) que efetivamente funcionou no Flow — hoje `PENDENTE DE IMPORTAÇÃO DA FONTE APROVADA` (ver `SOL-007`).
+4. Promover cozinha, sala e quarto de Marcos/Patrícia (bíblia visual de S01E001) a cenários canônicos reutilizáveis (`LOC-00X`) em `cenarios/oficiais/`, se decidido que valem para toda a série.
+5. Gerar e registrar em `producao/testes/` os 29 clipes de S01E001, na ordem recomendada pela fonte histórica.
+6. Aprovar e registrar a voz de cada personagem separadamente.
+7. Definir cidade, época, duração padrão de episódio, plataforma e público.
 
 ## Limite
 

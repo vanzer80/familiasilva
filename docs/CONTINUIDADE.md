@@ -72,7 +72,21 @@ Devem ser preservadas separadamente:
 
 ## Eventos anteriores
 
-Cada episódio aprovado deve registrar:
+### S01E001 — A Greve da Patrícia
+
+Importado em `2026-08-28` de [FONTE-HISTORICA-S01E001-A-GREVE-DA-PATRICIA.md](../episodios/S01/FONTE-HISTORICA-S01E001-A-GREVE-DA-PATRICIA.md). Eventos diretamente sustentados pelo roteiro:
+
+| Evento | Cena | Impacto futuro | Status |
+| --- | --- | --- | --- |
+| Beto deve R$50 a um primo e usa uma falsa "reunião de negócios" para conseguir salgadinhos de Patrícia | 2 | Beto tem uma dívida pessoal preexistente com um primo; pode ser retomada em episódios futuros | `NO ROTEIRO APROVADO` |
+| Patrícia declara greve doméstica (para de procurar, lembrar, preparar e resolver por todos) | 3 | Marco de virada da dinâmica familiar; pode ser referenciada como precedente | `NO ROTEIRO APROVADO` |
+| Marcos cria uma "escala doméstica" que a família tenta contornar cômicamente | 9 | Estabelece o padrão de Marcos responder a problemas emocionais com soluções organizacionais | `NO ROTEIRO APROVADO` |
+| Sr. Antônio elogia a aparência de Patrícia; Marcos reage com ciúme cômico leve | 7–8 | Consistente com a personalidade canônica de Sr. Antônio (paixonite platônica não correspondida) e com a rivalidade cômica leve com Marcos | `NO ROTEIRO APROVADO` |
+| Marcos reconhece que tratou cuidar da casa como substituto de atenção emocional; reconciliação com Patrícia | 11–12 | Pequeno avanço emocional do casal, sem "curar" os personagens — pode ser referenciado em episódios futuros | `NO ROTEIRO APROVADO` |
+
+**Status `NO ROTEIRO APROVADO`** indica que o evento está sustentado pelo roteiro-fonte fornecido pelo usuário, distinto de confirmação de que os 29 clipes foram efetivamente gerados e aprovados em vídeo (isso seguiria o fluxo normal em `producao/testes/` → `producao/aprovados/`, ainda não registrado clipe a clipe para este episódio, exceto a Cena 2B — ver `ERR-007`/`SOL-007`).
+
+### Template de entrada para novos episódios
 
 - Episódio: `S01E001`.
 - Evento: `A DEFINIR`.

@@ -14,7 +14,7 @@ O universo de Família Silva acompanha uma familia brasileira em situacoes cotid
 
 - Cidade: `A DEFINIR`.
 - Bairro: `A DEFINIR`.
-- Casa principal: `A DEFINIR`.
+- Casa principal: descrita em nível de episódio (cozinha, sala e quarto de Marcos e Patrícia) na bíblia visual de [S01E001](../episodios/S01/S01E001-A-GREVE-DA-PATRICIA.md) — `PENDENTE DE PROMOÇÃO A CENÁRIO CANÔNICO REUTILIZÁVEL DA SÉRIE` em `cenarios/oficiais/`, que continua vazio.
 - Epoca: `A DEFINIR`.
 - Regras especificas do mundo: `A DEFINIR`.
 

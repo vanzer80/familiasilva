@@ -25,8 +25,8 @@ Detalhes, evidências e limitações estão em [APRENDIZADOS-DE-VIDEO.md](APREND
 ## A definir
 
 - Cidade: `A DEFINIR`.
-- Casa principal: `A DEFINIR`.
-- Duração dos episódios: `A DEFINIR`.
+- Casa principal: descrita em nível de episódio em [S01E001](../episodios/S01/S01E001-A-GREVE-DA-PATRICIA.md) (cozinha, sala, quarto de Marcos e Patrícia) — `PENDENTE DE PROMOÇÃO A CENÁRIO CANÔNICO REUTILIZÁVEL`.
+- Duração dos episódios (padrão da série): `A DEFINIR` — S01E001 tem duração histórica de aproximadamente 3min52s, o que não define um padrão obrigatório para a série.
 - Plataforma: `A DEFINIR`.
 - Público: `A DEFINIR`.
 - Voz de cada personagem: `A DEFINIR`.
