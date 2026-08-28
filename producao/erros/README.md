@@ -10,3 +10,4 @@ Registre aqui erros encontrados em geração, continuidade, fala, voz, lip sync,
 | [ERR-004](ERR-004-PROMPT-DEPENDENTE-DE-CONTEXTO.md) | prompt dependente de geração anterior | `SOLUÇÃO ADOTADA` |
 | [ERR-005](ERR-005-REFERENCIA-FACIAL-CRUZADA.md) | uso cruzado de referência facial | `PREVENÇÃO OBRIGATÓRIA` |
 | [ERR-006](ERR-006-REFERENCIA-DUDU-NAO-NEUTRA.md) | referência de Dudu não neutra | `PENDENTE DE NOVO ASSET` |
+| [ERR-007](ERR-007-CENA-2B-TENTATIVA-INICIAL.md) | Cena 2B (Carol + Beto), tentativa inicial falhou no Flow | `AGUARDANDO FONTE` |

@@ -10,3 +10,4 @@ Uma solução só é considerada validada na extensão descrita em seu registro.
 | [SOL-004](SOL-004-PROMPT-AUTOSSUFICIENTE.md) | prompt autossuficiente | toda geração |
 | [SOL-005](SOL-005-REFERENCIA-PROPRIA-POR-PERSONAGEM.md) | referência própria por personagem | toda geração com personagem |
 | [SOL-006](SOL-006-REFERENCIA-NEUTRA-DUDU.md) | nova referência neutra de Dudu | pendente de execução |
+| [SOL-007](SOL-007-CENA-2B-VERSAO-SIMPLIFICADA.md) | Cena 2B (Carol + Beto), versão simplificada | parcialmente documentado; prompt exato pendente de fonte |
