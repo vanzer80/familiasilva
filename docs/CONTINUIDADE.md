@@ -29,6 +29,37 @@ Registrar aqui informacoes que, uma vez aprovadas, nao devem mudar sem decisao f
 - Layout da casa.
 - Eventos que passam a valer para episodios futuros.
 
+## Estado canonico consolidado em 2026-08-28
+
+### Personalidades
+
+- Marcos — personalidade canonica; ficha-base `CHAR-001`.
+- Dona Célia — personalidade canonica; ficha-base `CHAR-002`.
+- Beto — personalidade canonica; ID `CHAR-005` conforme o documento aprovado.
+- Patrícia — personalidade canonica; Character ID permanece `A DEFINIR`.
+- Carol — personalidade canonica; Character ID permanece `A DEFINIR`.
+- Dudu — personalidade canonica; Character ID permanece `A DEFINIR`.
+- Sr. Antônio — personalidade canonica; Character ID permanece `A DEFINIR`.
+
+Os documentos completos estao em [../personagens/oficiais/personalidades/](../personagens/oficiais/personalidades/).
+
+### Relacoes permanentes
+
+- Marcos e Patrícia sao casados.
+- Carol e Dudu sao filhos de Marcos e Patrícia e irmaos entre si.
+- Carol e Beto sao casados.
+- Dona Célia e mae de Marcos, sogra de Patrícia e avo de Carol e Dudu.
+- Beto e genro de Marcos e Patrícia e cunhado de Dudu.
+- Sr. Antônio e vizinho recorrente e nao integra oficialmente a Família Silva.
+- A paixonite de Sr. Antônio por Patrícia e platonica, unilateral e nao correspondida.
+- A relacao entre Sr. Antônio e Marcos inclui rivalidade e inveja comica leve.
+
+A matriz completa e bidirecional esta em [../personagens/relacoes/RELACOES-FAMILIARES.md](../personagens/relacoes/RELACOES-FAMILIARES.md).
+
+### Limite desta consolidacao
+
+A consolidacao de personalidade e relacoes nao altera nem aprova aparencia, imagem mestre, figurino, rendering, voz, idade, profissao ou Character IDs ausentes.
+
 ## Eventos anteriores
 
 Cada episodio aprovado deve atualizar a continuidade com acontecimentos que passam a importar depois.

@@ -19,10 +19,11 @@
 - **Roupa principal:** `A DEFINIR`
 - **Roupas alternativas aprovadas:** `A DEFINIR`
 - **Voz:** `A DEFINIR`
-- **Estilo de fala:** `A DEFINIR`
-- **Maneirismos:** `A DEFINIR`
-- **Relacao com outros personagens:** `A DEFINIR`
-- **Elementos imutaveis:** `A DEFINIR`
+- **Personalidade:** [CANÔNICA](personalidades/DONA-CELIA-PERSONALIDADE.md)
+- **Estilo de fala:** definido no documento de personalidade canonica.
+- **Maneirismos:** definidos no documento de personalidade canonica.
+- **Relacao com outros personagens:** [matriz canonica](../relacoes/RELACOES-FAMILIARES.md) e documento de personalidade.
+- **Elementos imutaveis:** `A DEFINIR` para o visual; limites narrativos definidos no documento de personalidade.
 - **Elementos que podem variar:** `A DEFINIR`
 - **Negative constraints:** `A DEFINIR`
-- **Historico de alteracoes:** `A DEFINIR`
+- **Historico de alteracoes:** `2026-08-28` — personalidade e relacoes canonicas consolidadas; canon visual permanece `A DEFINIR`.
