@@ -18,6 +18,14 @@ O universo de Família Silva acompanha uma familia brasileira em situacoes cotid
 - Epoca: `A DEFINIR`.
 - Regras especificas do mundo: `A DEFINIR`.
 
+## Referência de modelagem — A Grande Família
+
+Família Silva usa *A Grande Família* como uma das referências de modelagem de arquétipos, funções narrativas, dinâmica doméstica e mecanismos de humor — ver as referências individuais em [../personagens/oficiais/personalidades/](../personagens/oficiais/personalidades/) (Marcos/Lineu, Patrícia/Dona Nenê, Beto/Agostinho Carrara, Dudu/Tuco, Dona Célia/Seu Flor-Floriano, Sr. Antônio/Beiçola).
+
+Pode servir de estudo para: arquétipos, funções narrativas, contrastes familiares, motores de conflito, mecanismos de humor e dinâmica de sitcom doméstica.
+
+Não pode ser usada como orientação de reprodução para: diálogos, bordões, cenas, histórias específicas, acontecimentos específicos, aparência, figurino, cenários reconhecíveis, trejeitos exclusivos ou caracterizações diretamente identificáveis. A referência é sempre estrutural, nunca cópia literal.
+
 ## Observacao de propriedade intelectual
 
 O projeto deve preservar identidade propria. Referencias externas podem servir apenas como estudo de formato, ritmo ou dinamica geral, nunca como copia de personagens, historias, nomes, cenarios ou elementos protegidos.

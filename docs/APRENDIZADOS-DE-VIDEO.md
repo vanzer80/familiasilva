@@ -69,6 +69,25 @@ Hipóteses são identificadas como hipóteses. Campos sem evidência permanecem 
 - **Limite:** esta é uma baseline de teste, não uma duração obrigatória para todos os episódios ou cenas.
 - **Status:** `VALIDADO PARA TESTE`.
 
+### LRN-010 — Não copiar rótulos técnicos para o prompt final
+
+- **Observação:** Character IDs, nomes técnicos de clipe (por exemplo `Clip 1C`), cabeçalhos administrativos e metadados do pipeline pertencem à documentação de produção, não ao texto enviado ao gerador; se copiados para o prompt, arriscam aparecer como texto visível no vídeo.
+- **Solução:** manter esses identificadores apenas nos registros em `producao/` e nos nomes de arquivo; o prompt operacional deve conter somente linguagem natural e instruções de continuidade.
+- **Status:** `VALIDADO` como regra de composição de prompt.
+
+### LRN-011 — Um falante principal quando há risco de troca de fala
+
+- **Observação:** cenas com mais de um personagem aumentam o risco de o modelo trocar a fala, a voz ou o lip sync entre eles.
+- **Solução:** quando esse risco existir, priorizar apenas um personagem falando por geração, mantendo o(s) demais explicitamente silencioso(s) via `Silent Character Continuity`, combinado com `Speaking Continuity`, `Voice Continuity` e `Lip-Sync Continuity`.
+- **Limite:** é uma heurística de mitigação de risco, não uma regra obrigatória para toda cena com múltiplos personagens.
+- **Status:** `VALIDADO` como heurística de composição de prompt.
+
+### LRN-012 — Simplificação controlada
+
+- **Observação:** mais restrições e negative constraints não produzem automaticamente um resultado melhor; em alguns casos um prompt mais enxuto e semanticamente claro supera um prompt com dezenas de restrições.
+- **Solução:** manter apenas os blocos e negative constraints aplicáveis e proporcionais ao problema real da cena; blocos sem utilidade podem ser omitidos, conforme já previsto na filosofia do [TEMPLATE-MESTRE-VIDEO.md](../prompts/templates/TEMPLATE-MESTRE-VIDEO.md).
+- **Status:** `VALIDADO` como princípio de composição; não substitui os locks obrigatórios (Speaking, Voice, Lip-Sync, Silent Character, Relationship).
+
 ## Estado dos casos conhecidos
 
 **Nota de reconciliação (`2026-08-28`, [DEC-013](DECISOES.md#dec-013)):** a coluna "Estado visual registrado" abaixo preserva o rótulo original de cada teste, como aprendizado histórico. O **status canônico vigente** de Marcos, Dona Célia, Patrícia, Sr. Antônio, Beto e Dudu foi reconciliado para aprovação plena de canon visual (ver as fichas em `personagens/oficiais/` e a tabela em [CONTINUIDADE.md](CONTINUIDADE.md)); os aprendizados e limites técnicos desta tabela continuam válidos e devem orientar novos prompts, mas não representam mais o status de aprovação atual.

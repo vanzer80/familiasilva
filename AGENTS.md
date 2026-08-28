@@ -71,3 +71,14 @@ Para cada teste, registrar ferramenta, configuração, prompt ou sua situação 
 - Preservar documentos e conteúdo existente.
 - Não inventar características, história, idade, voz, roupa, profissão ou relações de personagens.
 - Não fazer push remoto sem autorização explícita.
+
+## Ausência de informação não autoriza invenção
+
+Um campo `A DEFINIR`, uma pasta vazia ou uma informação ausente no Git **não** deve ser interpretada automaticamente como uma lacuna criativa livre para preencher. Antes de criar personalidade, relação, episódio, história, papel narrativo ou informação biográfica nova, verificar nesta ordem:
+
+1. a ficha e a personalidade canônica do personagem em [personagens/oficiais/](personagens/oficiais/);
+2. a matriz de relações em [personagens/relacoes/RELACOES-FAMILIARES.md](personagens/relacoes/RELACOES-FAMILIARES.md);
+3. [docs/DECISOES.md](docs/DECISOES.md) e [docs/CHANGELOG-CRIATIVO.md](docs/CHANGELOG-CRIATIVO.md);
+4. qualquer conteúdo marcado como `PENDENTE DE IMPORTAÇÃO DA FONTE APROVADA` — isso indica que a informação **já existe fora deste repositório** e não deve ser reconstruída por suposição.
+
+Se houver indicação de que o conteúdo já foi definido externamente, não reinventar: registrar o bloqueio (`PENDENTE DE IMPORTAÇÃO DA FONTE APROVADA` ou equivalente) e seguir apenas com o que está aprovado.
