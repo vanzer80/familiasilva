@@ -14,6 +14,9 @@
 - Visual de Patrícia: `APROVADO / CANON VISUAL` — MASTER V02 PHOTOREALISTIC ingerida em `2026-08-28`, resolvendo a pendência histórica.
 - Vozes: `A DEFINIR`.
 - Assets MASTER no repositório: as sete imagens `V01` do elenco inicial foram versionadas e catalogadas pela [DEC-014](../docs/DECISOES.md#dec-014); as sete imagens `V02 PHOTOREALISTIC` foram versionadas e promovidas a `CURRENT CANON` pela [DEC-015](../docs/DECISOES.md#dec-015).
+- Validação em vídeo das MASTERs V02: `CONCLUÍDA` para os 7 personagens em `2026-08-28` — um vídeo individual de apresentação por personagem no Google Flow, todos `APROVADO`/`APROVADA` pelo usuário (rendering `Photorealistic / Warm Cinematic Realism`, identidade visual consistente); ver `producao/testes/TESTE-VIDEO-*-002.md` (Dudu: `-001`).
+- Falas finais exatas das apresentações: o usuário alterou manualmente algumas falas antes da geração; o texto literal final não está disponível como fonte verificável — `PENDENTE DE IMPORTAÇÃO DA FONTE APROVADA` para os 7 personagens.
+- Falso positivo "pessoa famosa" no Flow: `PROCEDIMENTO DE FALLBACK VALIDADO` para Dudu, Sr. Antônio e Beto — ver [ERR-008](erros/ERR-008-FLOW-FALSO-POSITIVO-PESSOA-FAMOSA.md)/[SOL-008](solucoes/SOL-008-CONTEXTO-FICCIONAL-COMPLIANCE-FLOW.md); causa interna do classificador do Flow permanece desconhecida.
 - Episódios: `S01E001` ("A Greve da Patrícia") `SOURCE_AVAILABLE — IMPORTED` em `2026-08-28` — roteiro completo, 12 cenas, 29 clipes, prompts originais e bíblia visual do episódio disponíveis; produção em vídeo clipe a clipe ainda não registrada (exceto Cena 2B, parcialmente documentada em `ERR-007`/`SOL-007`).
 - Cenários: casa principal descrita em nível de episódio (S01E001), `PENDENTE DE PROMOÇÃO A CENÁRIO CANÔNICO REUTILIZÁVEL` em `cenarios/oficiais/`.
 - Temporadas: `A DEFINIR`.
@@ -27,6 +30,8 @@
 5. Aprovar e registrar a voz de cada personagem separadamente.
 6. Definir cidade, época, duração padrão de episódio, plataforma e público.
 7. Avaliar o arquivo `G:\Meu Drive\familia_silva\patricia_silva.png` (fotorrealista, blusa terracota, fora do pacote V02) encontrado na auditoria de `2026-08-28` — não importado; ver nota em `MANIFESTO-MESTRES.md`.
+8. Obter e importar o texto literal exato das falas finais dos 7 vídeos de apresentação (V02), alteradas manualmente pelo usuário antes da geração — hoje `PENDENTE DE IMPORTAÇÃO DA FONTE APROVADA` em cada `producao/testes/TESTE-VIDEO-*-002.md` (Dudu: `-001`).
+9. Confirmar (ou descartar) a correspondência entre os vídeos de apresentação aprovados e os arquivos nomeados por personagem em `G:\Meu Drive\familia_silva\videos\`, encontrados na auditoria de `2026-08-28` mas não vinculados formalmente a nenhum registro de teste.
 
 ## Limite
 

@@ -1,0 +1,9 @@
+# ERR-008 — Falso positivo "pessoa famosa" no Flow (personagens ficcionais)
+
+- **Sintoma (FATO):** durante a rodada de validação das MASTERs V02 PHOTOREALISTIC em vídeo (`2026-08-28`, vídeos individuais de apresentação), o Google Flow bloqueou as gerações de Dudu (`CHAR-007`), Sr. Antônio (`CHAR-004`) e Beto (`CHAR-005`) com a mensagem: "Esse comando pode violar nossas políticas contra a geração de imagens de pessoas famosas." Não houve cobrança pela geração bloqueada.
+- **Personagens não afetados nesta rodada:** Marcos, Dona Célia, Patrícia e Carol geraram sem esse bloqueio, usando o mesmo tipo de MASTER V02 PHOTOREALISTIC.
+- **HIPÓTESE (não comprovada):** o gatilho pode ter sido a combinação entre a imagem de referência anexada e o wording de identidade/compliance usado no prompt original. A causa exata do classificador interno do Flow é desconhecida e não é observável a partir deste repositório. Em particular, **não há evidência** de que a aparência de algum dos três personagens tenha sido interpretada como semelhante a alguma pessoa famosa específica — essa é apenas uma hipótese possível entre outras, não confirmada, e não deve ser tratada como fato em nenhum documento futuro.
+- **Impacto:** interrompe a geração até reformulação do prompt; não corrompe, invalida ou desaprova a MASTER V02 usada.
+- **Registros relacionados:** [TESTE-VIDEO-ANTONIO-CHAR-004-002.md](../testes/TESTE-VIDEO-ANTONIO-CHAR-004-002.md), [TESTE-VIDEO-BETO-CHAR-005-002.md](../testes/TESTE-VIDEO-BETO-CHAR-005-002.md), [TESTE-VIDEO-DUDU-CHAR-007-001.md](../testes/TESTE-VIDEO-DUDU-CHAR-007-001.md).
+- **Solução:** [SOL-008](../solucoes/SOL-008-CONTEXTO-FICCIONAL-COMPLIANCE-FLOW.md).
+- **Estado:** `SOLUÇÃO ADOTADA` — o fallback funcionou nos três casos desta rodada; a causa interna do classificador do Flow permanece desconhecida.

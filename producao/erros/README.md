@@ -11,3 +11,4 @@ Registre aqui erros encontrados em geração, continuidade, fala, voz, lip sync,
 | [ERR-005](ERR-005-REFERENCIA-FACIAL-CRUZADA.md) | uso cruzado de referência facial | `PREVENÇÃO OBRIGATÓRIA` |
 | [ERR-006](ERR-006-REFERENCIA-DUDU-NAO-NEUTRA.md) | referência de Dudu não neutra | `PENDENTE DE NOVO ASSET` |
 | [ERR-007](ERR-007-CENA-2B-TENTATIVA-INICIAL.md) | Cena 2B (Carol + Beto), tentativa inicial falhou no Flow | `PARCIALMENTE DOCUMENTADO` — roteiro e prompt originais disponíveis; mensagem exata do erro pendente |
+| [ERR-008](ERR-008-FLOW-FALSO-POSITIVO-PESSOA-FAMOSA.md) | falso positivo "pessoa famosa" no Flow (Dudu, Sr. Antônio, Beto) | `SOLUÇÃO ADOTADA` — causa interna do classificador desconhecida |

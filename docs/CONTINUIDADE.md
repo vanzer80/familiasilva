@@ -39,7 +39,8 @@ Os IDs não podem ser reutilizados ou renumerados. As personalidades completas e
 - Um vídeo pode complementar somente a dimensão explicitamente aprovada.
 - Sr. Antônio e Beto são referências metodológicas de arquitetura de prompt e rendering, nunca referências faciais de outros personagens.
 - As sete imagens MASTER `V02 PHOTOREALISTIC` são a referência visual `CURRENT CANON` desde `2026-08-28` ([DEC-015](DECISOES.md#dec-015)) e estão versionadas em [../assets/personagens/mestres/](../assets/personagens/mestres/), catalogadas em [MANIFESTO-MESTRES.md](../assets/personagens/mestres/MANIFESTO-MESTRES.md). As sete MASTERs `V01` (pela `DEC-014`) permanecem preservadas como `HISTORICAL` e não devem ser escolhidas automaticamente para novas gerações.
-- A referência atual de Dudu está aprovada como canon visual (`DEC-013`), mas contém elementos a evitar em referências futuras (gimbal/celular, boca aberta, tênis de marca) — ver `ERR-006` e `SOL-006`.
+- A referência atual de Dudu está aprovada como canon visual (`DEC-013`), mas contém elementos a evitar em referências futuras (gimbal/celular, boca aberta, tênis de marca) — ver `ERR-006` e `SOL-006`; esse ponto não foi encerrado pela V02.
+- As sete MASTERs V02 PHOTOREALISTIC foram validadas em vídeo (apresentação individual) no Google Flow em `2026-08-28`, com aprovação do usuário para os sete personagens; ver registros `producao/testes/TESTE-VIDEO-*-CHAR-00X-002.md` (Dudu: `-001`, primeiro teste de vídeo dele). Essa validação cobre apenas rendering e identidade visual — voz, fala final exata e dinâmica narrativa não foram aprovadas por esses testes.
 
 ### Relações permanentes
 
