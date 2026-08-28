@@ -43,12 +43,12 @@ CHARACTERS PRESENT
 [For an individual shot, state that only the requested character is visible.]
 
 CURRENT GENERATION REFERENCES
-[List each attached reference and the character, costume, or environment it belongs to.]
+[List each attached reference and the character, costume, or environment it belongs to. Use each character's current canonical MASTER V02 PHOTOREALISTIC — see assets/personagens/mestres/MANIFESTO-MESTRES.md — not the historical V01, unless a specific approved source requires otherwise.]
 Use the uploaded master images as visual references and preserve their identities consistently. Each character must use only their own approved reference — never another character's.
 [A prior approved video may guide only the specifically approved method or rendering dimension; it never replaces the character's own facial reference.]
 
 CHARACTER VISUAL CONTINUITY
-For each visible character, preserve the approved facial features, apparent age, hair, body build, height, proportions, silhouette, and distinguishing visual features shown in that character's own attached approved reference.
+For each visible character, preserve the approved facial features, apparent age, hair, body build, height, proportions, silhouette, and distinguishing visual features shown in that character's own attached approved reference (current canon: MASTER V02 PHOTOREALISTIC). Because this reference is already photorealistic, the prompt does not need to "convert" a stylized/3D reference into live-action — only preserve what the reference already shows.
 Maintain stable facial structure, body build, weight, anatomy, skin texture, hair, and proportions from the first frame to the last.
 No facial drift, body drift, weight change, age change, morphing, feature blending, or character mixing.
 [Add only approved character-specific details.]
@@ -138,7 +138,7 @@ Depois de preencher a estrutura interna acima, reescreva-a como prosa natural em
 
 **E. Fictional context com moderação.** Família Silva continua sendo obra ficcional original, mas não repetir automaticamente em todo prompt final longas frases sobre "real person", "likeness", "identity" ou "imitation". Usar esse contexto apenas quando realmente necessário para compliance (por exemplo, se uma geração anterior foi bloqueada por esse motivo). Esse contexto nunca pode enfraquecer o requisito de live-action photorealistic do item A.
 
-**F. Referência MASTER concisa.** Usar o wording comprovado e enxuto: `"Use the uploaded master image(s) of [NAME(S)] as the visual reference and preserve their established appearance consistently."` Evitar blocos extensos sobre biometria, morphing ou identidade quando não houver necessidade específica documentada (ver `producao/solucoes/SOL-007-CENA-2B-VERSAO-SIMPLIFICADA.md`).
+**F. Referência MASTER concisa.** Usar o wording comprovado e enxuto: `"Use the uploaded master image(s) of [NAME(S)] as the visual reference and preserve their established appearance consistently."` Anexar sempre a MASTER `V02 PHOTOREALISTIC` de cada personagem (current canon desde a [DEC-015](../../docs/DECISOES.md#dec-015) — ver [MANIFESTO-MESTRES.md](../../assets/personagens/mestres/MANIFESTO-MESTRES.md)), não a V01 histórica. Como a V02 já é fotorrealista, o prompt não precisa converter uma referência estilizada em live-action — só preservar o que a própria referência já mostra. Evitar blocos extensos sobre biometria, morphing ou identidade quando não houver necessidade específica documentada (ver `producao/solucoes/SOL-007-CENA-2B-VERSAO-SIMPLIFICADA.md`).
 
 **G. Regra central, de novo.** Documentation may be detailed. The final Google Flow prompt must be concise. A checklist serve para validar o prompt já escrito, não para ser colada dentro dele.
 

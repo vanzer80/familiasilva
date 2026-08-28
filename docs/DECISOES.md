@@ -127,6 +127,15 @@ As decisões DEC-007 a DEC-012 abaixo foram originalmente registradas, na mesma 
 - **Status:** `APROVADO`
 - **Evidência:** [MANIFESTO-MESTRES.md](../assets/personagens/mestres/MANIFESTO-MESTRES.md)
 
+## DEC-015
+
+- **Data:** `2026-08-28`
+- **Decisão:** migrar as MASTERs oficiais dos sete personagens (`CHAR-001` a `CHAR-007`) para a versão `V02 PHOTOREALISTIC`, fornecida pelo usuário como pacote `FAMILIA-SILVA-MASTERS-V02-PHOTOREALISTIC` (sete arquivos JPEG, `768x1376`, confirmados individualmente por correspondência visual a cada personagem antes da ingestão — ver [MANIFESTO-MESTRES.md](../assets/personagens/mestres/MANIFESTO-MESTRES.md)). A V02 passa a ser a referência visual `CURRENT CANON` para novas gerações de imagem e vídeo; a V01 é preservada como `HISTORICAL`, sem exclusão, e não deve ser escolhida automaticamente para novas cenas.
+- **Motivo:** alinhar as referências visuais dos personagens ao padrão oficial `Photorealistic / Warm Cinematic Realism`, aumentando a consistência de geração image-to-video. Em testes recentes, a conversão de referências estilizadas (3D) para rendering fotorrealista mostrou-se instável — nem sempre reprodutível — mesmo com prompts corretos solicitando `Photorealistic / Warm Cinematic Realism`; usar uma referência de entrada já fotorrealista reduz esse conflito entre referência visual e estilo de rendering desejado. Ver aprendizado correspondente em [docs/APRENDIZADOS-DE-VIDEO.md](APRENDIZADOS-DE-VIDEO.md).
+- **Impacto:** nenhuma identidade, persona, relação narrativa ou personalidade muda — a V02 é uma tradução fotorrealista/live-action do mesmo design de personagem aprovado, não um personagem diferente. Resolve a pendência histórica de longa data da MASTER V02 de Patrícia (`CHAR-003`), antes `PENDENTE DE IMPORTAÇÃO DA FONTE APROVADA` em múltiplos documentos. Fichas de personagem, manifesto, changelog e template mestre atualizados para refletir a V02 como referência atual. Faixas etárias visuais aproximadas usadas como guia de casting/aparência na geração das V02 foram registradas nas fichas apenas como `visual age range`, não como idade narrativa canônica.
+- **Status:** `APROVADO`
+- **Evidência:** [MANIFESTO-MESTRES.md](../assets/personagens/mestres/MANIFESTO-MESTRES.md); pacote de origem `G:\Meu Drive\familia_silva\FAMILIA-SILVA-MASTERS-V02-PHOTOREALISTIC`
+
 ## Template de entrada
 
 ### DEC-XXX

@@ -30,7 +30,7 @@ Detalhes, evidências e limitações estão em [APRENDIZADOS-DE-VIDEO.md](APREND
 - Plataforma: `A DEFINIR`.
 - Público: `A DEFINIR`.
 - Voz de cada personagem: `A DEFINIR`.
-- MASTER definitiva (V02) de Patrícia: `PENDENTE DE IMPORTAÇÃO DA FONTE APROVADA` (a V01 já está versionada, ver [MANIFESTO-MESTRES.md](../assets/personagens/mestres/MANIFESTO-MESTRES.md)).
+- MASTER V02 PHOTOREALISTIC de todos os sete personagens: `CURRENT CANON` desde `2026-08-28` ([DEC-015](DECISOES.md#dec-015)), resolvendo a pendência histórica específica de Patrícia; V01 preservada como `HISTORICAL` (ver [MANIFESTO-MESTRES.md](../assets/personagens/mestres/MANIFESTO-MESTRES.md)).
 - Campos visuais ou de produção que continuem marcados como `A DEFINIR` nas fichas oficiais.
 
 ## Regra de cânone

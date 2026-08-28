@@ -20,7 +20,7 @@ Cânone é toda informação aprovada e registrada oficialmente. Não são câno
 | --- | --- | --- | --- | --- |
 | [`CHAR-001`](../personagens/oficiais/CHAR-001-MARCOS.md) | Marcos Silva | `CANÔNICA` | `APROVADO / CANON VISUAL PARA RENDERING DE VIDEO` | `A DEFINIR` |
 | [`CHAR-002`](../personagens/oficiais/CHAR-002-DONA-CELIA.md) | Dona Célia | `CANÔNICA` | `APROVADO / CANON VISUAL PARA RENDERING DE VIDEO` | `A DEFINIR` |
-| [`CHAR-003`](../personagens/oficiais/CHAR-003-PATRICIA-SILVA.md) | Patrícia Silva | `CANÔNICA` | `APROVADO / CANON VISUAL PARA RENDERING DE VIDEO` (V01; V02 pendente — ver manifesto) | `A DEFINIR` |
+| [`CHAR-003`](../personagens/oficiais/CHAR-003-PATRICIA-SILVA.md) | Patrícia Silva | `CANÔNICA` | `APROVADO / CANON VISUAL PARA RENDERING DE VIDEO` (V02 PHOTOREALISTIC — current canon; V01 histórica) | `A DEFINIR` |
 | [`CHAR-004`](../personagens/oficiais/CHAR-004-ANTONIO-SILVA.md) | Sr. Antônio | `CANÔNICA` | `APROVADO / CANON VISUAL` (referência metodológica) | `A DEFINIR` |
 | [`CHAR-005`](../personagens/oficiais/CHAR-005-BETO.md) | Beto | `CANÔNICA` | `APROVADO / CANON VISUAL EM VIDEO` | `A DEFINIR` |
 | [`CHAR-006`](../personagens/oficiais/CHAR-006-CAROL-SILVA.md) | Carol Silva | `CANÔNICA` | `APROVADO VISUALMENTE` | `A DEFINIR` |
@@ -38,7 +38,7 @@ Os IDs não podem ser reutilizados ou renumerados. As personalidades completas e
 - A imagem MASTER continua sendo a referência facial primária.
 - Um vídeo pode complementar somente a dimensão explicitamente aprovada.
 - Sr. Antônio e Beto são referências metodológicas de arquitetura de prompt e rendering, nunca referências faciais de outros personagens.
-- As sete imagens MASTER estão versionadas em [../assets/personagens/mestres/](../assets/personagens/mestres/) e catalogadas em [MANIFESTO-MESTRES.md](../assets/personagens/mestres/MANIFESTO-MESTRES.md) pela `DEC-014`. Exceção: a MASTER definitiva (V02) de Patrícia segue `PENDENTE DE IMPORTAÇÃO DA FONTE APROVADA`.
+- As sete imagens MASTER `V02 PHOTOREALISTIC` são a referência visual `CURRENT CANON` desde `2026-08-28` ([DEC-015](DECISOES.md#dec-015)) e estão versionadas em [../assets/personagens/mestres/](../assets/personagens/mestres/), catalogadas em [MANIFESTO-MESTRES.md](../assets/personagens/mestres/MANIFESTO-MESTRES.md). As sete MASTERs `V01` (pela `DEC-014`) permanecem preservadas como `HISTORICAL` e não devem ser escolhidas automaticamente para novas gerações.
 - A referência atual de Dudu está aprovada como canon visual (`DEC-013`), mas contém elementos a evitar em referências futuras (gimbal/celular, boca aberta, tênis de marca) — ver `ERR-006` e `SOL-006`.
 
 ### Relações permanentes

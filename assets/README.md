@@ -14,7 +14,7 @@ Assets experimentais não são cânone. Apenas arquivos versionados, identificad
 
 ## Estado atual
 
-As sete imagens MASTER do elenco inicial foram versionadas em `personagens/mestres/` e estão catalogadas, com SHA-256 e proveniência, em [personagens/mestres/MANIFESTO-MESTRES.md](personagens/mestres/MANIFESTO-MESTRES.md) — ver [DEC-014](../docs/DECISOES.md#dec-014). A MASTER definitiva de Patrícia (V02) segue `PENDENTE DE IMPORTAÇÃO DA FONTE APROVADA`. Não inventar caminhos, hashes ou Asset IDs além dos já registrados no manifesto.
+As sete imagens MASTER `V02 PHOTOREALISTIC` do elenco inicial são a referência visual `CURRENT CANON` desde `2026-08-28` ([DEC-015](../docs/DECISOES.md#dec-015)) e estão versionadas em `personagens/mestres/`, catalogadas com SHA-256 e proveniência em [personagens/mestres/MANIFESTO-MESTRES.md](personagens/mestres/MANIFESTO-MESTRES.md). As sete imagens `V01` (pela [DEC-014](../docs/DECISOES.md#dec-014)) permanecem preservadas como `HISTORICAL`. Não inventar caminhos, hashes ou Asset IDs além dos já registrados no manifesto.
 
 ## Promoção a MASTER
 

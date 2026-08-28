@@ -84,7 +84,7 @@ Para conflitos e precedência entre decisões, consulte [docs/DECISOES.md](docs/
 |---|---|---|
 | `CHAR-001` | Marcos Silva | `APROVADO / CANON VISUAL` |
 | `CHAR-002` | Dona Célia | `APROVADO / CANON VISUAL` |
-| `CHAR-003` | Patrícia Silva | `APROVADO / CANON VISUAL` na V01; MASTER V02 pendente de importação |
+| `CHAR-003` | Patrícia Silva | `APROVADO / CANON VISUAL` — MASTER V02 PHOTOREALISTIC (current canon) |
 | `CHAR-004` | Sr. Antônio | `APROVADO / CANON VISUAL`; vizinho recorrente, não membro oficial da Família Silva |
 | `CHAR-005` | Beto | `APROVADO / CANON VISUAL` |
 | `CHAR-006` | Carol Silva | `APROVADO VISUALMENTE` |
@@ -99,7 +99,7 @@ O repositório está reconciliado e concentra hoje a maior parte do conhecimento
 - sete Character IDs permanentes;
 - sete personalidades canônicas;
 - relações familiares consolidadas;
-- sete imagens MASTER versionadas e catalogadas;
+- sete imagens MASTER `V02 PHOTOREALISTIC` versionadas e catalogadas como `CURRENT CANON`; V01 preservada como `HISTORICAL`;
 - rendering canônico definido;
 - arquitetura mestre de prompts de vídeo aprovada;
 - base de erros, soluções, testes e aprendizados populada;

@@ -88,6 +88,13 @@ Hipóteses são identificadas como hipóteses. Campos sem evidência permanecem 
 - **Solução:** manter apenas os blocos e negative constraints aplicáveis e proporcionais ao problema real da cena; blocos sem utilidade podem ser omitidos, conforme já previsto na filosofia do [TEMPLATE-MESTRE-VIDEO.md](../prompts/templates/TEMPLATE-MESTRE-VIDEO.md).
 - **Status:** `VALIDADO` como princípio de composição; não substitui os locks obrigatórios (Speaking, Voice, Lip-Sync, Silent Character, Relationship).
 
+### LRN-013 — Referências fotorrealistas reduzem instabilidade de conversão para live-action
+
+- **Observação:** as MASTERs originais (`V01`) tinham visual estilizado/3D. Historicamente, essas mesmas referências conseguiram, em alguns casos, gerar vídeos fotorrealistas no Flow — não é verdade que uma referência estilizada/3D nunca consiga produzir fotorrealismo. Porém, em testes recentes, com diferentes arquiteturas de prompt e configurações/modelos do Flow, ocorreram repetidamente resultados em 3D/cartoon mesmo com prompts solicitando explicitamente `Photorealistic / Warm Cinematic Realism`. O comportamento não se mostrou suficientemente estável para garantir reprodução consistente do live-action a partir de referências estilizadas.
+- **Não registrar como regra absoluta:** "uma imagem 3D nunca consegue gerar vídeo fotorealista" é falso segundo os testes históricos e não deve ser usado como justificativa.
+- **Solução:** criar e adotar MASTERs `V02 PHOTOREALISTIC` para os sete personagens, alinhando a referência visual de entrada ao rendering desejado dos vídeos. Referências estilizadas/3D podem gerar fotorrealismo em alguns casos, mas demonstraram comportamento instável; MASTERs fotorrealistas reduzem o conflito entre referência visual e estilo de rendering desejado e passam a ser o padrão recomendado (`CURRENT CANON`). As V01 permanecem preservadas como histórico e como referência metodológica de identidade, mas não devem ser escolhidas automaticamente para novas gerações.
+- **Status:** `VALIDADO` pela [DEC-015](DECISOES.md#dec-015).
+
 ## Estado dos casos conhecidos
 
 **Nota de reconciliação (`2026-08-28`, [DEC-013](DECISOES.md#dec-013)):** a coluna "Estado visual registrado" abaixo preserva o rótulo original de cada teste, como aprendizado histórico. O **status canônico vigente** de Marcos, Dona Célia, Patrícia, Sr. Antônio, Beto e Dudu foi reconciliado para aprovação plena de canon visual (ver as fichas em `personagens/oficiais/` e a tabela em [CONTINUIDADE.md](CONTINUIDADE.md)); os aprendizados e limites técnicos desta tabela continuam válidos e devem orientar novos prompts, mas não representam mais o status de aprovação atual.
