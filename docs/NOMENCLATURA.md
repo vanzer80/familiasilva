@@ -11,9 +11,13 @@ IDs sao permanentes e nao devem ser reutilizados. O numero sequencial deve usar 
 | Temporada | `S01` | `S01` |
 | Episodio | `S01E001` | `S01E001` |
 | Cena | `S01E001-C01` | `S01E001-C01` |
-| Prompt | `PROMPT-S01E001-C01-V01` | `PROMPT-S01E001-C01-V01` |
+| Prompt de personagem | `PROMPT-CHAR-001-VIDEO-001` | `PROMPT-CHAR-001-VIDEO-001` |
+| Prompt de cena | `PROMPT-S01E001-C01-V01` | `PROMPT-S01E001-C01-V01` |
 | Imagem | `IMG-CHAR-001-MASTER-V01` | `IMG-CHAR-001-MASTER-V01` |
 | Video | `VID-S01E001-C01-V01` | `VID-S01E001-C01-V01` |
 | Audio | `AUD-CHAR-001-V01` | `AUD-CHAR-001-V01` |
+| Teste | `TEST-VIDEO-CHAR-001-001` | `TEST-VIDEO-CHAR-001-001` |
+| Erro | `ERR-001` | `ERR-001` |
+| Solução | `SOL-001` | `SOL-001` |
 
 Nomes descritivos podem complementar o ID, por exemplo `CHAR-001-MARCOS.md`, sem substituir o ID permanente.

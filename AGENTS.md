@@ -2,39 +2,72 @@
 
 ## Escopo
 
-Este repositorio e a fonte de verdade documental do projeto Familia Silva. A organizacao e a rastreabilidade nao autorizam a criacao de conteudo criativo. Toda informacao ainda ausente deve permanecer como `A DEFINIR`.
+Este repositório é a fonte de verdade documental do projeto Família Silva. A organização e a rastreabilidade não autorizam a criação de conteúdo criativo. Toda informação ainda ausente deve permanecer como `A DEFINIR`.
 
-## Protecao de canon
+## Fontes obrigatórias para vídeo
 
-- Nunca alterar informacao oficial de personagem sem autorizacao explicita.
-- Nunca substituir silenciosamente uma decisao aprovada.
+- A fonte executável para todo novo prompt de vídeo é [prompts/templates/TEMPLATE-MESTRE-VIDEO.md](prompts/templates/TEMPLATE-MESTRE-VIDEO.md).
+- As decisões permanentes ficam em [docs/DECISOES.md](docs/DECISOES.md).
+- Erros, acertos, hipóteses e soluções validadas ficam em [docs/APRENDIZADOS-DE-VIDEO.md](docs/APRENDIZADOS-DE-VIDEO.md) e nos registros de [producao/](producao/).
+- Nenhum prompt pode depender de contexto, prompt ou vídeo anterior que a ferramenta de geração não recebeu. Cada prompt deve ser autossuficiente.
+
+## Proteção de cânone
+
+- Nunca alterar informação oficial de personagem sem autorização explícita.
+- Nunca substituir silenciosamente uma decisão aprovada.
 - Nunca promover um teste para material oficial automaticamente.
-- Nunca tratar imagem experimental como imagem mestre.
-- Marcar materiais e decisoes como `DEFINIDO`, `EM TESTE`, `APROVADO`, `REJEITADO` ou `A DEFINIR`.
+- Nunca tratar imagem experimental como imagem MASTER.
+- Marcar materiais e decisões como `DEFINIDO`, `EM TESTE`, `APROVADO`, `APROVADO VISUALMENTE`, `APROVADO COM RESSALVAS`, `REJEITADO` ou `A DEFINIR`.
+- Separar aprovação visual, vocal, narrativa e técnica. Aprovar uma dimensão não aprova automaticamente as demais.
 
-## Personagens e versoes
+## Personagens e versões
 
 - Cada personagem possui um ID permanente, como `CHAR-001`.
-- Registrar mudancas visuais, de voz, de relacao ou de continuidade no arquivo do personagem e no changelog criativo.
-- Nao apagar versoes antigas relevantes. Preferir versionar arquivos ou registrar a alteracao.
+- Cada personagem usa exclusivamente sua própria imagem MASTER ou referência visual aprovada.
+- Um vídeo aprovado pode complementar o método de prompting ou rendering, mas não substitui a imagem MASTER como referência facial.
+- Sr. Antônio (`CHAR-004`) e Beto (`CHAR-005`) são referências metodológicas para arquitetura de prompt e rendering, nunca referências faciais de outros personagens.
+- Registrar mudanças visuais, de voz, de relação ou de continuidade no arquivo do personagem e no changelog criativo.
+- Não apagar versões antigas relevantes. Preferir versionar arquivos ou registrar a alteração.
 
-## Consistencia audiovisual
+## Rendering da série
 
-Todo prompt de video com personagens deve incluir e respeitar: Character Identity Lock, Visual Consistency Lock, Facial Consistency Lock, Body Consistency Lock, Wardrobe Lock, Relationship Lock, Speaking Lock, Voice Lock, Lip-Sync Lock e Silent Character Lock quando aplicavel.
+- O padrão canônico é `Photorealistic / Warm Cinematic Realism`.
+- Evitar cartoon plano, visual infantil, pele plástica, aparência de brinquedo, proporções exageradas e deriva de rosto ou corpo.
+- Não usar nomes de estúdios, franquias, obras ou artistas como atalho de estilo. Descrever materiais, iluminação, anatomia, câmera e acabamento de forma técnica.
 
-## Dialogo e voz
+## Continuidade audiovisual
 
-- Uma fala pertence exclusivamente ao personagem a que foi atribuida.
+Todo prompt de vídeo com personagens deve usar, quando aplicável:
+
+- `Fictional Context Declaration`.
+- `Character Visual Continuity`.
+- `Series Rendering Style Continuity`.
+- `Costume Continuity`.
+- `Environment Continuity`.
+- `Relationship Continuity`.
+- `Speaking Continuity`.
+- `Voice Continuity`.
+- `Lip-Sync Continuity`.
+- `Silent Character Continuity`.
+
+Blocos não aplicáveis podem ser omitidos. Não usar linguagem de identidade de pessoa real nem instruções que afirmem que o personagem é exatamente a mesma pessoa de uma referência.
+
+## Diálogo e voz
+
+- Uma fala pertence exclusivamente ao personagem a que foi atribuída.
 - Nunca trocar falas, aplicar a voz de um personagem a outro ou deixar um personagem completar a fala de outro.
-- Personagens silenciosos nao devem movimentar os labios como se falassem.
+- Personagens silenciosos não devem movimentar os lábios como se falassem.
 - O lip sync deve pertencer apenas ao personagem que profere a fala correta.
+- Voz ou fala experimental não se torna canônica por uma aprovação visual.
 
 ## Fluxo de materiais de IA
 
-Todo resultado de IA entra primeiro em `producao/testes/`. Somente aprovacao explicita permite classifica-lo como `APROVADO`. Um material aprovado pode depois ser promovido a referencia oficial ou mestre com registro de decisao.
+Todo resultado de IA entra primeiro em `producao/testes/`. Somente aprovação explícita permite classificá-lo como aprovado. Um material aprovado pode depois ser promovido a referência oficial ou MASTER com registro de decisão.
 
-## Seguranca de edicao
+Para cada teste, registrar ferramenta, configuração, prompt ou sua situação de recuperação, referências, resultado, erros, correções, dimensão aprovada e impacto no cânone.
 
-- Preservar documentos e conteudo existente.
-- Nao inventar caracteristicas, historia, idade, voz, roupa ou relacoes de personagens.
-- Nao fazer push remoto sem autorizacao explicita.
+## Segurança de edição
+
+- Preservar documentos e conteúdo existente.
+- Não inventar características, história, idade, voz, roupa, profissão ou relações de personagens.
+- Não fazer push remoto sem autorização explícita.

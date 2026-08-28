@@ -1,11 +1,15 @@
-# CHANGELOG CRIATIVO
+# Changelog Criativo
 
-Registre aqui somente mudancas importantes aprovadas ou resultados validados. Nao transformar hipotese ou teste em canon.
+Registrar somente mudanças aprovadas ou resultados validados. Hipóteses devem permanecer identificadas como hipóteses.
 
-| Data | ID relacionado | Tipo | Status | Descricao | Decisao ou evidencia |
+| Data | ID relacionado | Tipo | Status | Descrição | Decisão ou evidência |
 | --- | --- | --- | --- | --- | --- |
-| `2026-08-28` | `CHAR-001` a `CHAR-007` | cadastro canônico de personagens | `APROVADO` | Registrados os IDs permanentes do elenco inicial; criadas as cinco fichas-base pendentes e ratificadas as duas existentes. Nenhum campo visual, de voz ou imagem MASTER foi aprovado. | [DEC-002](DECISOES.md#dec-002) e [cadastro de personagens](../personagens/README.md) |
-| `2026-08-28` | `CHAR-001`, `CHAR-002`, `CHAR-005` e IDs ainda `A DEFINIR` | mudanca de canon e continuidade | `APROVADO` | Consolidadas as personalidades dos sete personagens e o mapa bidirecional de relacoes; removidos trechos relacionais provisórios. Nenhum elemento visual, figurino, rendering, voz ou ID ausente foi alterado. | [DEC-001](DECISOES.md#dec-001) e [relatorio de auditoria](auditorias/RELATORIO-AUDITORIA-CANONICA-PERSONALIDADES-2026-08-28.md) |
-| `A DEFINIR` | `A DEFINIR` | `A DEFINIR` | `A DEFINIR` | `A DEFINIR` | `A DEFINIR` |
+| `2026-08-28` | `CHAR-006` | aprovação visual | `APROVADO VISUALMENTE` | Consolidado o primeiro teste visual de Carol; fala experimental, voz e dinâmica narrativa não foram canonizadas. | [DEC-006](DECISOES.md#dec-006) |
+| `2026-08-28` | `CHAR-004`, `CHAR-005` | referência metodológica | `APROVADO` | Sr. Antônio e Beto podem orientar arquitetura de prompt e rendering, nunca referência facial cruzada. | [DEC-005](DECISOES.md#dec-005) |
+| `2026-08-28` | `CHAR-001` a `CHAR-007` | template mestre | `APROVADO` | Template de vídeo tornado fonte única, autossuficiente e baseado em continuidades de personagem, rendering, roupa, ambiente, fala, voz e lip sync. | [DEC-004](DECISOES.md#dec-004) |
+| `2026-08-28` | série | rendering | `APROVADO` | Adotado `Photorealistic / Warm Cinematic Realism`; cartoon e atalhos por nomes de franquias/estúdios deixam de orientar novos prompts. | [DEC-003](DECISOES.md#dec-003) |
+| `2026-08-28` | `CHAR-001` a `CHAR-007` | aprendizados de produção | `CONSOLIDADO` | Registrados testes, erros, soluções, aprovações e rejeições conhecidos; fatos e hipóteses foram separados. | [Aprendizados de Vídeo](APRENDIZADOS-DE-VIDEO.md) |
+| `2026-08-28` | `CHAR-001` a `CHAR-007` | cadastro canônico | `APROVADO` | Registrados os IDs permanentes do elenco inicial. | [DEC-002](DECISOES.md#dec-002) |
+| `2026-08-28` | `CHAR-001` a `CHAR-007` | personalidade e relações | `APROVADO` | Consolidadas as sete personalidades e o mapa bidirecional de relações. | [DEC-001](DECISOES.md#dec-001) |
 
-Tipos esperados incluem: personagem aprovado, aparencia alterada, nova imagem mestre, voz aprovada, cenario aprovado, prompt mestre atualizado, erro encontrado, solucao validada e mudanca de canon.
+Tipos esperados incluem: personagem aprovado, aparência alterada, nova imagem MASTER, voz aprovada, cenário aprovado, prompt mestre atualizado, erro encontrado, solução validada e mudança de cânone.

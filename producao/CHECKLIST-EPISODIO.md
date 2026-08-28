@@ -1,58 +1,54 @@
-# Checklist de Episodio
+# Checklist de Episódio e Vídeo
 
-Use este checklist antes de aprovar um episodio como final.
+## Antes da geração
 
-## Consistencia visual
+- [ ] O prompt partiu do template mestre oficial.
+- [ ] O prompt é autossuficiente e não depende de geração anterior.
+- [ ] Personagens, IDs, falantes e silenciosos estão listados.
+- [ ] Cada personagem usa sua própria referência aprovada.
+- [ ] Nenhum vídeo de Antônio ou Beto foi usado como referência facial cruzada.
+- [ ] O rendering está definido como `Photorealistic / Warm Cinematic Realism`.
+- [ ] Não há nome de estúdio, franquia, obra ou artista como atalho visual.
+- [ ] Informações não aprovadas permanecem `A DEFINIR` e não foram inventadas.
 
-- [ ] Personagens seguem a imagem mestre oficial.
-- [ ] Roupas estao consistentes com a cena e a continuidade.
-- [ ] Cenarios mantem layout, objetos permanentes e estilo aprovado.
-- [ ] Objetos recorrentes aparecem corretamente.
-- [ ] Cores e iluminacao nao contradizem referencias aprovadas.
+## Continuidade visual
 
-## Voz e interpretacao
+- [ ] Rosto, idade aparente, cabelo, corpo, peso, silhueta e proporções permanecem estáveis.
+- [ ] Não há morphing, mistura de personagens ou deriva facial/corporal.
+- [ ] Figurino, acessórios e calçados permanecem consistentes.
+- [ ] Cenário, layout, objetos, cores e iluminação permanecem consistentes.
+- [ ] Não aparecem personagens, objetos, textos ou logos não solicitados.
+- [ ] Mãos, dedos, membros, pele e movimentos foram revisados.
+- [ ] O resultado evita cartoon, aparência infantil, pele plástica e proporções exageradas.
 
-- [ ] Vozes estao consistentes com os personagens.
-- [ ] Ritmo de fala esta adequado.
-- [ ] Falas respeitam personalidade e relacoes aprovadas.
-- [ ] Nomes, apelidos e formas de tratamento estao corretos.
+## Fala, voz e lip sync
 
-## Narrativa
+- [ ] Cada fala literal pertence ao personagem correto.
+- [ ] Nenhum personagem troca, completa, parafraseia ou recebe fala extra.
+- [ ] Cada voz está vinculada ao personagem correto e tem status conhecido.
+- [ ] Somente o falante executa o lip sync correspondente.
+- [ ] Personagens silenciosos não movimentam os lábios como se falassem.
+- [ ] Áudio, ritmo e inteligibilidade foram revisados.
 
-- [ ] Premissa esta clara.
-- [ ] Conflito esta compreensivel.
-- [ ] Desenvolvimento conduz ao climax.
-- [ ] Resolucao funciona dentro do tom da serie.
-- [ ] Humor esta alinhado a [../docs/TOM-E-HUMOR.md](../docs/TOM-E-HUMOR.md).
+## Narrativa e relações
 
-## Continuidade
+- [ ] Personalidades e limites de comportamento foram respeitados.
+- [ ] Relações, nomes, apelidos e formas de tratamento estão corretos.
+- [ ] Sr. Antônio não foi tratado como integrante ou parente da Família Silva.
+- [ ] Humor está alinhado a [../docs/TOM-E-HUMOR.md](../docs/TOM-E-HUMOR.md).
+- [ ] Nenhuma informação experimental foi apresentada como cânone.
 
-- [ ] Relacoes familiares e dinamicas aprovadas foram respeitadas.
-- [ ] Eventos anteriores relevantes foram considerados.
-- [ ] Nenhuma informacao nao aprovada foi tratada como canon.
-- [ ] Acontecimentos novos que viram canon foram listados.
+## Saída técnica
 
-## Duracao
+- [ ] Duração, proporção, resolução, frame rate, número de tomadas e áudio correspondem ao registro do teste.
+- [ ] Cortes, transições, sincronização e artefatos foram revisados.
+- [ ] A configuração usada foi registrada, inclusive quando diverge da baseline do Flow.
 
-- [ ] Duracao final esta dentro do formato aprovado ou marcada como `A DEFINIR`.
-- [ ] Ritmo de cenas esta adequado.
+## Registro e aprovação
 
-## Audio e video
-
-- [ ] Audio esta claro.
-- [ ] Sincronia de voz e imagem foi revisada.
-- [ ] Cortes e transicoes estao limpos.
-- [ ] Video nao apresenta falhas evidentes.
-
-## Defeitos de IA
-
-- [ ] Maos, rostos e proporcoes foram revisados.
-- [ ] Continuidade visual entre takes foi revisada.
-- [ ] Texto em cena foi revisado.
-- [ ] Artefatos, distorcoes e movimentos estranhos foram identificados e corrigidos ou rejeitados.
-
-## Atualizacao de canon
-
-- [ ] [../docs/CONTINUIDADE.md](../docs/CONTINUIDADE.md) foi atualizado quando necessario.
-- [ ] Personagens, cenarios, prompts e assets relevantes foram registrados.
-- [ ] Decisoes formais foram registradas em [../docs/DECISOES.md](../docs/DECISOES.md), se aplicavel.
+- [ ] O teste foi registrado em `producao/testes/`.
+- [ ] Erros e soluções foram vinculados quando aplicável.
+- [ ] A dimensão aprovada foi declarada sem ampliação indevida.
+- [ ] Rejeições úteis foram preservadas.
+- [ ] Ficha, continuidade, changelog e decisões foram atualizados quando necessário.
+- [ ] O asset só foi chamado de MASTER depois de versionado e vinculado.

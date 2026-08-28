@@ -1,49 +1,45 @@
 # Continuidade
 
-Este documento define o que precisa ser rastreado para preservar consistência entre episódios, temporadas, materiais visuais, voz e narrativas.
+Este documento define o estado que precisa ser preservado entre episódios, temporadas, imagens, vídeos, vozes e narrativas.
 
 ## Cânone
 
-Cânone é toda informação aprovada e registrada oficialmente neste repositório.
+Cânone é toda informação aprovada e registrada oficialmente. Não são cânone:
 
-Não são cânone:
+- informações marcadas como `A DEFINIR`;
+- hipóteses e ideias em rascunho;
+- prompts experimentais;
+- imagens ou vídeos não aprovados na dimensão citada;
+- voz, diálogo ou dinâmica narrativa presentes em um teste aprovado somente no visual.
 
-- Informações marcadas como `TODO`.
-- Informações marcadas como `A DEFINIR`.
-- Ideias em rascunho.
-- Conceitos não aprovados.
-- Prompts experimentais.
-- Imagens ou vídeos não aprovados como referência oficial.
+## Estado consolidado em 2026-08-28
 
-## Informações permanentes
+### Personagens
 
-Registrar aqui informações que, uma vez aprovadas, não devem mudar sem decisão formal:
+| ID | Personagem | Personalidade | Visual | Voz |
+| --- | --- | --- | --- | --- |
+| [`CHAR-001`](../personagens/oficiais/CHAR-001-MARCOS.md) | Marcos Silva | `CANÔNICA` | `APROVADO COM RESSALVAS` | `A DEFINIR` |
+| [`CHAR-002`](../personagens/oficiais/CHAR-002-DONA-CELIA.md) | Dona Célia | `CANÔNICA` | `APROVADO COM RESSALVAS` | `A DEFINIR` |
+| [`CHAR-003`](../personagens/oficiais/CHAR-003-PATRICIA-SILVA.md) | Patrícia Silva | `CANÔNICA` | `APROVADO COM RESSALVAS` | `A DEFINIR` |
+| [`CHAR-004`](../personagens/oficiais/CHAR-004-ANTONIO-SILVA.md) | Sr. Antônio | `CANÔNICA` | `APROVADO COM RESSALVAS` | `A DEFINIR` |
+| [`CHAR-005`](../personagens/oficiais/CHAR-005-BETO.md) | Beto | `CANÔNICA` | `APROVADO COM RESSALVAS` | `A DEFINIR` |
+| [`CHAR-006`](../personagens/oficiais/CHAR-006-CAROL-SILVA.md) | Carol Silva | `CANÔNICA` | `APROVADO VISUALMENTE` | `A DEFINIR` |
+| [`CHAR-007`](../personagens/oficiais/CHAR-007-DUDU-SILVA.md) | Dudu Silva | `CANÔNICA` | `AJUSTE NECESSÁRIO` | `A DEFINIR` |
 
-- Personagens oficiais e Character IDs.
-- Relações familiares.
-- Cidade e locais recorrentes.
-- Aparência dos personagens.
-- Voz e forma de falar.
-- Personalidade.
-- Objetos permanentes.
-- Layout da casa.
-- Eventos que passam a valer para episódios futuros.
+Os IDs não podem ser reutilizados ou renumerados. As personalidades completas estão em [../personagens/oficiais/personalidades/](../personagens/oficiais/personalidades/).
 
-## Estado canônico consolidado em 2026-08-28
+### Rendering permanente
 
-### Personagens, IDs e personalidades
+`Photorealistic / Warm Cinematic Realism` é o padrão canônico pela [DEC-003](DECISOES.md#dec-003). Ele substitui direções anteriores de cartoon ou realismo estilizado quando houver contradição.
 
-| ID permanente | Personagem | Estado |
-| --- | --- | --- |
-| [`CHAR-001`](../personagens/oficiais/CHAR-001-MARCOS.md) | Marcos Silva | personalidade canônica; visual e voz em desenvolvimento |
-| [`CHAR-002`](../personagens/oficiais/CHAR-002-DONA-CELIA.md) | Dona Célia | personalidade canônica; visual e voz em desenvolvimento |
-| [`CHAR-003`](../personagens/oficiais/CHAR-003-PATRICIA-SILVA.md) | Patrícia Silva | personalidade canônica; visual e voz em desenvolvimento |
-| [`CHAR-004`](../personagens/oficiais/CHAR-004-ANTONIO-SILVA.md) | Antônio Silva, conhecido como Sr. Antônio | personalidade canônica; visual e voz em desenvolvimento |
-| [`CHAR-005`](../personagens/oficiais/CHAR-005-BETO.md) | Beto | personalidade canônica; visual e voz em desenvolvimento |
-| [`CHAR-006`](../personagens/oficiais/CHAR-006-CAROL-SILVA.md) | Carol Silva | personalidade canônica; visual e voz em desenvolvimento |
-| [`CHAR-007`](../personagens/oficiais/CHAR-007-DUDU-SILVA.md) | Dudu Silva | personalidade canônica; visual e voz em desenvolvimento |
+### Referências visuais
 
-Os IDs são permanentes e não podem ser reutilizados ou renumerados. As personalidades completas estão em [../personagens/oficiais/personalidades/](../personagens/oficiais/personalidades/).
+- Cada personagem usa somente sua própria imagem MASTER ou referência aprovada.
+- A imagem MASTER continua sendo a referência facial primária.
+- Um vídeo pode complementar somente a dimensão explicitamente aprovada.
+- Sr. Antônio e Beto são referências metodológicas de arquitetura de prompt e rendering, nunca referências faciais de outros personagens.
+- Os nomes de arquivos informados nas fichas ainda precisam ser versionados em [../assets/personagens/](../assets/personagens/).
+- A referência de Dudu precisa ser refeita sem gimbal/celular, com boca fechada e tênis sem marca.
 
 ### Relações permanentes
 
@@ -56,59 +52,37 @@ Os IDs são permanentes e não podem ser reutilizados ou renumerados. As persona
 - A paixonite de Sr. Antônio por Patrícia é platônica, unilateral e não correspondida.
 - A relação entre Sr. Antônio e Marcos inclui rivalidade e inveja cômica leve.
 
-A matriz completa e bidirecional está em [../personagens/relacoes/RELACOES-FAMILIARES.md](../personagens/relacoes/RELACOES-FAMILIARES.md).
+A matriz bidirecional está em [../personagens/relacoes/RELACOES-FAMILIARES.md](../personagens/relacoes/RELACOES-FAMILIARES.md).
 
-### Limite desta consolidação
+## Continuidade de vídeo
 
-O registro dos IDs não altera nem aprova aparência, imagem MASTER, figurino, rendering, voz, idade ou profissão. Esses campos permanecem `A DEFINIR` quando não houver aprovação explícita.
+Todo novo prompt deve seguir [../prompts/templates/TEMPLATE-MESTRE-VIDEO.md](../prompts/templates/TEMPLATE-MESTRE-VIDEO.md) e as regras em [../personagens/regras/](../personagens/regras/).
+
+Devem ser preservadas separadamente:
+
+- aparência do personagem;
+- rendering da série;
+- figurino;
+- ambiente;
+- relacionamento;
+- fala;
+- voz;
+- lip sync;
+- silêncio de personagens sem fala.
 
 ## Eventos anteriores
 
-Cada episódio aprovado deve atualizar a continuidade com acontecimentos que passam a importar depois.
+Cada episódio aprovado deve registrar:
 
-Formato recomendado:
+- Episódio: `S01E001`.
+- Evento: `A DEFINIR`.
+- Impacto futuro: `A DEFINIR`.
+- Status: `A DEFINIR`.
 
-- Episódio: `S01E001`
-- Evento: `TODO`
-- Impacto futuro: `TODO`
-- Status: `A DEFINIR`
+## Objetos e layout
 
-## Relacionamentos
-
-Registrar apenas relações aprovadas. Não presumir parentesco, idade, profissão, hierarquia familiar ou dinâmica emocional sem aprovação.
-
-## Aparência
-
-Cada personagem aprovado deve ter referência a uma **IMAGEM MESTRE OFICIAL** em [assets/personagens/](../assets/personagens/) somente depois da aprovação do asset correspondente.
-
-## Objetos
-
-Objetos recorrentes ou relevantes devem ser documentados com:
-
-- Nome.
-- Local.
-- Dono ou usuário, se aprovado.
-- Episódios em que aparece.
-- Regras de continuidade.
-
-## Layout da casa
-
-Quando a casa principal for aprovada, registrar:
-
-- Ambientes.
-- Posição relativa dos cômodos.
-- Portas, janelas e corredores.
-- Móveis permanentes.
-- Objetos permanentes.
-- Regras para manter continuidade visual.
+Objetos recorrentes devem registrar nome, local, dono/usuário, episódios e regras de continuidade. Quando a casa principal for aprovada, registrar ambientes, posições relativas, portas, janelas, corredores, móveis, objetos e regras visuais.
 
 ## Voz e personalidade
 
-Cada personagem aprovado deve ter registro de:
-
-- Voz.
-- Ritmo de fala.
-- Vocabulário recorrente, se aprovado.
-- Personalidade.
-- Limites de comportamento.
-- Coisas que o personagem não faria sem justificativa.
+Cada voz futura deve ter versão, fonte, ritmo, vínculo exclusivo, teste e aprovação específica. A personalidade e os limites de comportamento continuam definidos nos documentos canônicos, mesmo quando a voz ainda está `A DEFINIR`.

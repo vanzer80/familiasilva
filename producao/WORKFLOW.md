@@ -1,23 +1,27 @@
 # Workflow
 
-Fluxo recomendado para produzir episodios da serie Família Silva.
+## Fluxo de episódio ou cena
 
-1. Ideia.
-2. Premissa.
-3. Roteiro.
-4. Validacao de continuidade.
-5. Divisao em cenas.
-6. Prompts.
-7. Geracao de imagens.
-8. Geracao de videos.
-9. Voz e dialogos.
-10. Edicao.
-11. Revisao.
-12. Episodio final.
-13. Atualizacao do canon.
+1. Registrar ideia e premissa.
+2. Escrever roteiro usando personalidades e relações canônicas.
+3. Validar continuidade narrativa.
+4. Dividir em cenas e falas literais.
+5. Identificar as referências próprias de cada personagem.
+6. Consultar [../docs/APRENDIZADOS-DE-VIDEO.md](../docs/APRENDIZADOS-DE-VIDEO.md).
+7. Criar o prompt a partir do [template mestre](../prompts/templates/TEMPLATE-MESTRE-VIDEO.md).
+8. Registrar o teste antes ou imediatamente após a geração.
+9. Gerar imagem ou vídeo com as referências atuais anexadas.
+10. Aplicar [CHECKLIST-EPISODIO.md](CHECKLIST-EPISODIO.md).
+11. Registrar erros factuais e hipóteses separadamente.
+12. Testar e registrar soluções.
+13. Classificar a dimensão aprovada: visual, vocal, narrativa e/ou técnica.
+14. Editar e revisar o episódio final.
+15. Atualizar ficha, continuidade, changelog e decisões quando houver impacto canônico.
 
-## Observacoes
+## Regras de passagem
 
-- A validacao de continuidade deve acontecer antes da geracao final.
-- Prompts, assets e decisoes relevantes devem ser registrados.
-- A atualizacao do canon so deve ocorrer depois de revisao e aprovacao.
+- Teste não vira aprovação automaticamente.
+- Aprovação visual não aprova voz ou diálogo.
+- Prompt aprovado só vira mestre quando seu texto exato, referências, configuração e resultado estiverem recuperados.
+- Asset só vira MASTER quando for versionado, identificado e vinculado à ficha.
+- O cânone só muda depois de revisão, aprovação explícita e registro.

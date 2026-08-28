@@ -1,24 +1,35 @@
 # Prompts
 
-Este diretorio organiza prompts usados na producao de Família Silva.
+Este diretório organiza os prompts usados na produção de Família Silva.
 
-Prompts nao aprovados sao materiais de trabalho, nao canon.
+## Fonte oficial
 
-## Subdiretorios
+[templates/TEMPLATE-MESTRE-VIDEO.md](templates/TEMPLATE-MESTRE-VIDEO.md) é a única fonte executável para a arquitetura de novos prompts de vídeo.
 
-- [imagem/](imagem/) - Prompts para imagens, personagens, cenarios e referencias visuais.
-- [video/](video/) - Prompts para animacao, cenas e geracao audiovisual.
-- [voz/](voz/) - Prompts e direcoes de voz, fala e interpretacao.
-- [templates/](templates/) - Modelos reutilizaveis de prompts.
+- Não criar um segundo template mestre concorrente.
+- Não depender de prompt ou vídeo anterior não fornecido à ferramenta.
+- Consultar [../docs/APRENDIZADOS-DE-VIDEO.md](../docs/APRENDIZADOS-DE-VIDEO.md) antes de gerar um novo vídeo.
+- Usar somente informações aprovadas; campos ausentes permanecem `A DEFINIR`.
+- Prompts não aprovados são materiais de trabalho, não cânone.
 
-## Convencao de IDs
+## Subdiretórios
 
-Use `PROMPT-CHAR-001-IMAGE-001`, adaptando o tipo conforme necessario:
+- [imagem/](imagem/) — prompts de imagens, personagens, cenários e referências visuais.
+- [video/](video/) — instruções específicas das ferramentas audiovisuais.
+- [voz/](voz/) — prompts e direções de voz, fala e interpretação.
+- [templates/](templates/) — modelos reutilizáveis.
+- [mestres/](mestres/) — instâncias de prompts promovidas explicitamente a mestre; não usar como depósito de testes.
 
-- `IMAGE`
-- `VIDEO`
-- `VOICE`
+## Convenção de IDs
 
-## Regra de uso
+Use `PROMPT-CHAR-001-VIDEO-001`, adaptando o tipo:
 
-Todo prompt deve indicar qual personagem, cenario, episodio ou asset ele referencia.
+- `IMAGE`.
+- `VIDEO`.
+- `VOICE`.
+
+Todo prompt deve indicar personagem, cenário, episódio ou asset relacionado, além da versão e do status.
+
+## Rendering obrigatório
+
+O padrão aprovado é `Photorealistic / Warm Cinematic Realism`. O estilo deve ser descrito tecnicamente, sem nomes de estúdios, franquias, obras ou artistas.

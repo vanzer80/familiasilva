@@ -11,13 +11,15 @@
 
 ## Aparencia
 
+- **Estado visual:** `A DEFINIR`
+- **Rendering da série:** `Photorealistic / Warm Cinematic Realism`
 - **Descricao geral:** `A DEFINIR`
 - **Rosto:** `A DEFINIR`
 - **Cabelo:** `A DEFINIR`
 - **Corpo:** `A DEFINIR`
 - **Roupas recorrentes:** `A DEFINIR`
 - **Acessorios:** `A DEFINIR`
-- **Observacoes de consistencia visual:** `A DEFINIR`
+- **Observações de Character Visual Continuity:** `A DEFINIR`
 
 ## Personalidade
 
@@ -74,11 +76,16 @@
 
 - **Referencia:** `A DEFINIR`
 - **Arquivo em assets:** `A DEFINIR`
-- **Observacao:** a IMAGEM MESTRE OFICIAL deve ficar em `assets/personagens/` e ser usada como referencia visual principal.
+- **Asset ID:** `A DEFINIR`
+- **Observacao:** a IMAGEM MASTER deve pertencer ao próprio personagem, ficar em `assets/personagens/` e permanecer como referência facial primária. Vídeo aprovado não a substitui.
 
 ## Status
 
-- **Status atual:** `Conceito / Em desenvolvimento / Visual em desenvolvimento / Aprovado / Canon`
+- **Status atual:** `CONCEITO / EM DESENVOLVIMENTO / VISUAL APROVADO COM RESSALVAS / APROVADO VISUALMENTE / APROVADO / CANÔNICO`
+- **Aprovação visual:** `A DEFINIR`
+- **Aprovação vocal:** `A DEFINIR`
+- **Aprovação narrativa:** `A DEFINIR`
+- **Aprovação técnica:** `A DEFINIR`
 
 ## Controle e versao
 

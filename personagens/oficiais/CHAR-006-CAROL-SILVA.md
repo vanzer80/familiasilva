@@ -4,14 +4,15 @@
 
 - **ID:** `CHAR-006`
 - **Nome:** `Carol Silva`
-- **Status:** `EM DESENVOLVIMENTO`
-- **Versão:** `V01`
-- **Data de aprovação visual:** `A DEFINIR`
+- **Status:** `VISUAL APROVADO`
+- **Versão:** `V02`
+- **Data de aprovação visual:** `2026-08-27`
 
 ## Ficha oficial
 
-- **Imagem mestre:** `A DEFINIR`
-- **Referências visuais:** `A DEFINIR`
+- **Imagem MASTER:** `carol_silva.png` — referência primária informada e aprovada; asset ainda não versionado em `assets/`
+- **Referências visuais:** [primeiro teste aprovado visualmente](../../producao/testes/TESTE-VIDEO-CAROL-CHAR-006-001.md)
+- **Rendering da série:** `Photorealistic / Warm Cinematic Realism`
 - **Aparência facial:** `A DEFINIR`
 - **Corpo:** `A DEFINIR`
 - **Altura/proporções:** `A DEFINIR`
@@ -23,7 +24,7 @@
 - **Estilo de fala:** definido no documento de personalidade canônica.
 - **Maneirismos:** definidos no documento de personalidade canônica.
 - **Relação com outros personagens:** [matriz canônica](../relacoes/RELACOES-FAMILIARES.md) e documento de personalidade.
-- **Elementos imutáveis:** `A DEFINIR` para o visual; limites narrativos definidos no documento de personalidade.
+- **Elementos imutáveis:** continuidade visual da imagem MASTER própria; detalhes descritivos dependem do asset aprovado.
 - **Elementos que podem variar:** `A DEFINIR`
-- **Negative constraints:** `A DEFINIR`
-- **Histórico de alterações:** `2026-08-28` — Character ID permanente registrado pela [DEC-002](../../docs/DECISOES.md#dec-002); personalidade e relações canônicas vinculadas; cânone visual e voz permanecem `A DEFINIR`.
+- **Negative constraints:** sem referência facial de outro personagem, morphing, deriva visual, cartoon ou pele plástica.
+- **Histórico de alterações:** `2026-08-28` — Character ID permanente registrado pela [DEC-002](../../docs/DECISOES.md#dec-002); primeiro teste aprovado somente na dimensão visual pela [DEC-006](../../docs/DECISOES.md#dec-006); fala experimental e voz permanecem não canônicas.

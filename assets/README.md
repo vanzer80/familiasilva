@@ -1,29 +1,28 @@
 # Assets
 
-Este diretorio guarda materiais visuais, sonoros e referencias aprovadas ou em avaliacao.
+Este diretório guarda materiais visuais, sonoros e referências aprovadas ou em avaliação.
 
-Assets experimentais nao sao canon. Apenas arquivos marcados como oficiais nos documentos do projeto devem ser tratados como referencia mestre.
+Assets experimentais não são cânone. Apenas arquivos versionados, identificados e vinculados nas fichas podem ser tratados como MASTER.
 
-## Subdiretorios
+## Subdiretórios
 
-- [personagens/](personagens/) - Imagens mestre oficiais e variacoes de personagens.
-- [cenarios/](cenarios/) - Imagens mestre oficiais e referencias de cenarios.
-- [referencias/](referencias/) - Referencias internas, estudos visuais e materiais de apoio.
-- [logos/](logos/) - Logos e identidade visual do projeto.
-- [audio/](audio/) - Vozes, trilhas, efeitos e referencias sonoras.
+- [personagens/](personagens/) — imagens MASTER e variações de personagens.
+- [cenarios/](cenarios/) — imagens MASTER e referências de cenários.
+- [referencias/](referencias/) — estudos visuais e materiais de apoio.
+- [logos/](logos/) — logos e identidade visual.
+- [audio/](audio/) — vozes, trilhas, efeitos e referências sonoras.
 
-## Imagens mestre oficiais
+## Estado atual
 
-Personagens aprovados devem apontar para uma **IMAGEM MESTRE OFICIAL** em [personagens/](personagens/).
+Os nomes de referências visuais já informados estão registrados em [../personagens/README.md](../personagens/README.md), mas os arquivos ainda não foram adicionados a este repositório. Não inventar caminhos, hashes ou Asset IDs.
 
-Cenarios aprovados devem apontar para uma referencia visual ou imagem mestre em [cenarios/](cenarios/).
+## Promoção a MASTER
 
-## Convencao de IDs
+1. Adicionar o arquivo correto.
+2. Registrar origem, personagem, data, versão e status.
+3. Atribuir Asset ID.
+4. Obter aprovação explícita.
+5. Vincular o asset na ficha do personagem.
+6. Atualizar continuidade e changelog.
 
-Use `ASSET-CHAR-001-001`, adaptando o tipo e a numeracao conforme o material.
-
-## Cuidados
-
-- Registrar origem e status de cada asset relevante.
-- Nao usar referencias externas como copia.
-- Nao considerar uma imagem gerada por IA como oficial sem aprovacao.
+Use `ASSET-CHAR-001-001`, adaptando personagem e numeração.

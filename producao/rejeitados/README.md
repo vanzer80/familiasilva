@@ -1,3 +1,7 @@
-# REJEITADOS
+# Rejeitados
 
-Guarde resultados rejeitados quando forem uteis para rastreabilidade. Registre motivo, versao e data. Material rejeitado nao pode ser usado como referencia oficial.
+Resultados ou direções rejeitados permanecem registrados quando ajudam a evitar repetição do erro. Material rejeitado nunca pode ser referência oficial.
+
+| Registro | Motivo |
+| --- | --- |
+| [REJ-001-PADRAO-CARTOON.md](REJ-001-PADRAO-CARTOON.md) | incompatível com o rendering canônico |
