@@ -222,6 +222,8 @@ Antes de gerar qualquer prompt, leia obrigatoriamente:
 - Evitar IDs, nomes internos de clipes, títulos administrativos, cabeçalhos técnicos e metadados desnecessários dentro do prompt final quando houver risco de aparecerem no vídeo.
 - Não usar `CHARACTER IDENTITY LOCK` ou `EXACTLY the same person` como instruções operacionais ativas.
 
+Antes de entregar qualquer prompt, use a checklist, os "Reference Examples — illustrative, not production-verified" e a seção "Erros conhecidos e como evitar regressões" ao final de [prompts/templates/TEMPLATE-MESTRE-VIDEO.md](prompts/templates/TEMPLATE-MESTRE-VIDEO.md). O bloco `SERIES RENDERING STYLE CONTINUITY` é obrigatório em todo prompt e nunca deve ser removido ou enfraquecido — nem mesmo como tentativa de corrigir um bloqueio do Flow; ver "Bloqueios do Flow" no template mestre.
+
 ---
 
 ## 9. Episódio 1 como referência de produção

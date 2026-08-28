@@ -9,6 +9,7 @@ Este diretório organiza os prompts usados na produção de Família Silva.
 - Não criar um segundo template mestre concorrente.
 - Não depender de prompt ou vídeo anterior não fornecido à ferramenta.
 - Consultar [../docs/APRENDIZADOS-DE-VIDEO.md](../docs/APRENDIZADOS-DE-VIDEO.md) antes de gerar um novo vídeo.
+- Antes de entregar qualquer prompt, passar pela checklist e comparar com os Reference Examples (ilustrativos, não verificados em produção) e os erros conhecidos no fim de [templates/TEMPLATE-MESTRE-VIDEO.md](templates/TEMPLATE-MESTRE-VIDEO.md).
 - Usar somente informações aprovadas; campos ausentes permanecem `A DEFINIR`.
 - Prompts não aprovados são materiais de trabalho, não cânone.
 
