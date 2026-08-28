@@ -4,7 +4,18 @@
 
 Usar este arquivo para todo novo prompt de vídeo da Família Silva, principalmente no Google Flow/Veo. O prompt final deve ser autossuficiente: não pode depender de memória da ferramenta, de geração anterior ou de uma referência que não esteja anexada na execução atual.
 
-Preencher somente com informação aprovada. Se um campo obrigatório não tiver fonte, registrar `A DEFINIR` e não inventar. Blocos sem aplicação real podem ser omitidos — **exceto `FICTIONAL CONTEXT DECLARATION` e `SERIES RENDERING STYLE CONTINUITY`, que são obrigatórios em todo prompt de vídeo e nunca podem ser omitidos, esvaziados ou enfraquecidos, nem mesmo como tentativa de corrigir um bloqueio do Flow.** Ver "Bloqueios do Flow" abaixo.
+Preencher somente com informação aprovada. Se um campo obrigatório não tiver fonte, registrar `A DEFINIR` e não inventar. Blocos sem aplicação real podem ser omitidos — **exceto o conteúdo de `FICTIONAL CONTEXT DECLARATION`, quando necessário, e o de `SERIES RENDERING STYLE CONTINUITY`, que é obrigatório em todo prompt de vídeo e nunca pode ser omitido, esvaziado ou enfraquecido, nem mesmo como tentativa de corrigir um bloqueio do Flow.** Ver "Bloqueios do Flow" abaixo.
+
+## Regra central
+
+**Documentation may be detailed. The final Google Flow prompt must be concise.**
+
+Este documento tem duas camadas, e elas não se confundem:
+
+1. **Estrutura interna de raciocínio e validação** — os blocos nomeados (`CHARACTER VISUAL CONTINUITY`, `SERIES RENDERING STYLE CONTINUITY`, `SPEAKING CONTINUITY`, etc.), a checklist e os erros conhecidos. Servem para a IA **pensar e validar** antes de escrever o prompt, e para registrar o teste em `producao/testes/`. **Nunca são copiados literalmente para o Flow.**
+2. **Prompt final** — o texto que efetivamente é colado no Flow. Deve ser **prosa natural, enxuta, sem cabeçalhos técnicos, sem campos `A DEFINIR`, sem IDs, sem estrutura administrativa.** Ver "Do raciocínio interno ao prompt final" logo abaixo do template.
+
+A IA usa a checklist para **validar** o prompt já escrito em prosa — nunca despeja a checklist ou os nomes dos blocos dentro do prompt entregue ao usuário.
 
 ## Metadados do registro
 
@@ -16,7 +27,9 @@ Preencher somente com informação aprovada. Se um campo obrigatório não tiver
 - **Cena/episódio:** `A DEFINIR`
 - **Referências anexadas nesta geração:** `A DEFINIR`
 
-## Template para copiar e preencher
+## Estrutura interna de raciocínio e validação (NÃO é o prompt final)
+
+**Esta estrutura, com cabeçalhos em maiúsculas, existe para organizar o raciocínio da IA e para preencher o registro em `producao/testes/`. Ela não deve ser copiada literalmente para o Flow.** Os cabeçalhos (`FICTIONAL CONTEXT DECLARATION`, `SCENE OBJECTIVE`, `CHARACTERS PRESENT`, `CURRENT GENERATION REFERENCES`, `TECHNICAL OUTPUT`, `FINAL CONTINUITY CHECK` etc.) são rótulos administrativos internos, não texto a ser enviado à ferramenta. Preencher todos os blocos aplicáveis aqui primeiro, depois seguir "Do raciocínio interno ao prompt final" para transformar isso em prosa.
 
 ```text
 FICTIONAL CONTEXT DECLARATION
@@ -41,8 +54,8 @@ No facial drift, body drift, weight change, age change, morphing, feature blendi
 [Add only approved character-specific details.]
 
 SERIES RENDERING STYLE CONTINUITY
-Photorealistic / Warm Cinematic Realism.
-Use natural skin texture, physically plausible materials, believable human anatomy and proportions, warm cinematic lighting, realistic depth of field, grounded color, and subtle live-action-adjacent polish.
+Photorealistic / Warm Cinematic Realism. Mandatory in every prompt, never "live-action-adjacent" or any weaker equivalent: "Create a live-action photorealistic scene with real human beings, natural skin texture, realistic hair and clothing, believable human anatomy and warm cinematic lighting, filmed like real professional camera footage inside a real Brazilian environment."
+Use physically plausible materials, realistic depth of field, and grounded color.
 Avoid flat cartoon rendering, childlike animation, toy-like appearance, waxy or plastic skin, exaggerated proportions, and visual imitation of any named studio, franchise, artwork, or artist.
 
 COSTUME CONTINUITY
@@ -111,6 +124,26 @@ FINAL CONTINUITY CHECK
 Generate only the described original fictional scene. Preserve every supplied approved reference and every dialogue assignment. When an instruction is not defined above, do not invent a new canonical character trait, relationship, costume, voice, prop, or location.
 ```
 
+## Do raciocínio interno ao prompt final
+
+Depois de preencher a estrutura interna acima, reescreva-a como prosa natural em inglês antes de entregar ao usuário. Regras obrigatórias nessa transformação:
+
+**A. Live-action explícito.** Todo prompt final deve conter, quase literalmente, a frase obrigatória: `"Create a live-action photorealistic scene with real human beings, natural skin texture, realistic hair and clothing, believable human anatomy and warm cinematic lighting, filmed like real professional camera footage inside a real Brazilian environment."` Nunca substituir "live-action" por "live-action-adjacent" ou qualquer formulação mais fraca.
+
+**B. Sem cabeçalhos administrativos.** Remover completamente rótulos como `FICTIONAL CONTEXT DECLARATION`, `SCENE OBJECTIVE`, `CHARACTERS PRESENT`, `CURRENT GENERATION REFERENCES`, `TECHNICAL OUTPUT`, `FINAL CONTINUITY CHECK` e qualquer outro cabeçalho em maiúsculas do prompt final. Eles são organização interna, não texto para o Flow. Converter cada regra aplicável em uma frase de prosa.
+
+**C. Omitir campos não definidos.** Nunca escrever `Duration: A DEFINIR`, `Resolution: A DEFINIR`, `Frame rate: A DEFINIR`, `Generation quantity: A DEFINIR`, `Voice: A DEFINIR`, `Ambience: A DEFINIR` ou equivalente no prompt final. Se algo não foi definido e não é necessário para a geração pedida, **omitir a linha inteira**, não escrever o placeholder. Em especial, não incluir duração no prompt final quando o usuário não pediu uma duração específica — duração é configuração da ferramenta, não texto de prompt (ver "Baseline opcional" abaixo).
+
+**D. Locks reduzidos a frases naturais.** Manter internamente os conceitos de `Speaking Lock`, `Voice Lock`, `Lip-Sync Lock` e `Silent Character Lock` como regras de validação, mas no prompt final reduzi-los a uma frase natural, por exemplo `"Only [NAME] speaks. No other voices are heard."` (personagem único) ou `"Only [NAME] speaks. Everyone else remains silent."` (múltiplos personagens). Não criar longas cadeias de proibições no prompt final, salvo se um erro específico e documentado justificar uma restrição adicional pontual.
+
+**E. Fictional context com moderação.** Família Silva continua sendo obra ficcional original, mas não repetir automaticamente em todo prompt final longas frases sobre "real person", "likeness", "identity" ou "imitation". Usar esse contexto apenas quando realmente necessário para compliance (por exemplo, se uma geração anterior foi bloqueada por esse motivo). Esse contexto nunca pode enfraquecer o requisito de live-action photorealistic do item A.
+
+**F. Referência MASTER concisa.** Usar o wording comprovado e enxuto: `"Use the uploaded master image(s) of [NAME(S)] as the visual reference and preserve their established appearance consistently."` Evitar blocos extensos sobre biometria, morphing ou identidade quando não houver necessidade específica documentada (ver `producao/solucoes/SOL-007-CENA-2B-VERSAO-SIMPLIFICADA.md`).
+
+**G. Regra central, de novo.** Documentation may be detailed. The final Google Flow prompt must be concise. A checklist serve para validar o prompt já escrito, não para ser colada dentro dele.
+
+O resultado deve ser um texto corrido, em inglês, com a fala em português brasileiro entre aspas, sem cabeçalhos, sem campos vazios e sem estrutura administrativa — pronto para colar diretamente no Flow. Ver os exemplos em "Reference Examples" abaixo.
+
 ## Baseline opcional para teste curto no Flow
 
 Quando o objetivo for repetir a configuração já validada de teste, preencher:
@@ -132,7 +165,7 @@ Se o Flow rejeitar ou bloquear uma geração, a causa mais provável, segundo os
 - **Nunca reforce `FICTIONAL CONTEXT DECLARATION` com linguagem adicional de "cartoon", "animated", "stylized", "illustration" ou equivalente** como tentativa de correção. A declaração de ficção existe apenas para deixar claro que os personagens não são pessoas reais; ela nunca substitui nem compete com o bloco de rendering fotorrealista.
 - Se especificamente a referência às imagens MASTER for o ponto bloqueado, o fallback seguro é simplificar `CURRENT GENERATION REFERENCES` para algo factual e não biométrico, por exemplo: `"Reference images are attached for each character; match their established appearance."` Não trocar por linguagem mais rígida (`EXACTLY the same person`, `absolute source of truth for identity`, `biometric identity`, `face cloning`) — esse foi exatamente o padrão que falhou em `ERR-007`.
 - Reduzir `NEGATIVE CONSTRAINTS` para o mínimo necessário, conforme `LRN-012` em [docs/APRENDIZADOS-DE-VIDEO.md](../../docs/APRENDIZADOS-DE-VIDEO.md), continua sendo uma correção válida.
-- Nota sobre os cabeçalhos em letras maiúsculas usados para estruturar este template (`SCENE OBJECTIVE`, `CHARACTERS PRESENT` etc.): eles já estavam presentes tanto no prompt que falhou quanto no que funcionou no caso da Cena 2B (`ERR-007`), então não há evidência de que sejam a causa de bloqueio ou de texto em tela. Ainda assim, isso não foi comprovado como seguro de forma definitiva — permanece `A DEFINIR` como hipótese em aberto, não como regra validada.
+- Os cabeçalhos em letras maiúsculas usados para estruturar a "Estrutura interna de raciocínio" (`SCENE OBJECTIVE`, `CHARACTERS PRESENT` etc.) são organização administrativa interna e **não devem ser copiados para o prompt final** (ver "Do raciocínio interno ao prompt final" acima) — não porque haja prova de que causem bloqueio (eles estavam presentes tanto no prompt que falhou quanto no que funcionou na Cena 2B, `ERR-007`, sem causalidade estabelecida), mas porque um prompt em prosa natural, enxuto, é o padrão exigido pela regra central deste template.
 
 ## Registro pós-geração
 
@@ -150,6 +183,10 @@ Após gerar, criar ou atualizar o registro em `producao/testes/` com:
 
 ## Checklist antes de entregar qualquer prompt
 
+Esta checklist serve para **validar** o prompt final já escrito em prosa. Nunca copiar os itens da checklist, os nomes dos blocos ou os cabeçalhos internos para dentro do prompt entregue ao usuário.
+
+- [ ] O prompt final está em prosa natural, sem os cabeçalhos em maiúsculas da estrutura interna (`FICTIONAL CONTEXT DECLARATION`, `SCENE OBJECTIVE`, `CHARACTERS PRESENT`, `TECHNICAL OUTPUT`, `FINAL CONTINUITY CHECK` etc.)?
+- [ ] O prompt final não contém nenhuma linha `A DEFINIR` (campo não definido foi omitido, não escrito como placeholder)?
 - [ ] É explicitamente live-action?
 - [ ] É explicitamente photorealistic?
 - [ ] Fala em pessoas reais, textura de pele natural, câmera real?
@@ -179,51 +216,18 @@ Após gerar, criar ou atualizar o registro em `producao/testes/` com:
 - Eles **não são transcrições literais de nenhum prompt aprovado**.
 - **Nenhum prompt histórico deve ser inventado ou apresentado como evidência de produção** — quando o texto exato de um prompt aprovado for importado para o repositório, ele substitui o exemplo correspondente aqui, com a fonte citada.
 
+Estes exemplos mostram o **prompt final já em prosa** — o formato que deve ser entregue ao usuário, não a estrutura interna de raciocínio.
+
 ### Exemplo 1 — Personagem único, olhando para a câmera
 
 ```text
-FICTIONAL CONTEXT DECLARATION
-This video belongs to Família Silva, an original fictional Brazilian family sitcom. Every named character is an original fictional character. Use only the project-owned reference images attached to this generation. Do not interpret any character as a real person and do not imitate a real person's likeness.
+Create a live-action photorealistic scene with real human beings, natural skin texture, realistic hair and clothing, believable human anatomy and warm cinematic lighting, filmed like real professional camera footage inside a real Brazilian environment. Use the uploaded master image of Marcos as the visual reference and preserve his established appearance consistently.
 
-SCENE OBJECTIVE
-Marcos introduces himself directly to camera in his living room.
+Marcos is alone, facing the camera directly in a medium shot at eye level. He speaks warmly and naturally to the viewer, with relaxed, restrained body language.
 
-CHARACTERS PRESENT
-Only Marcos is visible.
+Only Marcos speaks. No other voices are heard. His lips match his exact dialogue in Brazilian Portuguese: "[Marcos's exact line, in Brazilian Portuguese]"
 
-CURRENT GENERATION REFERENCES
-Use the uploaded master images as visual references and preserve their identities consistently. Marcos uses only his own approved reference.
-
-CHARACTER VISUAL CONTINUITY
-Preserve Marcos's approved facial features, apparent age, hair, body build, and proportions from his own attached reference. No facial drift, body drift, weight change, or age change.
-
-SERIES RENDERING STYLE CONTINUITY
-Photorealistic / Warm Cinematic Realism. Natural skin texture, physically plausible materials, believable human anatomy, warm cinematic lighting, realistic depth of field, subtle live-action-adjacent polish. Avoid flat cartoon rendering, childlike animation, or plastic skin.
-
-SHOT, CAMERA, AND COMPOSITION
-Vertical 9:16. Medium shot, eye level, Marcos looking directly at the camera.
-
-ACTION AND PERFORMANCE
-Marcos smiles naturally and speaks directly to the camera with warm, relaxed body language.
-
-DIALOGUE MAP
-Speaker: Marcos
-Exact dialogue in Brazilian Portuguese: "[LITERAL DIALOGUE — A DEFINIR]"
-
-SPEAKING AND VOICE
-Only Marcos speaks. Everyone else remains silent.
-
-LIP-SYNC
-Only Marcos shows lip movement, matching his exact Portuguese dialogue.
-
-AUDIO
-Dialogue: clear Brazilian Portuguese, foreground and intelligible.
-
-OUTPUT CLEANLINESS
-No subtitles, captions, on-screen text, logos, watermarks, visible character IDs, or administrative clip/scene labels (for example "CHAR-005" or "Clip 2B").
-
-FINAL CONTINUITY CHECK
-Generate only the described original fictional scene. Preserve every supplied approved reference and every dialogue assignment.
+No subtitles, captions, logos, or on-screen text.
 ```
 
 ### Exemplo 2 — Dois personagens, um falando e um silencioso
@@ -231,45 +235,13 @@ Generate only the described original fictional scene. Preserve every supplied ap
 Baseado no roteiro canônico da Cena 2B (`producao/solucoes/SOL-007-CENA-2B-VERSAO-SIMPLIFICADA.md`, item A — `SOURCE AVAILABLE`), aplicando o wording de referência MASTER validado no mesmo documento (item D).
 
 ```text
-FICTIONAL CONTEXT DECLARATION
-This video belongs to Família Silva, an original fictional Brazilian family sitcom. Every named character is an original fictional character. Use only the project-owned reference images attached to this generation. Do not interpret any character as a real person and do not imitate a real person's likeness.
+Create a live-action photorealistic scene with real human beings, natural skin texture, realistic hair and clothing, believable human anatomy and warm cinematic lighting, filmed like real professional camera footage inside a real Brazilian environment. Use the uploaded master images of Carol and Beto as the visual reference and preserve their established appearances consistently.
 
-SCENE OBJECTIVE
-Carol explains to someone off-scene who the "investor" from Beto's meeting actually is.
+Carol and Beto, a married couple, stand together in the kitchen. Carol looks at Beto with dry disbelief, pauses, then delivers her line in a deadpan, matter-of-fact tone. Beto reacts with a small, sheepish smile but stays silent.
 
-CHARACTERS PRESENT
-Carol and Beto are visible. Only Carol speaks; Beto remains silent.
+Only Carol speaks. Everyone else remains silent. Her lips match her exact dialogue in Brazilian Portuguese: "O 'investidor' é seu primo, Beto. E a reunião é porque ele ainda não recebeu os cinquenta reais que você deve."
 
-CURRENT GENERATION REFERENCES
-Use the uploaded master images as visual references and preserve their identities consistently. Each character uses only their own approved reference — never the other's.
-
-CHARACTER VISUAL CONTINUITY
-Preserve each character's approved facial features, apparent age, hair, body build, and proportions from their own attached reference. No facial drift, body drift, or character mixing between Carol and Beto.
-
-SERIES RENDERING STYLE CONTINUITY
-Photorealistic / Warm Cinematic Realism. Natural skin texture, believable human anatomy, warm cinematic lighting, realistic depth of field. Avoid flat cartoon rendering or plastic skin.
-
-RELATIONSHIP CONTINUITY
-Carol and Beto are married. Casual, familiar domestic interaction.
-
-DIALOGUE MAP
-Speaker: Carol
-Exact dialogue in Brazilian Portuguese: "O 'investidor' é seu primo, Beto. E a reunião é porque ele ainda não recebeu os cinquenta reais que você deve."
-
-SPEAKING AND VOICE
-Only Carol speaks. Everyone else remains silent.
-
-LIP-SYNC
-Only Carol shows lip movement, matching her exact Portuguese dialogue. Beto keeps a closed, natural mouth and never mouths words; he may react through expression and posture.
-
-AUDIO
-Dialogue: clear Brazilian Portuguese, foreground and intelligible.
-
-OUTPUT CLEANLINESS
-No subtitles, captions, on-screen text, logos, watermarks, visible character IDs, or administrative clip/scene labels (for example "CHAR-005" or "Clip 2B").
-
-FINAL CONTINUITY CHECK
-Generate only the described original fictional scene. Preserve every supplied approved reference and every dialogue assignment.
+No subtitles, captions, logos, or on-screen text.
 ```
 
 ## Erros conhecidos e como evitar regressões
