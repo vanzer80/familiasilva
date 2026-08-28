@@ -1,12 +1,11 @@
 # PATRÍCIA SILVA — PERSONALIDADE CANÔNICA
 
 **Personagem:** Patrícia Silva  
+**Ficha canônica:** [`CHAR-003`](../CHAR-003-PATRICIA-SILVA.md)  
 **Projeto:** Família Silva  
 **Status:** CANÔNICO  
 **Categoria:** Personalidade / Comportamento / Escrita de personagem  
 **Relações canônicas:** esposa de Marcos; mãe de Carol e Dudu; nora de Dona Célia; sogra de Beto. Sr. Antônio é o vizinho recorrente do núcleo e sua paixonite por Patrícia não é correspondida.
-
-> O Character ID de Patrícia deve ser obtido da ficha canônica existente no repositório. Não criar ou alterar ID nesta documentação.
 
 ---
 

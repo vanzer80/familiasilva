@@ -1,12 +1,11 @@
 # DUDU SILVA — PERSONALIDADE CANÔNICA
 
 **Personagem:** Dudu Silva  
+**Ficha canônica:** [`CHAR-007`](../CHAR-007-DUDU-SILVA.md)  
 **Projeto:** Família Silva  
 **Status:** CANÔNICO  
 **Categoria:** Personalidade / Comportamento / Escrita de personagem  
 **Relações canônicas:** filho de Marcos e Patrícia; irmão de Carol; cunhado de Beto; neto de Dona Célia. Sr. Antônio é vizinho recorrente do núcleo familiar.
-
-> O Character ID de Dudu deve ser obtido da ficha canônica existente no repositório. Não criar ou alterar ID nesta documentação.
 
 ---
 

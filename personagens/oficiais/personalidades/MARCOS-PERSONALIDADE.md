@@ -1,12 +1,11 @@
 # MARCOS SILVA — PERSONALIDADE CANÔNICA
 
 **Personagem:** Marcos Silva  
+**Ficha canônica:** [`CHAR-001`](../CHAR-001-MARCOS.md)  
 **Projeto:** Família Silva  
 **Status:** CANÔNICO  
 **Categoria:** Personalidade / Comportamento / Escrita de personagem  
 **Relações canônicas:** marido de Patrícia; pai de Carol e Dudu; filho de Dona Célia; sogro de Beto. Sr. Antônio é o vizinho recorrente do núcleo e seu rival cômico leve.
-
-> O Character ID de Marcos deve ser obtido da ficha canônica existente no repositório. Não criar ou alterar ID nesta documentação.
 
 ---
 

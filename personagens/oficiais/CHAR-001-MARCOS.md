@@ -1,9 +1,9 @@
-# CHAR-001 - MARCOS
+# CHAR-001 - MARCOS SILVA
 
 ## Identificacao
 
 - **ID:** `CHAR-001`
-- **Nome:** `Marcos`
+- **Nome:** `Marcos Silva`
 - **Status:** `EM DESENVOLVIMENTO`
 - **Versao:** `V01`
 - **Data de aprovacao:** `A DEFINIR`
@@ -26,4 +26,4 @@
 - **Elementos imutaveis:** `A DEFINIR` para o visual; limites narrativos definidos no documento de personalidade.
 - **Elementos que podem variar:** `A DEFINIR`
 - **Negative constraints:** `A DEFINIR`
-- **Historico de alteracoes:** `2026-08-28` — personalidade e relacoes canonicas consolidadas; canon visual permanece `A DEFINIR`.
+- **Historico de alteracoes:** `2026-08-28` — personalidade e relações canônicas consolidadas; nome oficial e ID ratificados pela `DEC-002`; cânone visual permanece `A DEFINIR`.

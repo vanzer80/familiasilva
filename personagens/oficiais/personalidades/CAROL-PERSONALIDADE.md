@@ -1,12 +1,11 @@
 # CAROL SILVA — PERSONALIDADE CANÔNICA
 
 **Personagem:** Carol Silva  
+**Ficha canônica:** [`CHAR-006`](../CHAR-006-CAROL-SILVA.md)  
 **Projeto:** Família Silva  
 **Status:** CANÔNICO  
 **Categoria:** Personalidade / Comportamento / Escrita de personagem  
 **Relações canônicas:** filha de Marcos e Patrícia; irmã de Dudu; esposa de Beto; neta de Dona Célia. Sr. Antônio é vizinho recorrente do núcleo familiar.
-
-> O Character ID de Carol deve ser obtido da ficha canônica já existente no repositório. Não criar ou alterar ID nesta documentação.
 
 ---
 

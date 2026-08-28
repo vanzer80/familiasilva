@@ -1,9 +1,9 @@
-# CHAR-002 - DONA CELIA
+# CHAR-002 - DONA CÉLIA
 
 ## Identificacao
 
 - **ID:** `CHAR-002`
-- **Nome:** `Dona Celia`
+- **Nome:** `Dona Célia`
 - **Status:** `EM DESENVOLVIMENTO`
 - **Versao:** `V01`
 - **Data de aprovacao:** `A DEFINIR`
@@ -26,4 +26,4 @@
 - **Elementos imutaveis:** `A DEFINIR` para o visual; limites narrativos definidos no documento de personalidade.
 - **Elementos que podem variar:** `A DEFINIR`
 - **Negative constraints:** `A DEFINIR`
-- **Historico de alteracoes:** `2026-08-28` — personalidade e relacoes canonicas consolidadas; canon visual permanece `A DEFINIR`.
+- **Historico de alteracoes:** `2026-08-28` — personalidade e relações canônicas consolidadas; nome oficial e ID ratificados pela `DEC-002`; cânone visual permanece `A DEFINIR`.

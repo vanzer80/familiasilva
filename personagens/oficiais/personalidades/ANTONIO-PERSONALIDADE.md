@@ -1,12 +1,12 @@
-# SR. ANTÔNIO — PERSONALIDADE CANÔNICA
+# ANTÔNIO SILVA (SR. ANTÔNIO) — PERSONALIDADE CANÔNICA
 
-**Personagem:** Sr. Antônio  
+**Personagem:** Antônio Silva  
+**Nome de uso:** Sr. Antônio  
+**Ficha canônica:** [`CHAR-004`](../CHAR-004-ANTONIO-SILVA.md)  
 **Projeto:** Família Silva  
 **Status:** CANÔNICO  
 **Categoria:** Personalidade / Comportamento / Escrita de personagem  
 **Relação com o núcleo:** vizinho recorrente — não pertence oficialmente à Família Silva; nutre uma paixonite platônica por Patrícia e uma inveja/rivalidade cômica leve com Marcos.
-
-> O Character ID de Antônio deve ser obtido da ficha canônica existente no repositório. Não criar ou alterar ID nesta documentação.
 
 ---
 

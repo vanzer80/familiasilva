@@ -1,83 +1,85 @@
 # Continuidade
 
-Este documento define o que precisa ser rastreado para preservar consistencia entre episodios, temporadas, materiais visuais, voz e narrativas.
+Este documento define o que precisa ser rastreado para preservar consistência entre episódios, temporadas, materiais visuais, voz e narrativas.
 
-## Canon
+## Cânone
 
-Canon e toda informacao aprovada e registrada oficialmente neste repositorio.
+Cânone é toda informação aprovada e registrada oficialmente neste repositório.
 
-Nao sao canon:
+Não são cânone:
 
-- Informacoes marcadas como `TODO`.
-- Informacoes marcadas como `A DEFINIR`.
+- Informações marcadas como `TODO`.
+- Informações marcadas como `A DEFINIR`.
 - Ideias em rascunho.
-- Conceitos nao aprovados.
+- Conceitos não aprovados.
 - Prompts experimentais.
-- Imagens ou videos nao aprovados como referencia oficial.
+- Imagens ou vídeos não aprovados como referência oficial.
 
-## Informacoes permanentes
+## Informações permanentes
 
-Registrar aqui informacoes que, uma vez aprovadas, nao devem mudar sem decisao formal:
+Registrar aqui informações que, uma vez aprovadas, não devem mudar sem decisão formal:
 
-- Personagens oficiais.
-- Relacoes familiares.
+- Personagens oficiais e Character IDs.
+- Relações familiares.
 - Cidade e locais recorrentes.
-- Aparencia dos personagens.
+- Aparência dos personagens.
 - Voz e forma de falar.
 - Personalidade.
 - Objetos permanentes.
 - Layout da casa.
-- Eventos que passam a valer para episodios futuros.
+- Eventos que passam a valer para episódios futuros.
 
-## Estado canonico consolidado em 2026-08-28
+## Estado canônico consolidado em 2026-08-28
 
-### Personalidades
+### Personagens, IDs e personalidades
 
-- Marcos — personalidade canonica; ficha-base `CHAR-001`.
-- Dona Célia — personalidade canonica; ficha-base `CHAR-002`.
-- Beto — personalidade canonica; ID `CHAR-005` conforme o documento aprovado.
-- Patrícia — personalidade canonica; Character ID permanece `A DEFINIR`.
-- Carol — personalidade canonica; Character ID permanece `A DEFINIR`.
-- Dudu — personalidade canonica; Character ID permanece `A DEFINIR`.
-- Sr. Antônio — personalidade canonica; Character ID permanece `A DEFINIR`.
+| ID permanente | Personagem | Estado |
+| --- | --- | --- |
+| [`CHAR-001`](../personagens/oficiais/CHAR-001-MARCOS.md) | Marcos Silva | personalidade canônica; visual e voz em desenvolvimento |
+| [`CHAR-002`](../personagens/oficiais/CHAR-002-DONA-CELIA.md) | Dona Célia | personalidade canônica; visual e voz em desenvolvimento |
+| [`CHAR-003`](../personagens/oficiais/CHAR-003-PATRICIA-SILVA.md) | Patrícia Silva | personalidade canônica; visual e voz em desenvolvimento |
+| [`CHAR-004`](../personagens/oficiais/CHAR-004-ANTONIO-SILVA.md) | Antônio Silva, conhecido como Sr. Antônio | personalidade canônica; visual e voz em desenvolvimento |
+| [`CHAR-005`](../personagens/oficiais/CHAR-005-BETO.md) | Beto | personalidade canônica; visual e voz em desenvolvimento |
+| [`CHAR-006`](../personagens/oficiais/CHAR-006-CAROL-SILVA.md) | Carol Silva | personalidade canônica; visual e voz em desenvolvimento |
+| [`CHAR-007`](../personagens/oficiais/CHAR-007-DUDU-SILVA.md) | Dudu Silva | personalidade canônica; visual e voz em desenvolvimento |
 
-Os documentos completos estao em [../personagens/oficiais/personalidades/](../personagens/oficiais/personalidades/).
+Os IDs são permanentes e não podem ser reutilizados ou renumerados. As personalidades completas estão em [../personagens/oficiais/personalidades/](../personagens/oficiais/personalidades/).
 
-### Relacoes permanentes
+### Relações permanentes
 
-- Marcos e Patrícia sao casados.
-- Carol e Dudu sao filhos de Marcos e Patrícia e irmaos entre si.
-- Carol e Beto sao casados.
-- Dona Célia e mae de Marcos, sogra de Patrícia e avo de Carol e Dudu.
-- Beto e genro de Marcos e Patrícia e cunhado de Dudu.
-- Sr. Antônio e vizinho recorrente e nao integra oficialmente a Família Silva.
-- A paixonite de Sr. Antônio por Patrícia e platonica, unilateral e nao correspondida.
-- A relacao entre Sr. Antônio e Marcos inclui rivalidade e inveja comica leve.
+- Marcos e Patrícia são casados.
+- Carol e Dudu são filhos de Marcos e Patrícia e irmãos entre si.
+- Carol e Beto são casados.
+- Dona Célia é mãe de Marcos, sogra de Patrícia e avó de Carol e Dudu.
+- Beto é genro de Marcos e Patrícia e cunhado de Dudu.
+- Sr. Antônio é vizinho recorrente e não integra oficialmente a Família Silva.
+- A paixonite de Sr. Antônio por Patrícia é platônica, unilateral e não correspondida.
+- A relação entre Sr. Antônio e Marcos inclui rivalidade e inveja cômica leve.
 
-A matriz completa e bidirecional esta em [../personagens/relacoes/RELACOES-FAMILIARES.md](../personagens/relacoes/RELACOES-FAMILIARES.md).
+A matriz completa e bidirecional está em [../personagens/relacoes/RELACOES-FAMILIARES.md](../personagens/relacoes/RELACOES-FAMILIARES.md).
 
-### Limite desta consolidacao
+### Limite desta consolidação
 
-A consolidacao de personalidade e relacoes nao altera nem aprova aparencia, imagem mestre, figurino, rendering, voz, idade, profissao ou Character IDs ausentes.
+O registro dos IDs não altera nem aprova aparência, imagem MASTER, figurino, rendering, voz, idade ou profissão. Esses campos permanecem `A DEFINIR` quando não houver aprovação explícita.
 
 ## Eventos anteriores
 
-Cada episodio aprovado deve atualizar a continuidade com acontecimentos que passam a importar depois.
+Cada episódio aprovado deve atualizar a continuidade com acontecimentos que passam a importar depois.
 
 Formato recomendado:
 
-- Episodio: `S01E001`
+- Episódio: `S01E001`
 - Evento: `TODO`
 - Impacto futuro: `TODO`
 - Status: `A DEFINIR`
 
 ## Relacionamentos
 
-Registrar apenas relacoes aprovadas. Nao presumir parentesco, idade, profissao, hierarquia familiar ou dinamica emocional sem aprovacao.
+Registrar apenas relações aprovadas. Não presumir parentesco, idade, profissão, hierarquia familiar ou dinâmica emocional sem aprovação.
 
-## Aparencia
+## Aparência
 
-Cada personagem aprovado deve ter referencia a uma **IMAGEM MESTRE OFICIAL** em [assets/personagens/](../assets/personagens/).
+Cada personagem aprovado deve ter referência a uma **IMAGEM MESTRE OFICIAL** em [assets/personagens/](../assets/personagens/) somente depois da aprovação do asset correspondente.
 
 ## Objetos
 
@@ -85,8 +87,8 @@ Objetos recorrentes ou relevantes devem ser documentados com:
 
 - Nome.
 - Local.
-- Dono ou usuario, se aprovado.
-- Episodios em que aparece.
+- Dono ou usuário, se aprovado.
+- Episódios em que aparece.
 - Regras de continuidade.
 
 ## Layout da casa
@@ -94,9 +96,9 @@ Objetos recorrentes ou relevantes devem ser documentados com:
 Quando a casa principal for aprovada, registrar:
 
 - Ambientes.
-- Posicao relativa dos comodos.
+- Posição relativa dos cômodos.
 - Portas, janelas e corredores.
-- Moveis permanentes.
+- Móveis permanentes.
 - Objetos permanentes.
 - Regras para manter continuidade visual.
 
@@ -109,4 +111,4 @@ Cada personagem aprovado deve ter registro de:
 - Vocabulário recorrente, se aprovado.
 - Personalidade.
 - Limites de comportamento.
-- Coisas que o personagem nao faria sem justificativa.
+- Coisas que o personagem não faria sem justificativa.

@@ -11,6 +11,15 @@ Este documento registra decisoes formais do projeto. Nao registrar ideias soltas
 - **Status:** `APROVADO`
 - **Evidencia:** [RELATORIO-AUDITORIA-CANONICA-PERSONALIDADES-2026-08-28.md](auditorias/RELATORIO-AUDITORIA-CANONICA-PERSONALIDADES-2026-08-28.md)
 
+## DEC-002
+
+- **Data:** `2026-08-28`
+- **Decisão:** aprovar e registrar como permanentes os Character IDs `CHAR-001` Marcos Silva, `CHAR-002` Dona Célia, `CHAR-003` Patrícia Silva, `CHAR-004` Antônio Silva, `CHAR-005` Beto, `CHAR-006` Carol Silva e `CHAR-007` Dudu Silva.
+- **Motivo:** eliminar as pendências de identificação do elenco inicial e estabelecer uma fonte de verdade única para fichas, personalidades, continuidade e materiais futuros.
+- **Impacto:** ficam criadas as cinco fichas-base que faltavam e ratificadas as duas já existentes. Beto permanece oficialmente apenas `Beto`. Antônio Silva é conhecido como `Sr. Antônio`; seu sobrenome não o torna integrante oficial da Família Silva. Nenhuma aparência, imagem MASTER, figurino, rendering, voz, idade ou profissão é aprovada por esta decisão.
+- **Status:** `APROVADO`
+- **Evidência:** [cadastro canônico de personagens](../personagens/README.md)
+
 ## Template de entrada
 
 ### DEC-XXX

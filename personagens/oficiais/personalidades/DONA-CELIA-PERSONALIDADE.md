@@ -1,12 +1,11 @@
 # DONA CÉLIA — PERSONALIDADE CANÔNICA
 
 **Personagem:** Dona Célia  
+**Ficha canônica:** [`CHAR-002`](../CHAR-002-DONA-CELIA.md)  
 **Projeto:** Família Silva  
 **Status:** CANÔNICO  
 **Categoria:** Personalidade / Comportamento / Escrita de personagem  
 **Relações canônicas:** mãe de Marcos; sogra de Patrícia; avó de Carol e Dudu. Beto é marido de sua neta Carol, e Sr. Antônio é vizinho recorrente do núcleo familiar.
-
-> O Character ID de Dona Célia deve ser obtido da ficha canônica existente no repositório. Não criar ou alterar ID nesta documentação.
 
 ---
 

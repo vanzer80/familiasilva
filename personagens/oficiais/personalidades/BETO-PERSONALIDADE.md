@@ -1,7 +1,7 @@
-# BETO SILVA — PERSONALIDADE CANÔNICA
+# BETO — PERSONALIDADE CANÔNICA
 
-**Personagem:** Beto Silva  
-**ID:** CHAR-005  
+**Personagem:** Beto  
+**Ficha canônica:** [`CHAR-005`](../CHAR-005-BETO.md)  
 **Projeto:** Família Silva  
 **Status:** CANÔNICO  
 **Categoria:** Personalidade / Comportamento / Escrita de personagem  
@@ -11,7 +11,7 @@
 
 ## 1. VISÃO GERAL
 
-Beto Silva é o **sonhador falastrão da Família Silva**.
+Beto é o **sonhador falastrão da Família Silva**.
 
 É carismático, comunicativo, criativo e extremamente confiante nas próprias ideias — inclusive quando não existe praticamente nenhuma razão concreta para acreditar que elas vão funcionar.
 
@@ -56,7 +56,7 @@ Durante o desenvolvimento inicial, o personagem Agostinho Carrara, de *A Grande 
 
 Essa referência deve ser utilizada **somente no nível de arquétipo, função narrativa e mecanismo de humor**.
 
-Beto Silva deve permanecer um personagem original.
+Beto deve permanecer um personagem original.
 
 Não copiar:
 
@@ -336,4 +336,4 @@ A personalidade pode ganhar novas camadas ao longo da série, mas alterações i
 
 ## 15. RESUMO CANÔNICO
 
-**Beto Silva é o sonhador falastrão da Família Silva: carismático, criativo, otimista e extremamente convincente, vive enxergando grandes oportunidades em situações comuns. Sua confiança frequentemente é maior que o planejamento, fazendo com que pequenas ideias se transformem em grandes confusões. Apesar dos defeitos, possui bom coração, ama a família e quase sempre acredita genuinamente que seu próximo plano finalmente vai dar certo.**
+**Beto é o sonhador falastrão da Família Silva: carismático, criativo, otimista e extremamente convincente, vive enxergando grandes oportunidades em situações comuns. Sua confiança frequentemente é maior que o planejamento, fazendo com que pequenas ideias se transformem em grandes confusões. Apesar dos defeitos, possui bom coração, ama a família e quase sempre acredita genuinamente que seu próximo plano finalmente vai dar certo.**

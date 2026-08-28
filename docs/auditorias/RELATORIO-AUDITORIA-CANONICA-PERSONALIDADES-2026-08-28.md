@@ -6,6 +6,8 @@
 
 ---
 
+> **Atualização posterior — DEC-002:** depois desta auditoria, os Character IDs pendentes foram aprovados e registrados de `CHAR-001` a `CHAR-007`. As referências a IDs ausentes abaixo descrevem o estado observado durante a auditoria e foram preservadas como histórico. Consulte o [cadastro canônico de personagens](../../personagens/README.md).
+
 ## A. DIAGNÓSTICO GERAL
 
 Antes dos ajustes, o conjunto estava **parcialmente consistente**.

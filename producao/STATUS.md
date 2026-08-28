@@ -1,22 +1,23 @@
-# Status de Producao
+# Status de Produção
 
 **Status geral:** FASE DE DESENVOLVIMENTO / PRÉ-PRODUÇÃO
 
-## Areas
+## Áreas
 
-- Biblia da serie: base inicial criada.
-- Personagens: `A DEFINIR`.
-- Cenarios: `A DEFINIR`.
-- Episodios: `A DEFINIR`.
+- Bíblia da série: base inicial criada e elenco inicial registrado.
+- Personagens: sete IDs permanentes e sete personalidades canônicas; aparência, imagem MASTER, figurino e voz continuam `A DEFINIR`.
+- Cenários: `A DEFINIR`.
+- Episódios: `A DEFINIR`.
 - Temporadas: `A DEFINIR`.
 - Prompts: estrutura inicial criada.
 - Assets: estrutura inicial criada.
 
-## Proximas decisoes necessarias
+## Próximas decisões necessárias
 
-- Personagens principais.
-- Cidade ou contexto geografico.
+- Aparência e imagem MASTER de cada personagem, mediante aprovação explícita.
+- Voz de cada personagem, mediante aprovação explícita.
+- Cidade ou contexto geográfico.
 - Casa principal ou local recorrente.
-- Duracao dos episodios.
+- Duração dos episódios.
 - Plataforma.
-- Publico.
+- Público.

@@ -1,31 +1,31 @@
-# Biblia da Serie
+# Bíblia da Série
 
-## Canon aprovado
+## Cânone aprovado
 
 - **Nome:** Família Silva.
-- **Formato:** sitcom / comedia familiar brasileira.
-- **Producao:** producao audiovisual usando Inteligencia Artificial.
-- **Universo:** familia brasileira em situacoes cotidianas que podem gerar humor e identificacao.
-- **Estilos possiveis:** dinamica familiar, cotidiano, diferencas de personalidade, conflitos domesticos, mal-entendidos, relacoes familiares e situacoes reconheciveis pelo publico brasileiro.
-- **Nucleo familiar:** Marcos e Patrícia sao casados e pais de Carol e Dudu; Carol e casada com Beto; Dona Célia e mae de Marcos e avo de Carol e Dudu.
-- **Vizinho recorrente:** Sr. Antônio participa das dinamicas do nucleo, mas nao e integrante oficial da Família Silva.
-- **Personalidades:** os sete documentos em [../personagens/oficiais/personalidades/](../personagens/oficiais/personalidades/) sao canonicos.
-- **Relacoes:** a matriz em [../personagens/relacoes/RELACOES-FAMILIARES.md](../personagens/relacoes/RELACOES-FAMILIARES.md) e a referencia objetiva de parentesco e vinculos aprovados.
+- **Formato:** sitcom / comédia familiar brasileira.
+- **Produção:** produção audiovisual usando Inteligência Artificial.
+- **Universo:** família brasileira em situações cotidianas que podem gerar humor e identificação.
+- **Estilos possíveis:** dinâmica familiar, cotidiano, diferenças de personalidade, conflitos domésticos, mal-entendidos, relações familiares e situações reconhecíveis pelo público brasileiro.
+- **Núcleo familiar:** Marcos e Patrícia são casados e pais de Carol e Dudu; Carol é casada com Beto; Dona Célia é mãe de Marcos e avó de Carol e Dudu.
+- **Vizinho recorrente:** Sr. Antônio participa das dinâmicas do núcleo, mas não é integrante oficial da Família Silva.
+- **Personagens e IDs:** o cadastro permanente de `CHAR-001` a `CHAR-007` está em [../personagens/README.md](../personagens/README.md).
+- **Personalidades:** os sete documentos em [../personagens/oficiais/personalidades/](../personagens/oficiais/personalidades/) são canônicos.
+- **Relações:** a matriz em [../personagens/relacoes/RELACOES-FAMILIARES.md](../personagens/relacoes/RELACOES-FAMILIARES.md) é a referência objetiva de parentesco e vínculos aprovados.
 
-Os estilos acima indicam possibilidades de abordagem, sem rigidificar a serie.
+Os estilos acima indicam possibilidades de abordagem, sem rigidificar a série.
 
 ## A definir
 
-- Character IDs ainda ausentes nas fichas oficiais.
 - Cidade: `A DEFINIR`.
 - Casa principal: `A DEFINIR`.
-- Duracao dos episodios: `A DEFINIR`.
+- Duração dos episódios: `A DEFINIR`.
 - Plataforma: `A DEFINIR`.
-- Publico: `A DEFINIR`.
-- Campos visuais, vocais ou de producao que continuem marcados como `A DEFINIR` nas fichas oficiais.
+- Público: `A DEFINIR`.
+- Campos visuais, vocais ou de produção que continuem marcados como `A DEFINIR` nas fichas oficiais.
 
-## Regra de canon
+## Regra de cânone
 
-Somente informacoes aprovadas e registradas como canon neste repositorio fazem parte da serie.
+Somente informações aprovadas e registradas como cânone neste repositório fazem parte da série.
 
-Informacoes marcadas como `TODO`, `A DEFINIR`, conceito, rascunho ou em desenvolvimento nao sao canon.
+Informações marcadas como `TODO`, `A DEFINIR`, conceito, rascunho ou em desenvolvimento não são cânone.
