@@ -4,13 +4,13 @@
 
 - **ID:** `CHAR-005`
 - **Nome:** `Beto`
-- **Status:** `VISUAL APROVADO COM RESSALVAS`
-- **Versão:** `V02`
-- **Data de aprovação visual registrada:** `2026-08-28`
+- **Status:** `APROVADO / CANON VISUAL EM VIDEO`
+- **Versão:** `V01`
+- **Data de aprovação visual registrada:** `2026-08-27` (vídeo de validação) / `2026-08-28` (reconciliação de status, DEC-013)
 
 ## Ficha oficial
 
-- **Imagem MASTER:** `A DEFINIR`; referência informada `beto.png`, ainda não versionada em `assets/`
+- **Imagem MASTER:** [`assets/personagens/mestres/IMG-CHAR-005-BETO-MASTER-V01.png`](../../assets/personagens/mestres/IMG-CHAR-005-BETO-MASTER-V01.png) — versionada e catalogada no [manifesto](../../assets/personagens/mestres/MANIFESTO-MESTRES.md) pela `DEC-014`
 - **Referências visuais:** [teste de vídeo consolidado](../../producao/testes/TESTE-VIDEO-BETO-CHAR-005-001.md)
 - **Rendering da série:** `Photorealistic / Warm Cinematic Realism`
 - **Uso metodológico:** arquitetura de prompt e rendering; nunca referência facial de outro personagem
@@ -28,4 +28,4 @@
 - **Elementos imutáveis:** atributos presentes na própria referência aprovada; detalhes não documentados permanecem `A DEFINIR`.
 - **Elementos que podem variar:** `A DEFINIR`
 - **Negative constraints:** não usar seu rosto em outro personagem; sem personagem extra em tomada individual; sem morphing, cartoon ou deriva visual.
-- **Histórico de alterações:** `2026-08-28` — Character ID permanente registrado pela [DEC-002](../../docs/DECISOES.md#dec-002); referência metodológica e estado visual com ressalvas registrados pela [DEC-005](../../docs/DECISOES.md#dec-005); voz permanece `A DEFINIR`.
+- **Histórico de alterações:** `2026-08-28` — Character ID permanente registrado pela [DEC-002](../../docs/DECISOES.md#dec-002); referência metodológica registrada pela [DEC-005](../../docs/DECISOES.md#dec-005); status visual reconciliado como `APROVADO / CANON VISUAL EM VIDEO` pela `DEC-013` (ver `DEC-009`); imagem MASTER versionada pela `DEC-014`; voz permanece `A DEFINIR`.

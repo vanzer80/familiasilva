@@ -4,14 +4,14 @@
 
 - **ID:** `CHAR-007`
 - **Nome:** `Dudu Silva`
-- **Status:** `AJUSTE VISUAL NECESSÁRIO`
-- **Versão:** `V02`
-- **Data de aprovação visual:** `NÃO APROVADO`
+- **Status:** `APROVADO / CANON VISUAL`
+- **Versão:** `V01`
+- **Data de aprovação visual:** `2026-08-27` (vídeo de validação) / `2026-08-28` (reconciliação de status, DEC-013)
 
 ## Ficha oficial
 
-- **Imagem MASTER:** `A DEFINIR`
-- **Referências visuais:** `dudu_silva.png` — referência informada que precisa ser refeita; ver [registro](../../producao/testes/TESTE-REFERENCIA-DUDU-CHAR-007-001.md)
+- **Imagem MASTER:** [`assets/personagens/mestres/IMG-CHAR-007-DUDU-SILVA-MASTER-V01.png`](../../assets/personagens/mestres/IMG-CHAR-007-DUDU-SILVA-MASTER-V01.png) — versionada e catalogada no [manifesto](../../assets/personagens/mestres/MANIFESTO-MESTRES.md) pela `DEC-014`
+- **Observação técnica não revogatória:** [`ERR-006-REFERENCIA-DUDU-NAO-NEUTRA.md`](../../producao/erros/ERR-006-REFERENCIA-DUDU-NAO-NEUTRA.md) registra que esta referência contém elementos indesejáveis (gimbal/celular visível, boca aberta, tênis de marca) e recomenda uma nova referência neutra para gerações futuras. Por decisão explícita do usuário (`DEC-013`), essa observação técnica é preservada como aprendizado de produção mas **não revoga** a aprovação de canon visual do vídeo já validado — ver [`SOL-006`](../../producao/solucoes/SOL-006-REFERENCIA-NEUTRA-DUDU.md).
 - **Rendering da série:** `Photorealistic / Warm Cinematic Realism`
 - **Aparência facial:** `A DEFINIR`
 - **Corpo:** `A DEFINIR`
@@ -24,7 +24,7 @@
 - **Estilo de fala:** definido no documento de personalidade canônica.
 - **Maneirismos:** definidos no documento de personalidade canônica.
 - **Relação com outros personagens:** [matriz canônica](../relacoes/RELACOES-FAMILIARES.md) e documento de personalidade.
-- **Elementos imutáveis:** limites narrativos definidos no documento de personalidade; visual ainda não aprovado.
+- **Elementos imutáveis:** limites narrativos definidos no documento de personalidade; continuidade visual da imagem MASTER aprovada.
 - **Elementos que podem variar:** `A DEFINIR`
-- **Negative constraints:** nova referência neutra, sem gimbal/celular, com boca fechada e tênis sem marca; sem tratá-lo como burro ou incapaz; sem cartoon ou pele plástica.
-- **Histórico de alterações:** `2026-08-28` — Character ID permanente registrado pela [DEC-002](../../docs/DECISOES.md#dec-002); necessidade de nova referência neutra registrada; visual e voz permanecem não aprovados.
+- **Negative constraints:** sem tratá-lo como burro ou incapaz; sem cartoon ou pele plástica; em futuras referências, evitar gimbal/celular em quadro, boca aberta e tênis de marca (ver `ERR-006`), sem que isso invalide a referência já aprovada.
+- **Histórico de alterações:** `2026-08-28` — Character ID permanente registrado pela [DEC-002](../../docs/DECISOES.md#dec-002); status visual reconciliado como `APROVADO / CANON VISUAL` pela `DEC-013` (ver `DEC-011`), revertendo a classificação `AJUSTE VISUAL NECESSÁRIO` desta mesma data; imagem MASTER versionada pela `DEC-014`; voz permanece `A DEFINIR`.

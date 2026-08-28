@@ -71,7 +71,9 @@ Hipóteses são identificadas como hipóteses. Campos sem evidência permanecem 
 
 ## Estado dos casos conhecidos
 
-| Personagem | Estado visual registrado | Aprendizado preservado | Limites |
+**Nota de reconciliação (`2026-08-28`, [DEC-013](DECISOES.md#dec-013)):** a coluna "Estado visual registrado" abaixo preserva o rótulo original de cada teste, como aprendizado histórico. O **status canônico vigente** de Marcos, Dona Célia, Patrícia, Sr. Antônio, Beto e Dudu foi reconciliado para aprovação plena de canon visual (ver as fichas em `personagens/oficiais/` e a tabela em [CONTINUIDADE.md](CONTINUIDADE.md)); os aprendizados e limites técnicos desta tabela continuam válidos e devem orientar novos prompts, mas não representam mais o status de aprovação atual.
+
+| Personagem | Estado visual registrado (histórico, na data do teste) | Aprendizado preservado | Limites |
 | --- | --- | --- | --- |
 | Marcos (`CHAR-001`) | `APROVADO COM RESSALVAS` | preservar compleição, rosto, roupa e cenário; impedir variação de peso e morphing | voz e campos visuais não descritos continuam `A DEFINIR` |
 | Dona Célia (`CHAR-002`) | `APROVADO COM RESSALVAS` | manter leitura de idade madura e preservar rugas, cabelo grisalho, óculos e roupa quando presentes na referência aprovada | voz não canônica; descrição detalhada depende da referência |

@@ -10,7 +10,7 @@
 
 ## Ficha oficial
 
-- **Imagem MASTER:** `carol_silva.png` — referência primária informada e aprovada; asset ainda não versionado em `assets/`
+- **Imagem MASTER:** [`assets/personagens/mestres/IMG-CHAR-006-CAROL-SILVA-MASTER-V01.png`](../../assets/personagens/mestres/IMG-CHAR-006-CAROL-SILVA-MASTER-V01.png) — versionada e catalogada no [manifesto](../../assets/personagens/mestres/MANIFESTO-MESTRES.md) pela `DEC-014`
 - **Referências visuais:** [primeiro teste aprovado visualmente](../../producao/testes/TESTE-VIDEO-CAROL-CHAR-006-001.md)
 - **Rendering da série:** `Photorealistic / Warm Cinematic Realism`
 - **Aparência facial:** `A DEFINIR`
@@ -27,4 +27,4 @@
 - **Elementos imutáveis:** continuidade visual da imagem MASTER própria; detalhes descritivos dependem do asset aprovado.
 - **Elementos que podem variar:** `A DEFINIR`
 - **Negative constraints:** sem referência facial de outro personagem, morphing, deriva visual, cartoon ou pele plástica.
-- **Histórico de alterações:** `2026-08-28` — Character ID permanente registrado pela [DEC-002](../../docs/DECISOES.md#dec-002); primeiro teste aprovado somente na dimensão visual pela [DEC-006](../../docs/DECISOES.md#dec-006); fala experimental e voz permanecem não canônicas.
+- **Histórico de alterações:** `2026-08-28` — Character ID permanente registrado pela [DEC-002](../../docs/DECISOES.md#dec-002); primeiro teste aprovado somente na dimensão visual pela [DEC-006](../../docs/DECISOES.md#dec-006), confirmada de forma independente pela [DEC-010](../../docs/DECISOES.md#dec-010); imagem MASTER versionada pela `DEC-014`; fala experimental e voz permanecem não canônicas.

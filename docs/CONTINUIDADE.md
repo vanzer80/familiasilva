@@ -12,21 +12,21 @@ Cânone é toda informação aprovada e registrada oficialmente. Não são câno
 - imagens ou vídeos não aprovados na dimensão citada;
 - voz, diálogo ou dinâmica narrativa presentes em um teste aprovado somente no visual.
 
-## Estado consolidado em 2026-08-28
+## Estado consolidado em 2026-08-28 (reconciliado)
 
 ### Personagens
 
 | ID | Personagem | Personalidade | Visual | Voz |
 | --- | --- | --- | --- | --- |
-| [`CHAR-001`](../personagens/oficiais/CHAR-001-MARCOS.md) | Marcos Silva | `CANÔNICA` | `APROVADO COM RESSALVAS` | `A DEFINIR` |
-| [`CHAR-002`](../personagens/oficiais/CHAR-002-DONA-CELIA.md) | Dona Célia | `CANÔNICA` | `APROVADO COM RESSALVAS` | `A DEFINIR` |
-| [`CHAR-003`](../personagens/oficiais/CHAR-003-PATRICIA-SILVA.md) | Patrícia Silva | `CANÔNICA` | `APROVADO COM RESSALVAS` | `A DEFINIR` |
-| [`CHAR-004`](../personagens/oficiais/CHAR-004-ANTONIO-SILVA.md) | Sr. Antônio | `CANÔNICA` | `APROVADO COM RESSALVAS` | `A DEFINIR` |
-| [`CHAR-005`](../personagens/oficiais/CHAR-005-BETO.md) | Beto | `CANÔNICA` | `APROVADO COM RESSALVAS` | `A DEFINIR` |
+| [`CHAR-001`](../personagens/oficiais/CHAR-001-MARCOS.md) | Marcos Silva | `CANÔNICA` | `APROVADO / CANON VISUAL PARA RENDERING DE VIDEO` | `A DEFINIR` |
+| [`CHAR-002`](../personagens/oficiais/CHAR-002-DONA-CELIA.md) | Dona Célia | `CANÔNICA` | `APROVADO / CANON VISUAL PARA RENDERING DE VIDEO` | `A DEFINIR` |
+| [`CHAR-003`](../personagens/oficiais/CHAR-003-PATRICIA-SILVA.md) | Patrícia Silva | `CANÔNICA` | `APROVADO / CANON VISUAL PARA RENDERING DE VIDEO` (V01; V02 pendente — ver manifesto) | `A DEFINIR` |
+| [`CHAR-004`](../personagens/oficiais/CHAR-004-ANTONIO-SILVA.md) | Sr. Antônio | `CANÔNICA` | `APROVADO / CANON VISUAL` (referência metodológica) | `A DEFINIR` |
+| [`CHAR-005`](../personagens/oficiais/CHAR-005-BETO.md) | Beto | `CANÔNICA` | `APROVADO / CANON VISUAL EM VIDEO` | `A DEFINIR` |
 | [`CHAR-006`](../personagens/oficiais/CHAR-006-CAROL-SILVA.md) | Carol Silva | `CANÔNICA` | `APROVADO VISUALMENTE` | `A DEFINIR` |
-| [`CHAR-007`](../personagens/oficiais/CHAR-007-DUDU-SILVA.md) | Dudu Silva | `CANÔNICA` | `AJUSTE NECESSÁRIO` | `A DEFINIR` |
+| [`CHAR-007`](../personagens/oficiais/CHAR-007-DUDU-SILVA.md) | Dudu Silva | `CANÔNICA` | `APROVADO / CANON VISUAL` (ver observação técnica em ERR-006) | `A DEFINIR` |
 
-Os IDs não podem ser reutilizados ou renumerados. As personalidades completas estão em [../personagens/oficiais/personalidades/](../personagens/oficiais/personalidades/).
+Os IDs não podem ser reutilizados ou renumerados. As personalidades completas estão em [../personagens/oficiais/personalidades/](../personagens/oficiais/personalidades/). Os status visuais acima foram reconciliados pela [DEC-013](DECISOES.md#dec-013) a partir de duas linhas de decisão independentes (DEC-002/DEC-005 e DEC-009/DEC-011/DEC-012); ver nota de reconciliação em DECISOES.md.
 
 ### Rendering permanente
 
@@ -38,8 +38,8 @@ Os IDs não podem ser reutilizados ou renumerados. As personalidades completas e
 - A imagem MASTER continua sendo a referência facial primária.
 - Um vídeo pode complementar somente a dimensão explicitamente aprovada.
 - Sr. Antônio e Beto são referências metodológicas de arquitetura de prompt e rendering, nunca referências faciais de outros personagens.
-- Os nomes de arquivos informados nas fichas ainda precisam ser versionados em [../assets/personagens/](../assets/personagens/).
-- A referência de Dudu precisa ser refeita sem gimbal/celular, com boca fechada e tênis sem marca.
+- As sete imagens MASTER estão versionadas em [../assets/personagens/mestres/](../assets/personagens/mestres/) e catalogadas em [MANIFESTO-MESTRES.md](../assets/personagens/mestres/MANIFESTO-MESTRES.md) pela `DEC-014`. Exceção: a MASTER definitiva (V02) de Patrícia segue `PENDENTE DE IMPORTAÇÃO DA FONTE APROVADA`.
+- A referência atual de Dudu está aprovada como canon visual (`DEC-013`), mas contém elementos a evitar em referências futuras (gimbal/celular, boca aberta, tênis de marca) — ver `ERR-006` e `SOL-006`.
 
 ### Relações permanentes
 

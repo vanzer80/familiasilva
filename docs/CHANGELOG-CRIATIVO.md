@@ -11,5 +11,7 @@ Registrar somente mudanças aprovadas ou resultados validados. Hipóteses devem 
 | `2026-08-28` | `CHAR-001` a `CHAR-007` | aprendizados de produção | `CONSOLIDADO` | Registrados testes, erros, soluções, aprovações e rejeições conhecidos; fatos e hipóteses foram separados. | [Aprendizados de Vídeo](APRENDIZADOS-DE-VIDEO.md) |
 | `2026-08-28` | `CHAR-001` a `CHAR-007` | cadastro canônico | `APROVADO` | Registrados os IDs permanentes do elenco inicial. | [DEC-002](DECISOES.md#dec-002) |
 | `2026-08-28` | `CHAR-001` a `CHAR-007` | personalidade e relações | `APROVADO` | Consolidadas as sete personalidades e o mapa bidirecional de relações. | [DEC-001](DECISOES.md#dec-001) |
+| `2026-08-28` | todos | reconciliação de canon | `CONSOLIDADO` | Reconciliadas duas linhas independentes de decisão (checkpoint local `e954c01` e este repositório): DEC-001–006 originais renumeradas para DEC-007–012 sem perda de conteúdo; status visual de Marcos, Dona Célia, Patrícia, Sr. Antônio, Beto e Dudu elevado de "com ressalvas"/"ajuste necessário" para aprovação plena, por decisão explícita do usuário. | [DEC-013](DECISOES.md#dec-013) |
+| `2026-08-28` | `CHAR-001` a `CHAR-007` | nova imagem MASTER | `APROVADO` | Ingeridas as sete imagens MASTER e o manifesto correspondente, criados em `2026-08-27` e nunca antes enviados a este repositório. | [DEC-014](DECISOES.md#dec-014) |
 
 Tipos esperados incluem: personagem aprovado, aparência alterada, nova imagem MASTER, voz aprovada, cenário aprovado, prompt mestre atualizado, erro encontrado, solução validada e mudança de cânone.
