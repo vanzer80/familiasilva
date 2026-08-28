@@ -1,190 +1,437 @@
-# AI Onboarding — Família Silva
+# AI Onboarding V2 — Família Silva
 
-Este arquivo é o ponto de entrada recomendado para qualquer IA, agente ou colaborador que precise compreender, continuar, roteirizar ou produzir conteúdo do projeto **Família Silva**.
+> **Ponto de entrada oficial para IAs, agentes, GPTs personalizados, Skills, Claude Code, Gemini, Codex e colaboradores humanos.**
 
-O repositório é a fonte oficial de verdade do projeto. Não use memória externa, suposições ou conhecimento geral para preencher lacunas de cânone.
+Este repositório é a **fonte oficial de verdade documental** do projeto **Família Silva**.
 
-## 1. Regra principal
+O objetivo deste arquivo não é duplicar a Bíblia, as fichas, as decisões ou os aprendizados. Sua função é explicar **o que ler, em que ordem, qual fonte prevalece, como executar cada tipo de tarefa e como evitar reinventar cânone já definido**.
+
+---
+
+## 1. Regra máxima
 
 **Não invente informação ausente.**
 
-Um campo `A DEFINIR`, uma pasta vazia ou um item `PENDENTE DE IMPORTAÇÃO DA FONTE APROVADA` não significa liberdade para criar uma resposta nova. Antes de concluir que algo não existe, verifique as fontes abaixo.
+Um campo `A DEFINIR`, uma pasta vazia ou um item `PENDENTE DE IMPORTAÇÃO DA FONTE APROVADA` não significa liberdade para criar novo cânone.
 
-Se houver conflito entre documentos, preserve o histórico e aplique a decisão canônica mais recente e explicitamente aprovada. Em caso de dúvida real, sinalize a divergência em vez de escolher por conta própria.
+Antes de concluir que algo não existe:
 
-## 2. Ordem mínima de leitura
+1. procure nas fontes canônicas indicadas neste onboarding;
+2. verifique decisões e continuidade;
+3. verifique se a informação está marcada como pendente de importação;
+4. somente depois classifique como realmente indefinida.
 
-Para compreender o projeto antes de executar qualquer tarefa relevante, leia nesta ordem:
+Se houver incerteza real, **sinalize a incerteza**. Não resolva conflito de cânone por adivinhação.
 
-1. [AGENTS.md](AGENTS.md) — regras operacionais, proteção de cânone e comportamento esperado de agentes.
-2. [docs/BIBLIA-DA-SERIE.md](docs/BIBLIA-DA-SERIE.md) — identidade geral da série.
-3. [docs/DECISOES.md](docs/DECISOES.md) — decisões permanentes, aprovações e supersessões.
-4. [personagens/relacoes/RELACOES-FAMILIARES.md](personagens/relacoes/RELACOES-FAMILIARES.md) — relações canônicas.
-5. [personagens/oficiais/](personagens/oficiais/) — fichas e personalidades canônicas dos personagens.
-6. [docs/CONTINUIDADE.md](docs/CONTINUIDADE.md) — estado narrativo e continuidade entre materiais.
-7. [docs/APRENDIZADOS-DE-VIDEO.md](docs/APRENDIZADOS-DE-VIDEO.md) — erros, acertos e regras aprendidas em produção.
-8. [producao/STATUS.md](producao/STATUS.md) — estado atual, pendências e blockers.
+---
 
-Depois, leia as fontes específicas da tarefa.
+## 2. Missão do repositório
 
-## 3. Hierarquia prática de fontes
+Uma IA nova deve conseguir, somente a partir deste repositório:
 
-Use a seguinte precedência:
+- compreender a proposta e o universo da Família Silva;
+- identificar os personagens e suas relações;
+- compreender personalidade, função narrativa, tom de fala e limites de comportamento;
+- distinguir cânone, histórico, teste, hipótese, erro, solução, aprovação e pendência;
+- escrever cenas e diálogos coerentes;
+- gerar prompts de vídeo conforme as regras atuais;
+- reutilizar aprendizados de produção;
+- evitar repetir erros já conhecidos;
+- continuar episódios e continuidade narrativa;
+- criar uma camada externa de agente/GPT/Skill sem transformar essa camada em uma segunda fonte de verdade.
 
-### Regras de agente e edição
-- [AGENTS.md](AGENTS.md)
+---
 
-### Cânone geral e decisões
-- [docs/BIBLIA-DA-SERIE.md](docs/BIBLIA-DA-SERIE.md)
-- [docs/DECISOES.md](docs/DECISOES.md)
-- [docs/CHANGELOG-CRIATIVO.md](docs/CHANGELOG-CRIATIVO.md) como histórico cronológico, não como substituto das decisões vigentes.
+## 3. Ordem mínima obrigatória de leitura
 
-### Personagens
-- ficha oficial em [personagens/oficiais/](personagens/oficiais/)
-- personalidade canônica em [personagens/oficiais/personalidades/](personagens/oficiais/personalidades/)
-- relações em [personagens/relacoes/RELACOES-FAMILIARES.md](personagens/relacoes/RELACOES-FAMILIARES.md)
-- imagens MASTER e proveniência em [assets/personagens/mestres/MANIFESTO-MESTRES.md](assets/personagens/mestres/MANIFESTO-MESTRES.md)
+Antes de executar qualquer tarefa relevante, leia nesta ordem:
 
-### Continuidade narrativa
-- [docs/CONTINUIDADE.md](docs/CONTINUIDADE.md)
-- episódio correspondente em [episodios/](episodios/)
+1. [AI-ONBOARDING.md](AI-ONBOARDING.md) — este arquivo.
+2. [AGENTS.md](AGENTS.md) — regras operacionais e proteção de cânone.
+3. [docs/BIBLIA-DA-SERIE.md](docs/BIBLIA-DA-SERIE.md) — identidade geral da série.
+4. [docs/DECISOES.md](docs/DECISOES.md) — decisões formais, aprovações e supersessões.
+5. [personagens/relacoes/RELACOES-FAMILIARES.md](personagens/relacoes/RELACOES-FAMILIARES.md) — relações canônicas.
+6. fichas e personalidades dos personagens relevantes em [personagens/oficiais/](personagens/oficiais/).
+7. [docs/CONTINUIDADE.md](docs/CONTINUIDADE.md) — continuidade narrativa e eventos anteriores.
+8. [docs/APRENDIZADOS-DE-VIDEO.md](docs/APRENDIZADOS-DE-VIDEO.md) — conhecimento consolidado de produção audiovisual.
+9. [producao/STATUS.md](producao/STATUS.md) — estado atual, blockers e pendências.
 
-### Produção audiovisual
-- [docs/APRENDIZADOS-DE-VIDEO.md](docs/APRENDIZADOS-DE-VIDEO.md)
-- [producao/erros/](producao/erros/)
-- [producao/solucoes/](producao/solucoes/)
-- [producao/testes/](producao/testes/)
-- [producao/aprovados/](producao/aprovados/)
-- [producao/rejeitados/](producao/rejeitados/)
+Depois disso, leia as fontes específicas da tarefa.
 
-### Prompt de vídeo novo
-A única fonte executável para a arquitetura de novos prompts é:
+---
 
-- [prompts/templates/TEMPLATE-MESTRE-VIDEO.md](prompts/templates/TEMPLATE-MESTRE-VIDEO.md)
+## 4. Hierarquia real de autoridade
 
-Documentos históricos de episódios registram como determinado material foi criado na época, mas **não substituem o template mestre vigente**.
+### 4.1 Regras de agente e edição
 
-## 4. Se a tarefa for entender a Família Silva
+1. [AGENTS.md](AGENTS.md)
+2. este `AI-ONBOARDING.md` como guia de navegação e execução
 
-Leia, no mínimo:
+### 4.2 Decisões e cânone geral
+
+1. [docs/DECISOES.md](docs/DECISOES.md)
+2. [docs/BIBLIA-DA-SERIE.md](docs/BIBLIA-DA-SERIE.md)
+3. documentos especializados da área afetada
+
+[docs/CHANGELOG-CRIATIVO.md](docs/CHANGELOG-CRIATIVO.md) é **histórico cronológico**. Ele não substitui uma decisão formal vigente.
+
+### 4.3 Estado atual
+
+Para status operacional e pendências, consulte:
+
+- [producao/STATUS.md](producao/STATUS.md)
+
+Snapshots antigos de status em outros documentos não prevalecem sobre `STATUS.md` e decisões formais.
+
+### 4.4 Regra de precedência entre decisões
+
+**Não use apenas o número da DEC ou a data para decidir o que prevalece.**
+
+O repositório possui decisões reconciliadas de linhas históricas diferentes. Leia:
+
+- a seção de reconciliação de [docs/DECISOES.md](docs/DECISOES.md);
+- especialmente `DEC-013`, que formaliza precedência em conflitos de aprovação visual baseados em evidência de produção real.
+
+Uma decisão marcada como `SUPERADO`, `HISTÓRICO` ou explicitamente substituída **não é regra operacional vigente**.
+
+### 4.5 Quando ainda houver conflito
+
+Se duas fontes oficiais parecerem incompatíveis e `docs/DECISOES.md` não resolver a precedência:
+
+- não escolha sozinho;
+- preserve ambas;
+- reporte `CONFLITO DE CÂNONE / REQUER DECISÃO HUMANA`.
+
+---
+
+## 5. Mapa canônico dos personagens
+
+Os Character IDs permanentes são:
+
+| ID | Nome canônico | Papel relacional básico |
+|---|---|---|
+| `CHAR-001` | Marcos Silva | marido de Patrícia; pai de Carol e Dudu; filho de Dona Célia |
+| `CHAR-002` | Dona Célia | mãe de Marcos; avó de Carol e Dudu |
+| `CHAR-003` | Patrícia Silva | esposa de Marcos; mãe de Carol e Dudu |
+| `CHAR-004` | Sr. Antônio | vizinho recorrente; **não integrante oficial da Família Silva** |
+| `CHAR-005` | Beto | marido de Carol; genro de Marcos e Patrícia |
+| `CHAR-006` | Carol Silva | filha de Marcos e Patrícia; irmã de Dudu; esposa de Beto |
+| `CHAR-007` | Dudu Silva | filho de Marcos e Patrícia; irmão de Carol |
+
+A tabela acima é apenas um **mapa de navegação**. Para detalhes e nuances, prevalecem as fichas e a matriz oficial de relações.
+
+### Personalidades canônicas — arquivos exatos
+
+- [MARCOS-PERSONALIDADE.md](personagens/oficiais/personalidades/MARCOS-PERSONALIDADE.md)
+- [PATRICIA-PERSONALIDADE.md](personagens/oficiais/personalidades/PATRICIA-PERSONALIDADE.md)
+- [CAROL-PERSONALIDADE.md](personagens/oficiais/personalidades/CAROL-PERSONALIDADE.md)
+- [DUDU-PERSONALIDADE.md](personagens/oficiais/personalidades/DUDU-PERSONALIDADE.md)
+- [BETO-PERSONALIDADE.md](personagens/oficiais/personalidades/BETO-PERSONALIDADE.md)
+- [DONA-CELIA-PERSONALIDADE.md](personagens/oficiais/personalidades/DONA-CELIA-PERSONALIDADE.md)
+- [ANTONIO-PERSONALIDADE.md](personagens/oficiais/personalidades/ANTONIO-PERSONALIDADE.md)
+
+Nunca deduza personalidade apenas de aparência, vídeo, nome, arquétipo ou relação familiar.
+
+---
+
+## 6. Modo: entender o projeto
+
+Se a tarefa for explicar ou compreender a Família Silva, leia no mínimo:
 
 - [docs/BIBLIA-DA-SERIE.md](docs/BIBLIA-DA-SERIE.md)
 - [docs/UNIVERSO.md](docs/UNIVERSO.md)
 - [docs/TOM-E-HUMOR.md](docs/TOM-E-HUMOR.md)
 - [personagens/README.md](personagens/README.md)
 - [personagens/relacoes/RELACOES-FAMILIARES.md](personagens/relacoes/RELACOES-FAMILIARES.md)
-- as fichas e personalidades dos personagens relevantes
+- as sete personalidades, ou pelo menos as dos personagens envolvidos na pergunta
 - [docs/DECISOES.md](docs/DECISOES.md)
+- [docs/CONTINUIDADE.md](docs/CONTINUIDADE.md)
 - [producao/STATUS.md](producao/STATUS.md)
 
-## 5. Se a tarefa for criar roteiro, cena ou diálogo
+Ao responder, diferencie claramente:
+
+- fato canônico;
+- histórico;
+- pendência;
+- hipótese;
+- interpretação.
+
+---
+
+## 7. Modo: criar roteiro, cena ou diálogo
 
 Antes de escrever:
 
-1. leia a ficha e a personalidade de todos os personagens da cena;
-2. leia as relações entre eles;
-3. leia [docs/TOM-E-HUMOR.md](docs/TOM-E-HUMOR.md);
-4. leia [docs/CONTINUIDADE.md](docs/CONTINUIDADE.md);
-5. leia os episódios anteriores relevantes;
-6. verifique [docs/DECISOES.md](docs/DECISOES.md) para regras narrativas vigentes.
+1. leia a ficha oficial de cada personagem da cena;
+2. leia a personalidade de cada personagem da cena;
+3. leia as relações entre eles;
+4. leia [docs/TOM-E-HUMOR.md](docs/TOM-E-HUMOR.md);
+5. leia [docs/CONTINUIDADE.md](docs/CONTINUIDADE.md);
+6. leia os episódios anteriores relevantes;
+7. verifique [docs/DECISOES.md](docs/DECISOES.md);
+8. verifique se existe restrição ou aprendizado de produção que afete a cena.
 
-Não copie diálogos, bordões, cenas, aparência, figurino ou caracterizações de obras de referência. Referências externas como *A Grande Família* são metodológicas e estruturais, nunca autorização para reprodução literal.
+### Referências externas
 
-## 6. Se a tarefa for gerar um vídeo
+*A Grande Família* é referência metodológica de arquétipos, funções narrativas, dinâmica doméstica e mecanismos de humor.
 
-Antes de produzir o prompt, leia obrigatoriamente:
+Não copiar:
 
-1. [prompts/templates/TEMPLATE-MESTRE-VIDEO.md](prompts/templates/TEMPLATE-MESTRE-VIDEO.md);
-2. ficha oficial e personalidade de cada personagem presente;
+- personagens;
+- diálogos;
+- bordões;
+- cenas;
+- histórias específicas;
+- aparência;
+- figurino;
+- cenários reconhecíveis;
+- trejeitos exclusivos.
+
+Família Silva deve permanecer uma obra original.
+
+---
+
+## 8. Modo: gerar vídeo ou prompt de vídeo
+
+A única fonte executável para a arquitetura de **novos prompts de vídeo** é:
+
+- [prompts/templates/TEMPLATE-MESTRE-VIDEO.md](prompts/templates/TEMPLATE-MESTRE-VIDEO.md)
+
+Antes de gerar qualquer prompt, leia obrigatoriamente:
+
+1. o template mestre;
+2. ficha e personalidade de cada personagem presente;
 3. [personagens/relacoes/RELACOES-FAMILIARES.md](personagens/relacoes/RELACOES-FAMILIARES.md);
 4. [assets/personagens/mestres/MANIFESTO-MESTRES.md](assets/personagens/mestres/MANIFESTO-MESTRES.md);
 5. [docs/APRENDIZADOS-DE-VIDEO.md](docs/APRENDIZADOS-DE-VIDEO.md);
-6. erros e soluções relevantes em `producao/`;
-7. episódio/cena correspondente, se existir;
+6. erros, soluções e testes relevantes em `producao/`;
+7. episódio/cena correspondente, quando existir;
 8. [docs/CONTINUIDADE.md](docs/CONTINUIDADE.md).
 
 ### Regras essenciais de vídeo
 
 - Rendering canônico: `Photorealistic / Warm Cinematic Realism`.
-- Cada personagem usa sua própria MASTER ou referência aprovada.
-- Não usar a aparência de um personagem como referência facial de outro.
+- Cada personagem usa exclusivamente sua própria MASTER ou referência aprovada.
+- Nunca usar o rosto de outro personagem como referência facial.
+- Sr. Antônio e Beto podem servir como referências **metodológicas** de prompting/rendering, nunca como referência facial para outros.
 - Cada prompt deve ser autossuficiente.
-- Aplicar continuidades de personagem, rendering, figurino, ambiente, relação, fala, voz, lip sync e silêncio quando forem pertinentes.
+- Aplicar, quando pertinentes, continuidades de personagem, rendering, figurino, ambiente, relação, fala, voz, lip sync e silêncio.
 - Quando houver risco de troca de fala, priorizar um falante principal e manter os demais explicitamente silenciosos.
-- Mais restrições não significam automaticamente melhor resultado; usar apenas as restrições necessárias para a cena.
+- Mais negative constraints não significam automaticamente melhor geração; usar apenas restrições necessárias e úteis.
 - Por padrão, não inserir duração fixa em segundos no texto operacional do prompt. Duração editorial/configuração de ferramenta é separada do conteúdo textual enviado ao gerador.
-- Não colocar IDs, nomes internos de clipes, cabeçalhos administrativos ou metadados desnecessários dentro do prompt final se houver risco de aparecerem no vídeo.
+- Evitar IDs, nomes internos de clipes, títulos administrativos, cabeçalhos técnicos e metadados desnecessários dentro do prompt final quando houver risco de aparecerem no vídeo.
+- Não usar `CHARACTER IDENTITY LOCK` ou `EXACTLY the same person` como instruções operacionais ativas.
 
-## 7. Episódio 1 como referência de produção
+---
 
-O Episódio 1, **S01E001 — A Greve da Patrícia**, está importado no repositório.
+## 9. Episódio 1 como referência de produção
+
+O Episódio 1 está importado:
+
+**S01E001 — A Greve da Patrícia**
 
 Use:
 
-- [episodios/S01/S01E001-A-GREVE-DA-PATRICIA.md](episodios/S01/S01E001-A-GREVE-DA-PATRICIA.md) — índice e estado consolidado.
+- [episodios/S01/S01E001-A-GREVE-DA-PATRICIA.md](episodios/S01/S01E001-A-GREVE-DA-PATRICIA.md) — índice, status e consolidação;
 - [episodios/S01/FONTE-HISTORICA-S01E001-A-GREVE-DA-PATRICIA.md](episodios/S01/FONTE-HISTORICA-S01E001-A-GREVE-DA-PATRICIA.md) — fonte histórica de produção.
 
-A fonte histórica preserva instruções e prompts usados na época. Ela pode conter práticas posteriormente substituídas. Para criar material novo, sempre prevalecem o template mestre e os aprendizados atuais.
+A fonte histórica preserva como o episódio foi documentado e planejado naquela fase. Ela pode conter práticas posteriormente substituídas.
 
-## 8. Cena 2B — cuidado especial
+Para produzir material novo, prevalecem:
 
-O repositório possui o roteiro canônico e o prompt original da Cena 2B, além dos aprendizados derivados do caso.
+1. decisões vigentes;
+2. template mestre atual;
+3. aprendizados atuais;
+4. continuidade atual.
 
-Consulte:
+Nunca reescreva silenciosamente um documento histórico para fazê-lo parecer compatível com regras posteriores.
 
-- `producao/erros/ERR-007-CENA-2B-TENTATIVA-INICIAL.md`
-- `producao/solucoes/SOL-007-CENA-2B-VERSAO-SIMPLIFICADA.md`
+---
 
-A versão revisada/aprovada exata do prompt que efetivamente funcionou no Flow ainda pode estar marcada como `PENDENTE DE IMPORTAÇÃO DA FONTE APROVADA`. Não reconstruir essa versão por suposição e não substituir automaticamente a fala canônica do roteiro por uma variante de produção.
+## 10. Cena 2B — estudo de caso obrigatório
 
-## 9. Materiais históricos versus regra atual
+O repositório possui o roteiro canônico e o prompt original da Cena 2B, além de registros de erro/solução:
 
-Nunca "corrija" um documento histórico para fazê-lo parecer compatível com uma regra posterior.
+- [ERR-007-CENA-2B-TENTATIVA-INICIAL.md](producao/erros/ERR-007-CENA-2B-TENTATIVA-INICIAL.md)
+- [SOL-007-CENA-2B-VERSAO-SIMPLIFICADA.md](producao/solucoes/SOL-007-CENA-2B-VERSAO-SIMPLIFICADA.md)
 
-Exemplo: prompts históricos podem mencionar duração aproximada de 8 segundos. Isso registra como o episódio foi planejado naquela fase. A regra operacional atual para novos prompts é definida pelo template mestre e pelos aprendizados vigentes.
+A versão revisada/aprovada **exata** que efetivamente funcionou no Flow pode permanecer `PENDENTE DE IMPORTAÇÃO DA FONTE APROVADA`.
+
+Portanto:
+
+- não reconstrua o prompt exato por suposição;
+- não substitua automaticamente a fala canônica do roteiro por uma variante de produção;
+- use os aprendizados confirmados como heurística para novos prompts.
+
+---
+
+## 11. Modo: criar GPT personalizado, Skill ou agente externo
+
+Se a tarefa for criar um GPT, Skill, agente no Gemini, Claude Code, Codex ou outro sistema a partir deste repositório, **não copie todo o repositório para dentro das instruções do agente**.
+
+A camada externa deve conter principalmente:
+
+- papel do agente;
+- tarefas permitidas;
+- comportamento esperado;
+- regra de consultar o repositório;
+- ordem de leitura definida neste onboarding;
+- obrigação de respeitar cânone e pendências;
+- forma esperada de saída.
+
+O **conhecimento do projeto deve continuar no repositório**.
+
+### Se o agente tiver acesso contínuo ao GitHub/repositório
+
+Use o repositório como fonte viva e consulte os arquivos conforme a tarefa.
+
+### Se o agente NÃO tiver acesso contínuo ao GitHub
+
+Monte um pacote de conhecimento derivado das fontes canônicas e registre explicitamente:
+
+- repositório de origem;
+- branch/ref usada;
+- commit ou data do snapshot;
+- arquivos incluídos;
+- necessidade de atualização periódica.
+
+Nunca trate um snapshot antigo como se fosse o estado eterno do projeto.
+
+### Pacote mínimo recomendado para um agente sem acesso direto ao Git
+
+Inclua, no mínimo:
+
+- `AI-ONBOARDING.md`;
+- `AGENTS.md`;
+- `docs/BIBLIA-DA-SERIE.md`;
+- `docs/DECISOES.md`;
+- `docs/TOM-E-HUMOR.md`;
+- `docs/CONTINUIDADE.md`;
+- `docs/APRENDIZADOS-DE-VIDEO.md`;
+- `personagens/relacoes/RELACOES-FAMILIARES.md`;
+- as fichas e personalidades dos personagens;
+- `prompts/templates/TEMPLATE-MESTRE-VIDEO.md` quando o agente gerar vídeos;
+- `producao/STATUS.md`;
+- episódios relevantes para a tarefa.
+
+---
+
+## 12. Histórico, teste, aprovação e regra atual são coisas diferentes
 
 Preserve sempre a distinção entre:
 
-- roteiro canônico;
-- prompt histórico;
-- variante de teste;
-- solução aprovada;
-- aprendizado reutilizável;
-- regra operacional atual.
+- **roteiro canônico** — conteúdo narrativo aprovado;
+- **prompt histórico** — prompt usado em determinada etapa;
+- **variante de teste** — tentativa não necessariamente aprovada;
+- **erro** — falha observada;
+- **solução** — correção que funcionou ou foi validada;
+- **aprovação** — dimensão explicitamente aprovada;
+- **aprendizado reutilizável** — regra derivada de produção;
+- **regra operacional atual** — instrução vigente para material novo.
 
-## 10. Status e lacunas
+Aprovação visual não aprova automaticamente:
 
-Para saber o que está realmente pronto ou pendente, consulte sempre:
+- voz;
+- fala;
+- atuação;
+- personalidade;
+- dinâmica narrativa.
 
-- [producao/STATUS.md](producao/STATUS.md)
+---
 
-Não use snapshots antigos de status em outros documentos como fonte superior ao STATUS atual e às decisões formais.
+## 13. Como lidar com lacunas e blockers
 
-Itens ainda não definidos ou ainda não importados não devem bloquear tarefas que não dependem deles. Por exemplo, um cenário ainda não promovido a `LOC-00X` não impede necessariamente a criação de uma cena quando a ambientação necessária já está sustentada por um episódio ou por outra fonte aprovada.
+Consulte sempre [producao/STATUS.md](producao/STATUS.md).
 
-## 11. Antes de entregar qualquer resultado
+Classifique uma lacuna corretamente:
 
-Cheque:
+### `A DEFINIR`
+Ainda não existe decisão suficiente.
 
-- Estou usando os personagens corretos e seus IDs corretos?
-- Li as personalidades e relações relevantes?
-- Estou respeitando decisões mais recentes?
-- Estou confundindo material histórico com regra atual?
-- Estou inventando algo marcado `A DEFINIR` ou `PENDENTE DE IMPORTAÇÃO`?
-- Para vídeo, usei o template mestre vigente?
-- Consultei aprendizados, erros e soluções relevantes?
-- Minha saída contradiz continuidade já registrada?
+### `PENDENTE DE IMPORTAÇÃO DA FONTE APROVADA`
+A informação já existe fora do repositório, mas a fonte ainda não foi versionada. **Não reconstruir.**
 
-Se qualquer resposta for incerta, reporte a incerteza em vez de criar cânone por conta própria.
+### Histórico incompleto
+Preservar o que existe e indicar o que falta.
 
-## 12. Objetivo deste repositório
+### Cenário ainda não promovido a `LOC-00X`
+Isso não bloqueia automaticamente uma cena quando a ambientação necessária já estiver sustentada por episódio ou outra fonte aprovada.
 
-Uma IA nova deve conseguir, somente a partir deste repositório:
+---
 
-- compreender o universo e a proposta da Família Silva;
-- entender quem é cada personagem e como se relacionam;
-- distinguir cânone, teste, histórico e pendência;
-- escrever cenas coerentes com personalidade e continuidade;
-- gerar prompts de vídeo de acordo com as regras de produção atuais;
-- reutilizar erros e soluções já aprendidos sem repetir falhas conhecidas;
-- continuar o projeto sem depender de conversas antigas, salvo nos pontos explicitamente marcados como pendentes de importação.
+## 14. Como escrever de volta no repositório
+
+Uma IA com permissão de edição deve:
+
+- preservar documentos existentes;
+- não apagar histórico válido;
+- não substituir silenciosamente decisões;
+- separar teste de aprovação;
+- registrar mudanças de cânone em `docs/DECISOES.md` quando aplicável;
+- atualizar `docs/CHANGELOG-CRIATIVO.md` para mudanças relevantes;
+- atualizar `producao/STATUS.md` quando o estado do projeto mudar;
+- registrar erros/soluções/testes em `producao/`;
+- não fazer push remoto sem autorização explícita quando [AGENTS.md](AGENTS.md) exigir essa aprovação.
+
+Evite duplicar regras completas em vários arquivos. Quando uma fonte de verdade já existir, prefira **referenciar** essa fonte.
+
+---
+
+## 15. Checklist antes de entregar qualquer resultado
+
+Antes de responder, criar cena, roteiro, prompt, Skill ou agente, confirme:
+
+- [ ] Li `AGENTS.md` e este onboarding?
+- [ ] Consultei a Bíblia e decisões relevantes?
+- [ ] Estou usando os Character IDs corretos?
+- [ ] Li personalidade e relações dos personagens envolvidos?
+- [ ] Consultei a continuidade?
+- [ ] Estou respeitando a precedência de decisões e supersessões?
+- [ ] Estou confundindo histórico com regra atual?
+- [ ] Estou inventando algo marcado `A DEFINIR` ou `PENDENTE DE IMPORTAÇÃO`?
+- [ ] Para vídeo, usei o template mestre vigente?
+- [ ] Consultei aprendizados, erros e soluções relevantes?
+- [ ] Minha saída contradiz alguma aprovação já registrada?
+- [ ] Estou criando uma segunda fonte de verdade desnecessária?
+
+Se qualquer resposta importante for incerta, reporte a incerteza antes de criar novo cânone.
+
+---
+
+## 16. Teste de onboarding para uma IA nova
+
+Antes de se declarar pronta para trabalhar de forma autônoma no projeto, a IA deve conseguir responder corretamente, usando apenas o repositório:
+
+1. Quem são os sete personagens e quais são seus Character IDs?
+2. Quem é Sr. Antônio e por que o nome técnico legado não o torna membro da Família Silva?
+3. Quais são as relações familiares principais?
+4. Onde estão as sete personalidades canônicas?
+5. Qual é o rendering canônico vigente?
+6. Qual documento é a única fonte executável para novos prompts de vídeo?
+7. Como deve tratar duração em segundos em novos prompts?
+8. Qual a diferença entre o documento histórico do Episódio 1 e a regra operacional atual?
+9. O que aconteceu no caso da Cena 2B e o que ainda está pendente?
+10. Qual documento mostra o status atual do projeto?
+11. Como resolver conflitos entre decisões sem olhar apenas para número/data?
+12. O que significa `PENDENTE DE IMPORTAÇÃO DA FONTE APROVADA`?
+13. Quais informações ela está proibida de inventar?
+14. Como deve estruturar um GPT/Skill externo sem duplicar o repositório inteiro?
+
+Se não conseguir responder esses pontos com evidência documental, **a IA ainda não está onboarded**.
+
+---
+
+## 17. Critério de sucesso
+
+O onboarding está funcionando quando uma nova IA consegue:
+
+- navegar sozinha pelas fontes corretas;
+- compreender a Família Silva sem depender de conversas antigas;
+- não reinventar decisões já tomadas;
+- não confundir histórico com regra atual;
+- gerar cena, roteiro ou prompt coerente com o cânone;
+- reconhecer o que ainda está pendente;
+- criar agentes externos que usem o repositório como conhecimento vivo;
+- registrar novos aprendizados sem degradar a fonte de verdade.
+
+**O repositório deve permanecer a fonte de verdade. O agente é apenas a camada de comportamento sobre essa fonte.**
