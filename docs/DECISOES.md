@@ -56,6 +56,77 @@ Este documento registra decisões formais do projeto. Não registrar ideias solt
 - **Status:** `APROVADO`
 - **Evidência:** [registro do teste](../producao/testes/TESTE-VIDEO-CAROL-CHAR-006-001.md)
 
+## Nota de reconciliação — `2026-08-28`
+
+As decisões DEC-007 a DEC-012 abaixo foram originalmente registradas, na mesma data, sob os identificadores `DEC-001` a `DEC-006` em um checkpoint local (`e954c01`) que nunca havia sido enviado a este repositório remoto quando DEC-001 a DEC-006 acima foram publicadas. As duas séries foram produzidas de forma independente e usaram a mesma numeração para decisões diferentes. Esta renumeração resolve apenas a colisão de identificadores; não representa mudança cronológica, de conteúdo ou de autoria em relação ao registro original. DEC-013 e DEC-014 documentam a própria reconciliação.
+
+## DEC-007
+
+- **Data:** `2026-08-27` (renumerado de `DEC-001` do checkpoint local em `2026-08-28`)
+- **Decisão:** adotar `Visual Continuity` como padrão visual para prompts de vídeo de personagens fictícios originais.
+- **Motivo:** reduzir falsos positivos nos filtros de geração relacionados a reprodução de pessoas famosas ou reais, sem perder a consistência visual dos personagens fictícios.
+- **Impacto:** substitui `CHARACTER IDENTITY LOCK` como terminologia padrão nos prompts. Mantém Speaking Lock, Voice Lock, Lip-Sync Lock, Silent Character Lock, Relationship Lock e continuidade física e visual quando aplicáveis. Esta terminologia foi posteriormente absorvida e refinada pelas continuidades nomeadas em `personagens/regras/` (ver DEC-004).
+- **Status:** `APROVADO / HISTÓRICO — terminologia consolidada em personagens/regras/`
+
+## DEC-008
+
+- **Data:** `2026-08-27` (renumerado de `DEC-002` do checkpoint local em `2026-08-28`)
+- **Decisão:** Família Silva adota Stylized Cinematic Realism como estilo canônico de renderização da série.
+- **Motivo:** o vídeo de Sr. Antônio (`CHAR-004`) atingiu acabamento visual superior e passou a orientar o nível de realismo, textura, iluminação, materiais, profundidade de campo e equilíbrio entre cartoon e realismo.
+- **Status:** `SUPERADO — ver DEC-009 e DEC-003`. Mantido apenas como histórico; não deve orientar rendering, prompts ou novas gerações.
+
+## DEC-009
+
+- **Data:** `2026-08-27` (renumerado de `DEC-003` do checkpoint local em `2026-08-28`)
+- **Decisão:** `CHAR-005` — Beto é aprovado como canon visual em vídeo. Prompts de vídeo passam a usar `Photorealistic / Warm Cinematic Realism` como direção operacional de rendering.
+- **Motivo:** o vídeo final de Beto confirmou que a estrutura usada no vídeo aprovado de Sr. Antônio produz aparência humana mais natural, materiais realistas, proporções faciais menos caricatas, iluminação cinematográfica e estabilidade visual sem o aspecto excessivamente cartoon da tentativa anterior.
+- **Impacto:** substitui operacionalmente a terminologia de rendering de `DEC-008`, sem apagar seu registro histórico. Confirma e antecede o mesmo padrão formalizado em `DEC-003`.
+- **Status:** `APROVADO` — consistente com `DEC-003`.
+- **Evidência:** [referências metodológicas](../producao/aprovados/REFERENCIAS-METODOLOGICAS-ANTONIO-BETO.md)
+
+## DEC-010
+
+- **Data:** `2026-08-27` (renumerado de `DEC-004` do checkpoint local em `2026-08-28`)
+- **Decisão:** `CHAR-006` — Carol Silva tem primeiro teste de vídeo `APROVADO VISUALMENTE`.
+- **Motivo:** o teste demonstrou estabilidade visual, consistência facial e corporal, cabelo, idade aparente, iluminação, rendering e integração com `Photorealistic / Warm Cinematic Realism`.
+- **Limites de cânone:** a imagem MASTER de Carol permanece a referência facial primária. Diálogo experimental, dinâmica sugerida, personalidade inferida e voz usada no teste não se tornam cânone. Não há Voice Master formalizado para Carol.
+- **Status:** `APROVADO — decisão confirmatória, já formalizada em DEC-006`.
+
+## DEC-011
+
+- **Data:** `2026-08-27` (renumerado de `DEC-005` do checkpoint local em `2026-08-28`)
+- **Decisão:** `CHAR-007` — Dudu Silva é `APROVADO / CANON VISUAL` em vídeo.
+- **Motivo:** o resultado visual demonstrou rosto consistente, roupa e silhueta estáveis, ambiente doméstico coerente, performance compatível com comédia familiar e alinhamento com `Photorealistic / Warm Cinematic Realism`.
+- **Ajuste metodológico:** para intenção dramática de injustiçado ou de questionamento sobre culpa, evitar sorriso excessivamente simpático.
+- **Status:** `APROVADO / CANON VISUAL — status confirmado por DEC-013, que resolve a divergência com o registro em ERR-006/TESTE-REFERENCIA-DUDU-CHAR-007-001.md`.
+
+## DEC-012
+
+- **Data:** `2026-08-27` (renumerado de `DEC-006` do checkpoint local em `2026-08-28`)
+- **Decisão:** aprovar os vídeos de validação de `CHAR-001` — Marcos Silva, `CHAR-002` — Dona Célia e `CHAR-003` — Patrícia Silva como `CANON VISUAL PARA RENDERING DE VÍDEO` no padrão `Photorealistic / Warm Cinematic Realism`.
+- **Motivo:** os resultados demonstraram continuidade facial, corporal, de figurino e ambiente, rendering natural, iluminação cinematográfica quente e atuação contida compatíveis com o padrão vigente da série.
+- **Registro técnico de Patrícia:** vídeo aprovado com aproximadamente `6 segundos`, `720 x 1280`, `24 fps`, formato vertical e áudio presente; duração escolhida deliberadamente pelo usuário, não representando limitação do Flow.
+- **Restrições:** não usar pessoas reais, marcas, estúdios, franquias ou personagens externos como referência visual canônica ou facial.
+- **Status:** `APROVADO / CANON VISUAL PARA RENDERING DE VÍDEO — status confirmado por DEC-013`.
+
+## DEC-013
+
+- **Data:** `2026-08-28`
+- **Decisão:** em caso de divergência entre uma aprovação de vídeo explicitamente registrada após análise de teste real (DEC-007 a DEC-012) e uma reclassificação documental posterior sem nova evidência de produção (DEC-002 e DEC-005 desta série, e os registros `APROVADO COM RESSALVAS` / `AJUSTE VISUAL NECESSÁRIO` nas fichas e em `producao/testes/`), prevalece a aprovação baseada em evidência de produção real. Especificamente, `CHAR-001`, `CHAR-002`, `CHAR-003`, `CHAR-004`, `CHAR-005` e `CHAR-007` mantêm o status pleno de aprovação visual de DEC-009, DEC-011 e DEC-012, e não o rótulo `APROVADO COM RESSALVAS` / `AJUSTE VISUAL NECESSÁRIO` atribuído por DEC-002/DEC-005.
+- **Motivo:** decisão explícita do usuário nesta reconciliação (`2026-08-28`), fundamentada no princípio de que uma reauditoria documental não deve, por si só, revogar uma aprovação já concedida com base em produção real, na ausência de evidência objetiva e específica de revogação.
+- **Impacto:** `ERR-002-DERIVA-VISUAL-CORPORAL.md` (Marcos) e `ERR-006-REFERENCIA-DUDU-NAO-NEUTRA.md` / `TESTE-REFERENCIA-DUDU-CHAR-007-001.md` (Dudu) permanecem integralmente preservados como aprendizado de produção e devem orientar os próximos prompts, mas deixam de ser lidos como revogação do status canônico. `CHAR-006` (Carol) não é afetada, pois DEC-006 e DEC-010 já concordam em `APROVADO VISUALMENTE`.
+- **Status:** `APROVADO`
+- **Evidência:** tabela de reconciliação apresentada nesta sessão; `ERR-002-DERIVA-VISUAL-CORPORAL.md`; `ERR-006-REFERENCIA-DUDU-NAO-NEUTRA.md`
+
+## DEC-014
+
+- **Data:** `2026-08-28`
+- **Decisão:** ingerir neste repositório as sete imagens MASTER e o `MANIFESTO-MESTRES.md` originalmente adicionados em `2026-08-27` (commit local `dd9ee76`), que nunca haviam sido enviados a este repositório remoto.
+- **Motivo:** as fichas de personagem geradas em `2026-08-28` descreviam essas imagens como "ainda não versionadas em assets/" por não terem visibilidade sobre esse commit local; os arquivos e seus SHA-256 já existiam e não precisam ser reconstruídos.
+- **Impacto:** os campos "Imagem MASTER: `A DEFINIR`" de `CHAR-001`, `CHAR-002`, `CHAR-004`, `CHAR-005`, `CHAR-006` e `CHAR-007` passam a apontar para os arquivos reais. `CHAR-003` (Patrícia) mantém uma ressalva específica: ver nota de reconciliação em `assets/personagens/mestres/MANIFESTO-MESTRES.md`.
+- **Status:** `APROVADO`
+- **Evidência:** [MANIFESTO-MESTRES.md](../assets/personagens/mestres/MANIFESTO-MESTRES.md)
+
 ## Template de entrada
 
 ### DEC-XXX

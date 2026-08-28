@@ -14,7 +14,7 @@ Assets experimentais não são cânone. Apenas arquivos versionados, identificad
 
 ## Estado atual
 
-Os nomes de referências visuais já informados estão registrados em [../personagens/README.md](../personagens/README.md), mas os arquivos ainda não foram adicionados a este repositório. Não inventar caminhos, hashes ou Asset IDs.
+As sete imagens MASTER do elenco inicial foram versionadas em `personagens/mestres/` e estão catalogadas, com SHA-256 e proveniência, em [personagens/mestres/MANIFESTO-MESTRES.md](personagens/mestres/MANIFESTO-MESTRES.md) — ver [DEC-014](../docs/DECISOES.md#dec-014). A MASTER definitiva de Patrícia (V02) segue `PENDENTE DE IMPORTAÇÃO DA FONTE APROVADA`. Não inventar caminhos, hashes ou Asset IDs além dos já registrados no manifesto.
 
 ## Promoção a MASTER
 
