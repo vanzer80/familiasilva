@@ -4,52 +4,64 @@
 
 Auditar os sete arquivos de vídeo de apresentação, confirmar a correspondência com os testes de apresentação V02 aprovados, aplicar nomenclatura canônica e registrar a proveniência no repositório.
 
-## Fonte informada
+## Fonte confirmada
 
-- **Localização correta informada diretamente pelo usuário em 2026-08-29:** `G:\\Meu Drive\\familia_silva\\videos\\apresentação da familia\\`
-- O caminho `C:\\Users\\vanze\\OneDrive\\Documentos\\Downloads\\download zz` havia sido informado anteriormente por engano e foi explicitamente corrigido pelo usuário nesta mesma data. Ele **não deve ser usado como fonte desta auditoria**.
+- **Localização correta:** `G:\\Meu Drive\\familia_silva\\videos\\apresentação da familia\\`
+- **Google Drive folder ID:** `1VuZvtH8MY1NDAwbVcQKLH1_bVrWV4rc8`
+
+O caminho `C:\\Users\\vanze\\OneDrive\\Documentos\\Downloads\\download zz` havia sido informado anteriormente por engano e foi explicitamente corrigido pelo usuário em `2026-08-29`. Ele não pertence a esta auditoria.
 
 ## Estado da auditoria
 
-**Status:** `PARCIAL — BLOQUEADA POR ACESSO À FONTE BINÁRIA`
+**Status:** `CONTEÚDO E CORRESPONDÊNCIA CONFIRMADOS — RENAME FÍSICO PENDENTE`
 
-A existência histórica dos sete arquivos abaixo foi registrada na auditoria de `2026-08-28` e em `producao/STATUS.md`. Nesta sessão, o Google Drive conectado ao ChatGPT foi pesquisado pela pasta `apresentação da familia` e também pela forma sem acento `apresentacao da familia`, mas a pasta não foi retornada pela conta/conector disponível. Portanto, ainda não foi possível abrir os binários, conferir quadro/áudio/metadata, calcular hash ou executar o rename físico.
+Em `2026-08-29`, a pasta correta tornou-se acessível pelo Google Drive conectado. Foram localizados exatamente sete vídeos de apresentação. Os sete binários foram baixados e inspecionados por amostragem visual de múltiplos frames, comparados com as MASTERs V02 PHOTOREALISTIC correspondentes e analisados tecnicamente com `ffprobe`.
 
-Nenhuma correspondência abaixo deve ser tratada como confirmada somente pelo nome do arquivo. A promoção para `CONFIRMADO` exige inspeção do arquivo real.
+A correspondência personagem ↔ vídeo foi confirmada 1:1. Todos os arquivos são verticais `720x1280`, `24 fps`, codec de vídeo H.264, áudio AAC estéreo a `48 kHz` e apresentam rendering fotorrealista compatível com `Photorealistic / Warm Cinematic Realism`.
 
-## Nomenclatura alvo
+A tentativa de executar o rename físico no Google Drive foi iniciada, mas o conector do Drive ficou indisponível no momento da primeira escrita. Portanto, os nomes canônicos abaixo estão **confirmados como destino**, porém o rename físico no Drive ainda não foi concluído.
 
-Para vídeos individuais de apresentação de personagem, usar:
+## Nomenclatura canônica
+
+Para vídeos individuais de apresentação de personagem:
 
 `VID-CHAR-XXX-APRESENTACAO-VNN.ext`
 
-A primeira versão aprovada desta rodada usa `V01` no **asset de vídeo**, independentemente de a MASTER visual usada na geração ser `V02 PHOTOREALISTIC`.
+A primeira versão aprovada desta rodada usa `V01` no asset de vídeo, independentemente de a MASTER visual usada na geração ser `V02 PHOTOREALISTIC`.
 
-## Matriz de correspondência candidata
+## Correspondência confirmada
 
-| Nome histórico | Personagem | Teste aprovado | Nome canônico alvo | Estado |
-| --- | --- | --- | --- | --- |
-| `marcos.mp4` | Marcos Silva (`CHAR-001`) | `TESTE-VIDEO-MARCOS-CHAR-001-002.md` | `VID-CHAR-001-APRESENTACAO-V01.mp4` | `CANDIDATO — NÃO CONFIRMADO POR CONTEÚDO` |
-| `celia.mp4` | Dona Célia (`CHAR-002`) | `TESTE-VIDEO-DONA-CELIA-CHAR-002-002.md` | `VID-CHAR-002-APRESENTACAO-V01.mp4` | `CANDIDATO — NÃO CONFIRMADO POR CONTEÚDO` |
-| `patricia.mp4` | Patrícia Silva (`CHAR-003`) | `TESTE-VIDEO-PATRICIA-CHAR-003-002.md` | `VID-CHAR-003-APRESENTACAO-V01.mp4` | `CANDIDATO — NÃO CONFIRMADO POR CONTEÚDO` |
-| `antonio.mp4` | Sr. Antônio (`CHAR-004`) | `TESTE-VIDEO-ANTONIO-CHAR-004-002.md` | `VID-CHAR-004-APRESENTACAO-V01.mp4` | `CANDIDATO — NÃO CONFIRMADO POR CONTEÚDO` |
-| `beto.mp4` | Beto (`CHAR-005`) | `TESTE-VIDEO-BETO-CHAR-005-002.md` | `VID-CHAR-005-APRESENTACAO-V01.mp4` | `CANDIDATO — NÃO CONFIRMADO POR CONTEÚDO` |
-| `carol.mp4` | Carol Silva (`CHAR-006`) | `TESTE-VIDEO-CAROL-CHAR-006-002.md` | `VID-CHAR-006-APRESENTACAO-V01.mp4` | `CANDIDATO — NÃO CONFIRMADO POR CONTEÚDO` |
-| `dudu.mp4` | Dudu Silva (`CHAR-007`) | `TESTE-VIDEO-DUDU-CHAR-007-001.md` | `VID-CHAR-007-APRESENTACAO-V01.mp4` | `CANDIDATO — NÃO CONFIRMADO POR CONTEÚDO` |
+| Personagem | Arquivo atual no Drive | Drive file ID | Teste aprovado | Nome canônico destino | Duração | Tamanho (bytes) | SHA-256 |
+| --- | --- | --- | --- | --- | ---: | ---: | --- |
+| Marcos Silva (`CHAR-001`) | `Man_speaking_in_home_202608281910.mp4` | `1uN-1pXwo6SYyKdyFYOYe2F0iGk6jeti0` | `TESTE-VIDEO-MARCOS-CHAR-001-002.md` | `VID-CHAR-001-APRESENTACAO-V01.mp4` | `8.000 s` | `1,922,682` | `8ce3953a29843465b3d69c5d42305b97fa9f27bf2cb8cbec48cab70ae28d47c7` |
+| Dona Célia (`CHAR-002`) | `Woman_speaking_in_home_202608281910.mp4` | `1tyDGmaWmdut_3D_ucC41vvG0XlVNtXPV` | `TESTE-VIDEO-DONA-CELIA-CHAR-002-002.md` | `VID-CHAR-002-APRESENTACAO-V01.mp4` | `8.000 s` | `4,969,732` | `2b36ab36a4900895a8ff8d442e2e88befe84751fea14c1882458fc7fb32e857a` |
+| Patrícia Silva (`CHAR-003`) | `Woman_speaking_to_camera_202608281910.mp4` | `1MNr5rz6ZfwZ913bKn3IG3jld7325X5q7` | `TESTE-VIDEO-PATRICIA-CHAR-003-002.md` | `VID-CHAR-003-APRESENTACAO-V01.mp4` | `10.005 s` | `6,030,822` | `3a6bc090e33b863d3ef072d6ff65fd586cb5933aa54ae2777b5561fc62507853` |
+| Sr. Antônio (`CHAR-004`) | `Antônio_speaking_in_Brazilian_home_202608281910.mp4` | `18lHr2xgBKWgFjiUqXe0pvato2ekQit9G` | `TESTE-VIDEO-ANTONIO-CHAR-004-002.md` | `VID-CHAR-004-APRESENTACAO-V01.mp4` | `8.000 s` | `7,238,697` | `ad4859381878d051a3fb55ac1fd764e8fbec79ef31eb8afd502fe602e6331fef` |
+| Beto (`CHAR-005`) | `Man_speaking_to_camera_202608281910.mp4` | `1dZlsXtC7PIh-rcdqfaG_KgNuDuf1t8tw` | `TESTE-VIDEO-BETO-CHAR-005-002.md` | `VID-CHAR-005-APRESENTACAO-V01.mp4` | `10.005 s` | `3,382,289` | `dd978237499b5cb9b5dd40f3a0e56d9d5f89fecc7225e7f2708759bce4072f8b` |
+| Carol Silva (`CHAR-006`) | `Carol_speaking_to_the_camera_202608281910.mp4` | `1t1SlcjIhchcO14BlDPpQC77ehbyoc1QD` | `TESTE-VIDEO-CAROL-CHAR-006-002.md` | `VID-CHAR-006-APRESENTACAO-V01.mp4` | `10.005 s` | `4,647,318` | `20309cca9f7768f43854157e0dab7ceea957d84fb4a8194eaae5b35d3a3c3c65` |
+| Dudu Silva (`CHAR-007`) | `Man_speaking_Portuguese_indoors_202608281910.mp4` | `1DPdLDGgr4DAf4zBfOkuIWB0lhNAQpHDE` | `TESTE-VIDEO-DUDU-CHAR-007-001.md` | `VID-CHAR-007-APRESENTACAO-V01.mp4` | `8.000 s` | `2,577,583` | `2adc68fe1e663194e1463db75e177c2534ec02a995c156f4ae39f445aeb9be2e` |
 
-## Critério para confirmação
+## Critério usado para confirmação
 
-Para cada arquivo, confirmar no mínimo:
+Para cada arquivo foi confirmado:
 
 1. personagem visível compatível com a MASTER V02 PHOTOREALISTIC correspondente;
-2. vídeo individual de apresentação, não clipe de episódio ou teste anterior;
+2. vídeo individual de apresentação, e não clipe do episódio;
 3. rendering `Photorealistic / Warm Cinematic Realism` consistente com o registro do teste;
-4. ausência de evidência de que o arquivo seja uma versão rejeitada ou histórica V01;
-5. metadata básica registrada (nome original, tamanho, duração, resolução, fps quando disponível);
-6. SHA-256 do binário final após o rename/cópia, quando a fonte física estiver acessível.
+4. formato vertical de produção (`720x1280`, `24 fps`);
+5. áudio presente em todos os sete arquivos;
+6. metadata básica e SHA-256 do binário auditado.
 
-## Ação pendente
+## Pendência remanescente
 
-Assim que a fonte binária `G:\\Meu Drive\\familia_silva\\videos\\apresentação da familia\\` estiver acessível por upload direto, URL/ID de armazenamento conectado ou ambiente com acesso ao caminho montado, abrir os sete vídeos, validar a matriz acima, renomear os arquivos na fonte para os nomes canônicos, registrar hashes/metadata e substituir `Asset de vídeo: A DEFINIR` nos sete registros de teste pela correspondência confirmada.
+Executar apenas o rename físico no Google Drive, preservando os mesmos sete file IDs:
 
-Até lá, **nenhum `.mp4` foi renomeado, movido, copiado ou ingerido no GitHub nesta auditoria**.
+- `1uN-1pXwo6SYyKdyFYOYe2F0iGk6jeti0` → `VID-CHAR-001-APRESENTACAO-V01.mp4`
+- `1tyDGmaWmdut_3D_ucC41vvG0XlVNtXPV` → `VID-CHAR-002-APRESENTACAO-V01.mp4`
+- `1MNr5rz6ZfwZ913bKn3IG3jld7325X5q7` → `VID-CHAR-003-APRESENTACAO-V01.mp4`
+- `18lHr2xgBKWgFjiUqXe0pvato2ekQit9G` → `VID-CHAR-004-APRESENTACAO-V01.mp4`
+- `1dZlsXtC7PIh-rcdqfaG_KgNuDuf1t8tw` → `VID-CHAR-005-APRESENTACAO-V01.mp4`
+- `1t1SlcjIhchcO14BlDPpQC77ehbyoc1QD` → `VID-CHAR-006-APRESENTACAO-V01.mp4`
+- `1DPdLDGgr4DAf4zBfOkuIWB0lhNAQpHDE` → `VID-CHAR-007-APRESENTACAO-V01.mp4`
+
+Após o rename, basta verificar os nomes por readback; os hashes não devem mudar porque o conteúdo binário será preservado.
