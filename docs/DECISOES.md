@@ -157,12 +157,32 @@ As decisões DEC-007 a DEC-012 abaixo foram originalmente registradas, na mesma 
 ## DEC-018
 
 - **Data:** `2026-08-29`
-- **Decisão:** adotar como padrão preferencial condicional para novos vídeos da Família Silva a arquitetura de **vídeo contínuo multi-beat**, agrupando duas ou mais microcenas diretamente conectadas no mesmo vídeo quando a plataforma e a cena permitirem, em vez de dividir automaticamente cada microcena em um arquivo separado.
-- **Motivo:** teste realizado no Gemini com vídeo de aproximadamente `20 segundos` reuniu duas microcenas consecutivas (Marcos pedindo a pasta a Patrícia e Dudu pedindo a camiseta a Patrícia) e apresentou, segundo avaliação direta do usuário, transição muito mais fluida. Um segundo teste reuniu a declaração da greve de Patrícia e a consequência imediata para Marcos procurando a chave reserva, também aprovado pelo usuário como resultado de alta qualidade.
-- **Impacto:** o [TEMPLATE-MESTRE-VIDEO.md](../prompts/templates/TEMPLATE-MESTRE-VIDEO.md) passa a orientar a avaliação de `beats` narrativos antes da segmentação em microclipes. A exclusividade de fala pode ser controlada por beat, sem revogar `LRN-011`; todos os locks e continuidades anteriores permanecem válidos. Microclipes continuam sendo fallback para cenas complexas, mudanças grandes de ambiente/tempo/figurino, alto risco de troca de fala/voz/lip sync, deriva em vídeo longo ou limitações da plataforma. A duração de `20 segundos` é evidência de capacidade observada no Gemini, não uma duração canônica universal e não deve virar instrução fixa no corpo do prompt.
-- **Preservação:** esta decisão é um upgrade da pipeline e **não elimina nem substitui o conhecimento anterior**. As regras existentes de MASTER V02 própria, `Photorealistic / Warm Cinematic Realism`, prompt autossuficiente, simplificação controlada, continuidade visual, figurino, ambiente, relacionamento, fala, voz, lip sync e silêncio permanecem obrigatórias quando aplicáveis.
+- **Decisão:** adotar como padrão preferencial condicional a **avaliação narrativa multi-beat**: antes de dividir automaticamente microcenas conectadas, verificar se elas podem funcionar com maior fluidez como uma sequência contínua, desde que a ferramenta, a duração real, o elenco e o risco de fala/lip-sync permitam.
+- **Motivo:** os testes de S01E001 demonstraram que momentos causalmente ligados podem ficar mais fluidos quando tratados como uma sequência narrativa. Um arquivo final auditado de `20.010 s` contém dois momentos conectados e foi aprovado, mas a produção posterior mostrou que era incorreto inferir apenas desse resultado que o Gemini sempre oferece `20s` em uma geração única direta.
+- **Correção do registro inicial:** a formulação original desta decisão dizia que `20 segundos` eram uma capacidade observada de geração direta no Gemini. Essa parte foi promovida cedo demais. O que está objetivamente validado é a existência do arquivo final de `20.010 s` e o benefício narrativo do agrupamento; o mecanismo de origem (geração única, extensão, continuação ou sequência) não pode ser determinado somente pelo binário.
+- **Impacto:** o [TEMPLATE-MESTRE-VIDEO.md](../prompts/templates/TEMPLATE-MESTRE-VIDEO.md) deve avaliar beats narrativos antes da segmentação, mas não assumir duração nem mecanismo da plataforma sem validação. A exclusividade de fala continua controlada por beat quando aplicável; microclipes permanecem fallback.
+- **Preservação:** todas as regras anteriores de MASTER V02, `Photorealistic / Warm Cinematic Realism`, prompt autossuficiente, continuidade, fala, voz, lip sync, silêncio e simplificação controlada permanecem válidas.
+- **Status:** `APROVADO COM CORREÇÃO METODOLÓGICA` — interpretação técnica de duração corrigida por DEC-019.
+- **Evidência:** [aprendizados finais de S01E001](APRENDIZADOS-S01E001-VALIDACAO-FINAL-2026-08-29.md); [teste histórico](../producao/testes/TESTE-VIDEO-MULTIBEAT-GEMINI-S01E001-001.md).
+
+## DEC-019
+
+- **Data:** `2026-08-29`
+- **Decisão:** adotar a disciplina de validação `HIPÓTESE → EM TESTE → VALIDADO → decisão/template` para novos comportamentos de ferramentas e aprovar como regras operacionais desta rodada do Gemini: (a) anexar todas as MASTERs citadas no prompt; (b) em múltiplas referências, manter a ordem dos anexos alinhada à ordem dos nomes no prompt; (c) dimensionar diálogo para a duração real considerando emoção, pausas e reações; (d) não inferir mecanismo de geração apenas pela duração do arquivo final.
+- **Motivo:** durante S01E001, uma interpretação inicial sobre `20s` foi documentada antes de validação suficiente, enquanto um erro posterior do Gemini foi resolvido objetivamente ao completar e ordenar as MASTERs. O usuário determinou explicitamente que novos upgrades sejam validados antes de serem promovidos no repositório.
+- **Impacto:** [CHECKLIST-EPISODIO.md](../producao/CHECKLIST-EPISODIO.md), [prompts/README.md](../prompts/README.md) e os aprendizados finais passam a exigir separação entre fato observado e interpretação causal. A ordem das MASTERs é regra operacional específica do Gemini enquanto reproduzível, não regra universal de todas as ferramentas.
 - **Status:** `APROVADO`
-- **Evidência:** [LRN-015](APRENDIZADOS-DE-VIDEO.md#lrn-015--vídeo-contínuo-multi-beat-para-microcenas-encadeadas); [TESTE-VIDEO-MULTIBEAT-GEMINI-S01E001-001.md](../producao/testes/TESTE-VIDEO-MULTIBEAT-GEMINI-S01E001-001.md)
+- **Evidência:** [ERR-009](../producao/erros/ERR-009-GEMINI-MASTERS-AUSENTES-OU-FORA-DE-ORDEM.md); [SOL-009](../producao/solucoes/SOL-009-GEMINI-MASTERS-COMPLETAS-E-ORDENADAS.md); [aprendizados finais](APRENDIZADOS-S01E001-VALIDACAO-FINAL-2026-08-29.md).
+
+## DEC-020
+
+- **Data:** `2026-08-29`
+- **Decisão:** aprovar a versão curta final de `S01E001 — A Greve da Patrícia`, composta por cinco arquivos e montagem final de aproximadamente um minuto, e registrar sua publicação no TikTok oficial `@familiasilvahumor` em `2026-08-29`.
+- **Motivo:** o usuário revisou os cinco vídeos, aprovou a história, aprovou a montagem final e confirmou a publicação. A versão curta preserva o arco central com maior foco e ritmo, sem apagar a fonte histórica de 12 cenas/29 clipes.
+- **Impacto:** `S01E001` passa de episódio apenas importado/histórico para também possuir uma **versão publicada oficialmente aprovada**. A fonte histórica continua preservada e coexistente. A duração do episódio publicado não estabelece duração padrão para a série.
+- **Publicação:** descrição e hashtags finais registradas em [REDES-SOCIAIS.md](REDES-SOCIAIS.md), incluindo `#luisBoss` no lugar de `#GreveDaPatricia`.
+- **Status:** `APROVADO / PUBLICADO`
+- **Evidência:** [APROVACAO-S01E001-VERSAO-FINAL-PUBLICADA-001.md](../producao/aprovados/APROVACAO-S01E001-VERSAO-FINAL-PUBLICADA-001.md); [S01E001](../episodios/S01/S01E001-A-GREVE-DA-PATRICIA.md).
 
 ## Template de entrada
 
