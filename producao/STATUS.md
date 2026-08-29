@@ -14,6 +14,7 @@
 - Visual de Patrícia: `APROVADO / CANON VISUAL` — MASTER V02 PHOTOREALISTIC ingerida em `2026-08-28`, resolvendo a pendência histórica.
 - Vozes: `A DEFINIR` como MASTER vocal formal; vídeos aprovados podem conter vozes funcionais sem promovê-las automaticamente a Voice Master. A música-tema oficial (`ASSET-SERIES-002`) **não** altera isto — seus intérpretes são neutros.
 - Música-tema / identidade sonora: `CONCLUÍDA / APROVADA` em `2026-08-29` — primeira música oficial da série, `ASSET-SERIES-002`, arquivo `AUD-FAMILIA-SILVA-TEMA-V01.wav`, `CURRENT CANON / MASTER`; criada no Google Flow Music; ver [DEC-021](../docs/DECISOES.md#dec-021), [manifesto de áudio](../assets/audio/README.md) e [aprovação](aprovados/APROVACAO-MUSICA-TEMA-FAMILIA-SILVA-001.md). Seis faixas anteriores da sessão: `EXPERIMENTAL / HISTÓRICO`. Transcrição literal da letra: `PENDENTE`.
+- Videoclipe da música-tema: `APROVADO / PUBLICADO` no TikTok em `2026-08-29` — arquivo `FAMILIA-SILVA-VIDEOCLIPE-OFICIAL-V01.mp4`, `177.258000 s`, MP4 H.264 `720x1280`, `24 fps`, áudio AAC estéreo `48 kHz`, SHA-256 `7c66249f3dd61a83bdb6e7e1a23f8a009b9d750d4d6ab6669f420a307a8dfc61`; ver [aprovação/publicação](aprovados/APROVACAO-VIDEOCLIPE-TEMA-FAMILIA-SILVA-001.md) e [REDES-SOCIAIS.md](../docs/REDES-SOCIAIS.md). O binário do clipe ainda não está versionado no Git; a identidade está preservada documentalmente por metadados e hash.
 - Assets MASTER no repositório: as sete imagens `V01` do elenco inicial foram versionadas e catalogadas pela [DEC-014](../docs/DECISOES.md#dec-014); as sete imagens `V02 PHOTOREALISTIC` foram versionadas e promovidas a `CURRENT CANON` pela [DEC-015](../docs/DECISOES.md#dec-015).
 - Validação em vídeo das MASTERs V02: `CONCLUÍDA` para os 7 personagens em `2026-08-28` — um vídeo individual de apresentação por personagem no Google Flow, todos aprovados pelo usuário.
 - Imagem institucional de perfil: `APROVADA PARA USO EM PERFIS` em `2026-08-29` — `ASSET-SERIES-001`, arquivo `IMG-FAMILIA-SILVA-PERFIL-V01.png`; ver [DEC-016](../docs/DECISOES.md#dec-016).
@@ -25,6 +26,7 @@
 - Canal oficial TikTok: `CONFIGURADO / EM PUBLICAÇÃO` — `@familiasilvahumor`.
 - Primeira publicação de episódio: `S01E001 PUBLICADO` no TikTok em `2026-08-29`, com descrição e hashtags finais registradas em [REDES-SOCIAIS.md](../docs/REDES-SOCIAIS.md).
 - Hashtags da publicação de S01E001: `#FamiliaSilva #HumorBrasileiro #FamiliaBrasileira #luisBoss #ComediaBrasileira`.
+- Publicação do videoclipe oficial: `PUBLICADO` no TikTok em `2026-08-29`, com descrição final e hashtags `#FamiliaSilva #HumorBrasileiro #ComediaBrasileira #FamiliaBrasileira #luisBoss` registradas em [REDES-SOCIAIS.md](../docs/REDES-SOCIAIS.md).
 - Cenários: casa principal descrita em nível de episódio (S01E001), `PENDENTE DE PROMOÇÃO A CENÁRIO CANÔNICO REUTILIZÁVEL` em `cenarios/oficiais/`.
 - Temporadas: além de S01E001, estrutura futura `A DEFINIR`.
 
@@ -37,7 +39,8 @@
 5. Aprovar e registrar a voz de cada personagem separadamente, se for desejado criar Voice Masters formais.
 6. Definir cidade, época, duração padrão de episódio e público. O TikTok já é canal oficial; outras plataformas continuam `A DEFINIR`.
 7. Manter a fonte histórica de S01E001 preservada e usar a versão curta publicada como referência de edição, ritmo e compressão narrativa — sem apagar subtramas históricas.
-8. Para futuros episódios, registrar após publicação: arquivo final, metadata/hash quando disponível, descrição, hashtags e data/plataforma.
+8. Para futuros episódios ou assets publicados, registrar após publicação: arquivo final, metadata/hash quando disponível, descrição, hashtags e data/plataforma.
+9. Se o videoclipe publicado for futuramente ingerido no repositório ou em armazenamento oficial, conferir o SHA-256 documentado antes de tratá-lo como o mesmo binário; qualquer alteração deve receber nova versão.
 
 ## Limite
 
