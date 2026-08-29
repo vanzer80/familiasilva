@@ -104,6 +104,19 @@ Hipóteses são identificadas como hipóteses. Campos sem evidência permanecem 
 - **Limite:** este fallback deve ser usado apenas quando esse bloqueio específico de "pessoa famosa" ocorrer. Não é uma obrigação universal para todo prompt; prompts sem esse bloqueio continuam seguindo o template enxuto padrão de [TEMPLATE-MESTRE-VIDEO.md](../prompts/templates/TEMPLATE-MESTRE-VIDEO.md).
 - **Status:** `VALIDADO` como procedimento de fallback nos três casos desta rodada (`2026-08-28`); a causa interna do classificador do Flow permanece desconhecida.
 
+### LRN-015 — Vídeo contínuo multi-beat para microcenas encadeadas
+
+- **Observação:** em `2026-08-29`, a geração de vídeo do Gemini permitiu ao usuário reunir duas microcenas consecutivas em um único vídeo de aproximadamente `20 segundos`: Marcos perguntando a Patrícia pela pasta e, em seguida, Dudu perguntando pela camiseta. Segundo avaliação direta do usuário, a transição entre os dois momentos ficou muito mais fluida do que a montagem de microclipes independentes.
+- **Validação adicional:** um segundo teste reuniu, num único prompt contínuo, a declaração da greve de Patrícia e a consequência imediata para Marcos procurando a chave reserva. O usuário avaliou o resultado como muito bom e aprovou a adoção do método para as próximas gerações.
+- **Solução:** antes de dividir automaticamente o roteiro em um vídeo por microcena, avaliar se duas ou mais microcenas podem ser organizadas como `beats` dentro de um único vídeo contínuo. Priorizar o formato multi-beat quando os momentos forem causal ou emocionalmente encadeados, compartilhem ambiente/bloco temporal/figurino e tenham atribuição de fala controlável.
+- **Regra de fala em multi-beat:** `LRN-011` continua válido. A exclusividade de fala pode ser aplicada por beat: em cada beat, deixar explícito quem fala e quem permanece silencioso. Não interpretar multi-beat como permissão para diálogo descontrolado ou sobreposição de vozes.
+- **Continuidade:** o prompt deve descrever a progressão cronológica e emocional entre os beats e preservar as mesmas regras já consolidadas de MASTER própria, `Photorealistic / Warm Cinematic Realism`, Character/Costume/Environment/Relationship Continuity, speaking, voice, lip sync e silêncio.
+- **Duração:** `20 segundos` é uma capacidade observada no teste do Gemini, não uma duração canônica nem universal. A duração deve ser definida na ferramenta disponível e não escrita como requisito fixo no corpo do prompt, salvo necessidade específica da plataforma.
+- **Fallback:** voltar a microclipes quando houver mudança grande de ambiente/tempo/figurino, excesso de personagens ou ações, risco alto de troca de fala/voz/lip sync, deriva visual/narrativa no vídeo longo, limitação da plataforma ou resultado inferior ao formato curto.
+- **Preservação de conhecimento:** este upgrade complementa, e não revoga, a pipeline anterior. Microclipes permanecem um método válido e um fallback importante.
+- **Evidência:** [TESTE-VIDEO-MULTIBEAT-GEMINI-S01E001-001.md](../producao/testes/TESTE-VIDEO-MULTIBEAT-GEMINI-S01E001-001.md).
+- **Status:** `VALIDADO COMO PADRÃO PREFERENCIAL CONDICIONAL` pela [DEC-018](DECISOES.md#dec-018).
+
 ## Estado dos casos conhecidos
 
 **Nota de reconciliação (`2026-08-28`, [DEC-013](DECISOES.md#dec-013)):** a coluna "Estado visual registrado" abaixo preserva o rótulo original de cada teste, como aprendizado histórico. O **status canônico vigente** de Marcos, Dona Célia, Patrícia, Sr. Antônio, Beto e Dudu foi reconciliado para aprovação plena de canon visual (ver as fichas em `personagens/oficiais/` e a tabela em [CONTINUIDADE.md](CONTINUIDADE.md)); os aprendizados e limites técnicos desta tabela continuam válidos e devem orientar novos prompts, mas não representam mais o status de aprovação atual.
