@@ -23,6 +23,13 @@
 
 Detalhes, evidências e limitações estão em [APRENDIZADOS-DE-VIDEO.md](APRENDIZADOS-DE-VIDEO.md) e [APRENDIZADOS-S01E001-VALIDACAO-FINAL-2026-08-29.md](APRENDIZADOS-S01E001-VALIDACAO-FINAL-2026-08-29.md).
 
+## Identidade sonora canônica
+
+- **Música-tema oficial:** `ASSET-SERIES-002` — `AUD-FAMILIA-SILVA-TEMA-V01.wav`, `CURRENT CANON / MASTER` desde `2026-08-29` ([DEC-021](DECISOES.md#dec-021)).
+- **Direção:** samba-pop brasileiro contemporâneo com influência leve de pagode-pop e MPB contemporânea, instrumentação orgânica, clima caloroso e brincalhão; voz principal masculina adulta e backing vocals mistos no refrão. Hook: `"Família Silva, é assim"`.
+- **Limite:** a música-tema é identidade da série e **não** define a voz canônica de nenhum personagem; os intérpretes são neutros. Vozes individuais permanecem `A DEFINIR`.
+- **Detalhes técnicos, proveniência, conceito completo e histórico das versões experimentais:** [assets/audio/README.md](../assets/audio/README.md).
+
 ## Episódios publicados
 
 ### S01E001 — A Greve da Patrícia

@@ -12,7 +12,8 @@
 - Visual de Carol: `APROVADO VISUALMENTE`.
 - Visual de Marcos, Dona Célia, Beto, Sr. Antônio e Dudu: `APROVADO / CANON VISUAL` (reconciliado pela [DEC-013](../docs/DECISOES.md#dec-013) em `2026-08-28`).
 - Visual de Patrícia: `APROVADO / CANON VISUAL` — MASTER V02 PHOTOREALISTIC ingerida em `2026-08-28`, resolvendo a pendência histórica.
-- Vozes: `A DEFINIR` como MASTER vocal formal; vídeos aprovados podem conter vozes funcionais sem promovê-las automaticamente a Voice Master.
+- Vozes: `A DEFINIR` como MASTER vocal formal; vídeos aprovados podem conter vozes funcionais sem promovê-las automaticamente a Voice Master. A música-tema oficial (`ASSET-SERIES-002`) **não** altera isto — seus intérpretes são neutros.
+- Música-tema / identidade sonora: `CONCLUÍDA / APROVADA` em `2026-08-29` — primeira música oficial da série, `ASSET-SERIES-002`, arquivo `AUD-FAMILIA-SILVA-TEMA-V01.wav`, `CURRENT CANON / MASTER`; criada no Google Flow Music; ver [DEC-021](../docs/DECISOES.md#dec-021), [manifesto de áudio](../assets/audio/README.md) e [aprovação](aprovados/APROVACAO-MUSICA-TEMA-FAMILIA-SILVA-001.md). Seis faixas anteriores da sessão: `EXPERIMENTAL / HISTÓRICO`. Transcrição literal da letra: `PENDENTE`.
 - Assets MASTER no repositório: as sete imagens `V01` do elenco inicial foram versionadas e catalogadas pela [DEC-014](../docs/DECISOES.md#dec-014); as sete imagens `V02 PHOTOREALISTIC` foram versionadas e promovidas a `CURRENT CANON` pela [DEC-015](../docs/DECISOES.md#dec-015).
 - Validação em vídeo das MASTERs V02: `CONCLUÍDA` para os 7 personagens em `2026-08-28` — um vídeo individual de apresentação por personagem no Google Flow, todos aprovados pelo usuário.
 - Imagem institucional de perfil: `APROVADA PARA USO EM PERFIS` em `2026-08-29` — `ASSET-SERIES-001`, arquivo `IMG-FAMILIA-SILVA-PERFIL-V01.png`; ver [DEC-016](../docs/DECISOES.md#dec-016).

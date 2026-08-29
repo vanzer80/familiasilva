@@ -184,6 +184,17 @@ As decisões DEC-007 a DEC-012 abaixo foram originalmente registradas, na mesma 
 - **Status:** `APROVADO / PUBLICADO`
 - **Evidência:** [APROVACAO-S01E001-VERSAO-FINAL-PUBLICADA-001.md](../producao/aprovados/APROVACAO-S01E001-VERSAO-FINAL-PUBLICADA-001.md); [S01E001](../episodios/S01/S01E001-A-GREVE-DA-PATRICIA.md).
 
+## DEC-021
+
+- **Data:** `2026-08-29`
+- **Decisão:** adotar como **primeira música oficial / tema musical da série Família Silva** a faixa aprovada pelo usuário, registrada como asset `ASSET-SERIES-002`, arquivo `AUD-FAMILIA-SILVA-TEMA-V01.wav` (`V01`), versionada em `assets/audio/tema/`. Status: `CURRENT CANON — MASTER`.
+- **Motivo:** a música foi criada e refinada numa sessão de experimentação no **Google Flow Music** em `2026-08-29`. O usuário ouviu as versões produzidas e aprovou explicitamente a versão final, declarando que gostou dela e que não deseja continuar buscando aperfeiçoamentos. Princípio de produção declarado: o objetivo não é perseguir perfeição indefinidamente; a faixa aprovada já cumpre satisfatoriamente sua função de identidade musical da Família Silva. A decisão é final para o estado atual do projeto.
+- **Arquivo aprovado:** o arquivo experimental de origem chamava-se `Família Silva - Title Card Sting.wav`; apesar do nome, é a faixa completa (~2 min 57 s), não um sting curto. Metadados verificados: WAV PCM `s16le`, `48000 Hz`, `2` canais, `16-bit`, `177.258667 s`, `34046710` bytes, SHA-256 `6dcd5d835258d6d67c0ab81b7eadfb2db003c8aef9b83a955c69cbfac478d30f`. Renomeada por cópia byte a byte, sem reencode ou recompressão.
+- **Impacto:** a série passa a ter uma identidade sonora canônica registrada em [assets/audio/README.md](../assets/audio/README.md) e referenciada em [BIBLIA-DA-SERIE.md](BIBLIA-DA-SERIE.md). As seis faixas anteriores da sessão (`Família Silva.wav`, `Família Silva (1).wav`, `Família Silva (V02).wav`, `Família Silva (V02) (1).wav`, `Família Silva - Hook Experiment A.wav`, `Família Silva - Hook Experiment B.wav`) permanecem `EXPERIMENTAL / HISTÓRICO` — **não** `REJEITADO` — catalogadas com SHA-256 no manifesto; seus binários não foram versionados por tamanho e ficam preservados na origem. A letra longa inicialmente planejada **não** é registrada como "letra oficial executada integralmente"; o hook aprovado é `"Família Silva, é assim"` e a transcrição literal da faixa permanece `PENDENTE`.
+- **Limite explícito:** esta música **não define, não aprova e não sugere** a voz canônica de Marcos, Patrícia ou de qualquer personagem. Os intérpretes da faixa são neutros. Vozes individuais continuam `A DEFINIR` até aprovação específica, conforme [DEC-006](DECISOES.md#dec-006), [DEC-010](DECISOES.md#dec-010) e [CONTINUIDADE.md](CONTINUIDADE.md). Nenhuma personalidade, relação, imagem MASTER, rendering ou decisão narrativa é alterada.
+- **Status:** `APROVADO`
+- **Evidência:** [APROVACAO-MUSICA-TEMA-FAMILIA-SILVA-001.md](../producao/aprovados/APROVACAO-MUSICA-TEMA-FAMILIA-SILVA-001.md); [registro da sessão](../producao/testes/TESTE-AUDIO-MUSICA-TEMA-SERIE-001.md); [manifesto de áudio](../assets/audio/README.md); arquivo experimental de origem em `C:\Users\vanze\OneDrive\Documentos\Downloads\Família Silva - Title Card Sting.wav`.
+
 ## Template de entrada
 
 ### DEC-XXX

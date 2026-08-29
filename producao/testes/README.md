@@ -20,5 +20,6 @@ Todo resultado de IA entra inicialmente aqui. Registrar ferramenta, configuraç�
 | [TESTE-VIDEO-CAROL-CHAR-006-002.md](TESTE-VIDEO-CAROL-CHAR-006-002.md) | Carol | `APROVADA` (V02 PHOTOREALISTIC, apresentação) |
 | [TESTE-REFERENCIA-DUDU-CHAR-007-001.md](TESTE-REFERENCIA-DUDU-CHAR-007-001.md) | Dudu | `AJUSTE NECESSÁRIO` (referência V01, não vídeo) |
 | [TESTE-VIDEO-DUDU-CHAR-007-001.md](TESTE-VIDEO-DUDU-CHAR-007-001.md) | Dudu | `APROVADO` (V02 PHOTOREALISTIC, apresentação; ver `ERR-008`/`SOL-008`) |
+| [TESTE-AUDIO-MUSICA-TEMA-SERIE-001.md](TESTE-AUDIO-MUSICA-TEMA-SERIE-001.md) | série (música-tema) | `APROVADA` — faixa final promovida a `ASSET-SERIES-002` / MASTER ([DEC-021](../../docs/DECISOES.md#dec-021)); 6 faixas anteriores `EXPERIMENTAL / HISTÓRICO` |
 
 Os registros históricos não recuperados integralmente mantêm prompt, asset ou configuração exata como `A DEFINIR`; esses campos não podem ser reconstruídos por suposição. Os registros `-002` (e `-001` de Dudu, primeiro teste de **vídeo** dele) documentam a rodada de validação das MASTERs V02 PHOTOREALISTIC em `2026-08-28`; não substituem nem apagam os registros anteriores da V01.

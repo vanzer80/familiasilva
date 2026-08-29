@@ -101,3 +101,9 @@ Objetos recorrentes devem registrar nome, local, dono/usuário, episódios e reg
 ## Voz e personalidade
 
 Cada voz futura deve ter versão, fonte, ritmo, vínculo exclusivo, teste e aprovação específica. A personalidade e os limites de comportamento continuam definidos nos documentos canônicos, mesmo quando a voz ainda está `A DEFINIR`.
+
+A música-tema oficial da série (`ASSET-SERIES-002` — [DEC-021](DECISOES.md#dec-021)) usa intérpretes vocais neutros e **não** estabelece a voz canônica de Marcos, Patrícia nem de qualquer personagem. A coluna `Voz` da tabela acima permanece `A DEFINIR` para os sete personagens.
+
+## Identidade sonora
+
+A música-tema oficial é `ASSET-SERIES-002`, arquivo `AUD-FAMILIA-SILVA-TEMA-V01.wav`, `CURRENT CANON / MASTER` desde `2026-08-29`. Detalhes técnicos, proveniência (Google Flow Music) e histórico das versões experimentais em [../assets/audio/README.md](../assets/audio/README.md). Novas versões da música exigem numeração própria e nova aprovação.

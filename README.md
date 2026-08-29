@@ -30,6 +30,7 @@ Não presuma que ausência de informação autoriza invenção.
 ## Decisões audiovisuais vigentes
 
 - Rendering canônico: `Photorealistic / Warm Cinematic Realism`.
+- Música-tema oficial: `ASSET-SERIES-002` (`AUD-FAMILIA-SILVA-TEMA-V01.wav`), `CURRENT CANON / MASTER`; não define a voz de nenhum personagem.
 - Cada prompt deve ser autossuficiente.
 - Cada personagem usa exclusivamente sua própria imagem MASTER ou referência aprovada.
 - Sr. Antônio e Beto são referências metodológicas de prompt e rendering, nunca referências faciais de outros personagens.
@@ -104,6 +105,7 @@ O repositório está reconciliado e concentra hoje a maior parte do conhecimento
 - rendering canônico definido;
 - arquitetura mestre de prompts de vídeo aprovada;
 - base de erros, soluções, testes e aprendizados populada;
+- primeira música-tema oficial da série aprovada em `2026-08-29` (`ASSET-SERIES-002` / `AUD-FAMILIA-SILVA-TEMA-V01.wav`, `CURRENT CANON / MASTER`, origem Google Flow Music); versões experimentais anteriores preservadas como histórico documental; ver [DEC-021](docs/DECISOES.md#dec-021) e [manifesto de áudio](assets/audio/README.md);
 - `S01E001 — A Greve da Patrícia` importado, com roteiro completo, 12 cenas, 29 clipes, prompts originais e bíblia visual histórica;
 - Cena 2B documentada com roteiro e prompt original, mantendo pendente apenas a versão revisada/aprovada exata e detalhes não recuperados;
 - cozinha, sala e quarto do casal descritos no Episódio 1, ainda não necessariamente promovidos a cenários canônicos reutilizáveis;
