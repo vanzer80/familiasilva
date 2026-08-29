@@ -14,6 +14,9 @@ IDs sao permanentes e nao devem ser reutilizados. O numero sequencial deve usar 
 | Prompt de personagem | `PROMPT-CHAR-001-VIDEO-001` | `PROMPT-CHAR-001-VIDEO-001` |
 | Prompt de cena | `PROMPT-S01E001-C01-V01` | `PROMPT-S01E001-C01-V01` |
 | Imagem | `IMG-CHAR-001-MASTER-V01` | `IMG-CHAR-001-MASTER-V01` |
+| Imagem institucional da série | `IMG-FAMILIA-SILVA-PERFIL-V01` | `IMG-FAMILIA-SILVA-PERFIL-V01` |
+| Asset institucional da série | `ASSET-SERIES-001` | `ASSET-SERIES-001` |
+| Prompt institucional de imagem | `PROMPT-SERIES-IMAGE-001` | `PROMPT-SERIES-IMAGE-001` |
 | Video | `VID-S01E001-C01-V01` | `VID-S01E001-C01-V01` |
 | Audio | `AUD-CHAR-001-V01` | `AUD-CHAR-001-V01` |
 | Teste | `TEST-VIDEO-CHAR-001-001` | `TEST-VIDEO-CHAR-001-001` |

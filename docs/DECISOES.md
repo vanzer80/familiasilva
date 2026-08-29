@@ -136,6 +136,15 @@ As decisões DEC-007 a DEC-012 abaixo foram originalmente registradas, na mesma 
 - **Status:** `APROVADO`
 - **Evidência:** [MANIFESTO-MESTRES.md](../assets/personagens/mestres/MANIFESTO-MESTRES.md); pacote de origem `G:\Meu Drive\familia_silva\FAMILIA-SILVA-MASTERS-V02-PHOTOREALISTIC`
 
+## DEC-016
+
+- **Data:** `2026-08-29`
+- **Decisão:** aprovar `ASSET-SERIES-001`, arquivo `IMG-FAMILIA-SILVA-PERFIL-V01.png`, como imagem institucional `V01` para os perfis oficiais da Família Silva no Instagram, Facebook, TikTok, YouTube e X.
+- **Motivo:** estabelecer uma identidade visual única e reconhecível desde a criação dos perfis, reunindo o elenco fixo no rendering canônico `Photorealistic / Warm Cinematic Realism` e mantendo os sete rostos legíveis no recorte circular usado pelas plataformas.
+- **Impacto:** o mesmo PNG quadrado deve ser usado em todas as redes, sem filtro, texto, logo, borda ou máscara circular pré-renderizada. A composição é um asset institucional; não substitui, altera ou promove qualquer rosto nela a nova imagem MASTER. As sete MASTERs V02 individuais permanecem as referências faciais primárias para novas gerações.
+- **Status:** `APROVADO PARA USO EM PERFIS`
+- **Evidência:** [registro de aprovação](../producao/aprovados/APROVACAO-IMAGEM-PERFIL-FAMILIA-SILVA-001.md); [manifesto do asset](../assets/logos/perfis/README.md); [prompt executado](../prompts/imagem/PROMPT-SERIES-IMAGE-001.md)
+
 ## Template de entrada
 
 ### DEC-XXX
