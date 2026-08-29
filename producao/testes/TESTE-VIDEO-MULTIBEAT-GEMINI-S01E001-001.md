@@ -1,41 +1,57 @@
-# TESTE — Vídeo multi-beat contínuo no Gemini — S01E001
+# TESTE — Arquitetura multi-beat / Gemini — S01E001
 
 - **Data:** `2026-08-29`
 - **Episódio:** `S01E001 — A Greve da Patrícia`
 - **Ferramenta:** Gemini, opção de geração de vídeo
 - **Modelo exato:** `A DEFINIR`
-- **Configuração exata além da duração observada:** `A DEFINIR`
-- **Status:** `APROVADO COMO EVIDÊNCIA DE ARQUITETURA DE GERAÇÃO`; não aprova automaticamente voz, mídia final, modelo ou duração universal
+- **Status atual:** `VALIDADO COMO EVIDÊNCIA NARRATIVA; MECANISMO DE 20s NÃO DETERMINADO`
 
-## Objetivo
+## Objetivo original
 
-Testar se duas microcenas narrativamente contíguas podem ser geradas dentro de um único vídeo mais longo, preservando as continuidades já aprendidas no projeto e reduzindo a sensação de cortes fragmentados entre cenas que pertencem ao mesmo momento dramático.
+Testar se microcenas narrativamente contíguas poderiam ser tratadas como uma sequência mais fluida, preservando as continuidades já aprendidas no projeto e reduzindo a sensação de cortes fragmentados.
 
 ## Teste 1 — Marcos + Patrícia → Dudu + Patrícia
 
-O usuário informou que a opção de geração de vídeo do Gemini permitiu gerar um vídeo de `20 segundos` e reuniu, na mesma geração, dois beats consecutivos do episódio:
+O usuário produziu um resultado que reuniu dois beats consecutivos:
 
 1. Marcos pergunta a Patrícia pela pasta azul.
 2. Em seguida, Dudu pergunta a Patrícia pela camiseta preta.
 
-Patrícia participa dos dois beats, e as duas ações pertencem ao mesmo momento doméstico da manhã.
+Segundo avaliação direta do usuário, a transição entre os momentos ficou muito mais fluida.
 
-### Resultado observado
+### Auditoria posterior
 
-Segundo avaliação direta do usuário, a transição entre as duas cenas ficou **muito mais fluida** quando gerada no mesmo vídeo.
+O arquivo final correspondente, recebido e auditado nesta sessão como `1(1).mp4`, possui:
 
-O prompt exato usado pelo usuário neste primeiro teste não foi importado para o repositório e permanece `PENDENTE DE IMPORTAÇÃO DA FONTE APROVADA`. Não reconstruir esse texto por suposição.
+- duração: `20.010 s`;
+- resolução: `720x1280`;
+- frame rate: `24 fps`;
+- vídeo: H.264;
+- áudio: AAC estéreo `48 kHz`;
+- SHA-256: `94eda5b740c994d78885b2e0b52f3c8be38c3997c0c672053865038b6e922f3d`.
+
+### Correção de interpretação
+
+A primeira versão deste registro afirmou que o Gemini havia produzido diretamente `20 segundos` em uma única geração. Essa formulação foi feita cedo demais.
+
+Posteriormente, o próprio usuário levantou a possibilidade de ter produzido uma sequência/continuação. A existência do arquivo de `20.010 s` é fato; **o binário não permite determinar sozinho se sua origem foi geração única, extensão, continuação ou sequência na interface**.
+
+Portanto:
+
+- `20.010 s` do arquivo final = `CONFIRMADO`;
+- benefício narrativo da sequência = `APROVADO`;
+- “Gemini gera 20s diretamente em uma única geração nesse fluxo” = `NÃO COMPROVADO`.
+
+O prompt exato usado pelo usuário neste primeiro resultado não foi importado para o repositório e permanece `PENDENTE DE IMPORTAÇÃO DA FONTE APROVADA`.
 
 ## Teste 2 — Patrícia declara a greve → Marcos sente a consequência
 
-Foi então construído um prompt único para dois beats diretamente causais:
+Foi construído um prompt único com dois beats diretamente causais:
 
-1. Patrícia chega ao limite e declara a greve doméstica diante de Marcos e Dudu.
-2. Mais tarde na mesma manhã, Marcos procura a chave reserva, pede uma exceção e percebe que Patrícia está realmente mantendo a greve.
+1. Patrícia declara a greve diante de Marcos e Dudu.
+2. Marcos procura a chave reserva e percebe que a greve terá consequência real.
 
-O prompt foi estruturado como **um vídeo contínuo com dois beats dramático-cômicos conectados**, preservando MASTERs próprias, rendering canônico, ambiente doméstico, progressão emocional, atribuição de fala e silêncio por beat.
-
-### Prompt usado no segundo teste
+O prompt de teste foi:
 
 ```text
 Use the uploaded master images of Patrícia, Marcos and Dudu as visual references and preserve their established appearance consistently.
@@ -51,54 +67,44 @@ Then, without abrupt interruption, continue naturally into the second beat later
 The emotional progression must be very clear: first Patrícia explodes after accumulated frustration, then Marcos experiences the first real consequence of depending on her for everyday problems. The comedy should come from the truth of the family dynamic, not exaggerated acting. Keep performances natural, grounded and believable. Use subtle domestic ambience only. No music, subtitles, captions, logos or visible text.
 ```
 
-### Resultado observado
+O resultado foi inicialmente avaliado pelo usuário como muito bom. Em teste posterior com outra combinação de duas cenas dentro de um arquivo de aproximadamente `10.005 s`, parte do diálogo foi cortada, demonstrando que **a arquitetura multi-beat só funciona quando a duração real comporta fala, ação, emoção e reação**.
 
-Após a geração, o usuário avaliou o resultado como **"bom demais"** e pediu que o padrão fosse documentado e passasse a orientar as próximas gerações.
+## Aprendizado corrigido
 
-A duração binária do segundo resultado, o arquivo final e seus metadados ainda não foram auditados neste repositório. Portanto, não afirmar que todo resultado multi-beat terá exatamente 20 segundos nem que toda plataforma oferece a mesma janela.
+Quando duas ou mais microcenas são diretamente causais ou emocionalmente encadeadas, vale avaliar uma sequência contínua porque isso pode melhorar fluidez. Porém:
 
-## Aprendizado validado
+- não presumir duração disponível;
+- não presumir que um arquivo longo veio de uma única geração direta;
+- medir a quantidade de fala pela janela real;
+- voltar a microclipes ou usar uma continuação realmente suportada quando necessário.
 
-Quando duas ou mais microcenas:
+## Aprendizado adicional de referências
 
-- são diretamente causais ou emocionalmente encadeadas;
-- compartilham o mesmo ambiente ou uma transição simples dentro do mesmo núcleo;
-- preservam o mesmo bloco temporal e figurino;
-- têm elenco controlável e falas claramente atribuídas por beat;
+Durante a mesma rodada, uma geração falhou porque nem todas as MASTERs pedidas estavam anexadas. Depois de anexar o conjunto completo, a geração funcionou. O usuário também validou que, no Gemini multi-reference, a ordem dos anexos deve acompanhar a ordem dos nomes no prompt para reduzir inversões de papel/fala.
 
-é preferível **avaliar primeiro a geração como um vídeo contínuo multi-beat**, em vez de dividir automaticamente cada microcena em um vídeo separado.
+Ver [ERR-009](../erros/ERR-009-GEMINI-MASTERS-AUSENTES-OU-FORA-DE-ORDEM.md) e [SOL-009](../solucoes/SOL-009-GEMINI-MASTERS-COMPLETAS-E-ORDENADAS.md).
 
 ## Preservação do conhecimento anterior
 
-Este teste **não revoga** nenhum aprendizado anterior:
+Continuam válidos:
 
-- a arquitetura de microclipes continua válida como fallback;
-- `LRN-011` continua válido: o risco de troca de fala deve ser reduzido; em multi-beat, a atribuição de fala passa a ser controlada **por beat**, não necessariamente por vídeo inteiro;
-- MASTER V02 própria de cada personagem continua obrigatória;
-- `Photorealistic / Warm Cinematic Realism` continua obrigatório;
-- continuidade de personagem, figurino, ambiente, relacionamento, fala, voz, lip sync e silêncio continuam válidas;
-- simplificação controlada do prompt continua válida;
-- duração continua sendo configurada na ferramenta e não deve virar regra fixa escrita no corpo do prompt.
-
-## Critério de fallback para microclipes
-
-Dividir novamente em vídeos menores quando houver:
-
-- mudança grande de ambiente, tempo ou figurino;
-- excesso de personagens ou ações concorrentes;
-- diálogo sobreposto ou risco alto de troca de fala/voz/lip sync;
-- deriva visual ou narrativa no vídeo mais longo;
-- incompatibilidade da plataforma com a duração necessária;
-- resultado inferior ao obtido com microclipes.
+- microclipes como fallback;
+- `LRN-011` para controle de falantes;
+- MASTER V02 própria de cada personagem;
+- `Photorealistic / Warm Cinematic Realism`;
+- continuidade de personagem, figurino, ambiente, relacionamento, fala, voz, lip sync e silêncio;
+- simplificação controlada;
+- duração tratada como configuração real da ferramenta, não como pressuposto textual.
 
 ## Dimensão aprovada
 
-`ARQUITETURA DE GERAÇÃO / CONTINUIDADE NARRATIVA ENTRE BEATS`.
+`ARQUITETURA NARRATIVA / CONTINUIDADE ENTRE BEATS`, condicionada à duração e à ferramenta.
 
-Este registro não canoniza voz, duração universal, modelo específico do Gemini ou um arquivo final de episódio.
+Não está aprovado neste registro um mecanismo universal de geração direta de `20s` no Gemini.
 
 ## Referências
 
 - [TEMPLATE-MESTRE-VIDEO.md](../../prompts/templates/TEMPLATE-MESTRE-VIDEO.md)
 - [APRENDIZADOS-DE-VIDEO.md](../../docs/APRENDIZADOS-DE-VIDEO.md)
-- [DEC-018](../../docs/DECISOES.md#dec-018)
+- [APRENDIZADOS-S01E001-VALIDACAO-FINAL-2026-08-29.md](../../docs/APRENDIZADOS-S01E001-VALIDACAO-FINAL-2026-08-29.md)
+- [DEC-018 / DEC-019](../../docs/DECISOES.md)
