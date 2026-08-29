@@ -8,5 +8,6 @@ Materiais e padrões com aprovação explícita. Cada registro declara exatament
 | [REFERENCIAS-METODOLOGICAS-ANTONIO-BETO.md](REFERENCIAS-METODOLOGICAS-ANTONIO-BETO.md) | método e rendering, não face |
 | [APROVACAO-VISUAL-CAROL-CHAR-006-001.md](APROVACAO-VISUAL-CAROL-CHAR-006-001.md) | dimensão visual do primeiro teste de Carol |
 | [APROVACAO-IMAGEM-PERFIL-FAMILIA-SILVA-001.md](APROVACAO-IMAGEM-PERFIL-FAMILIA-SILVA-001.md) | imagem institucional V01 para os perfis oficiais da série |
+| [APROVACAO-S01E001-VERSAO-FINAL-PUBLICADA-001.md](APROVACAO-S01E001-VERSAO-FINAL-PUBLICADA-001.md) | versão curta final de S01E001, montagem de cinco arquivos, binário final e publicação no TikTok |
 
 Um registro aprovado não promove automaticamente o arquivo de mídia a MASTER. O asset precisa ser versionado e vinculado na ficha correspondente.
