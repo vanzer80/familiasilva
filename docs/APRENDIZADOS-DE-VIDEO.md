@@ -93,29 +93,86 @@ Hipóteses são identificadas como hipóteses. Campos sem evidência permanecem 
 - **Observação:** as MASTERs originais (`V01`) tinham visual estilizado/3D. Historicamente, essas mesmas referências conseguiram, em alguns casos, gerar vídeos fotorrealistas no Flow — não é verdade que uma referência estilizada/3D nunca consiga produzir fotorrealismo. Porém, em testes recentes, com diferentes arquiteturas de prompt e configurações/modelos do Flow, ocorreram repetidamente resultados em 3D/cartoon mesmo com prompts solicitando explicitamente `Photorealistic / Warm Cinematic Realism`. O comportamento não se mostrou suficientemente estável para garantir reprodução consistente do live-action a partir de referências estilizadas.
 - **Não registrar como regra absoluta:** "uma imagem 3D nunca consegue gerar vídeo fotorealista" é falso segundo os testes históricos e não deve ser usado como justificativa.
 - **Solução:** criar e adotar MASTERs `V02 PHOTOREALISTIC` para os sete personagens, alinhando a referência visual de entrada ao rendering desejado dos vídeos. Referências estilizadas/3D podem gerar fotorrealismo em alguns casos, mas demonstraram comportamento instável; MASTERs fotorrealistas reduzem o conflito entre referência visual e estilo de rendering desejado e passam a ser o padrão recomendado (`CURRENT CANON`). As V01 permanecem preservadas como histórico e como referência metodológica de identidade, mas não devem ser escolhidas automaticamente para novas gerações.
-- **Validação adicional (`2026-08-28`):** as sete MASTERs V02 PHOTOREALISTIC foram usadas para gerar vídeos individuais de apresentação no Google Flow, um por personagem. As sete gerações apresentaram o rendering `Photorealistic / Warm Cinematic Realism` esperado, sem cartoon/3D/CGI, com identidade visual considerada consistente com a respectiva MASTER V02; o usuário aprovou as sete. Três delas (Dudu, Sr. Antônio, Beto) precisaram de reformulação de compliance antes de gerar com sucesso — não por falha de rendering ou de identidade, mas por um bloqueio de possível "pessoa famosa" (ver [LRN-014](#lrn-014--falso-positivo-de-pessoa-famosa-no-flow-para-personagem-ficcional)). Isso fortalece, mas não substitui, a conclusão já registrada: MASTER V02 PHOTOREALISTIC demonstrou comportamento adequado e consistente nesta nova rodada de testes e permanece o padrão recomendado/`CURRENT CANON`. Não se registra a afirmação absoluta de que MASTER V01/3D nunca pode gerar fotorrealismo — o próprio histórico deste repositório mostra que isso já ocorreu.
+- **Validação adicional (`2026-08-28`):** as sete MASTERs V02 PHOTOREALISTIC foram usadas para gerar vídeos individuais de apresentação no Google Flow, um por personagem. As sete gerações apresentaram o rendering `Photorealistic / Warm Cinematic Realism` esperado, sem cartoon/3D/CGI, com identidade visual considerada consistente com a respectiva MASTER V02; o usuário aprovou as sete. Três delas (Dudu, Sr. Antônio, Beto) precisaram de reformulação de compliance antes de gerar com sucesso — não por falha de rendering ou de identidade, mas por um bloqueio de possível "pessoa famosa" (ver [LRN-014](#lrn-014--falso-positivo-de-pessoa-famosa-no-flow-para-personagem-ficcional)).
 - **Status:** `VALIDADO` pela [DEC-015](DECISOES.md#dec-015).
 
 ### LRN-014 — Falso positivo de "pessoa famosa" no Flow para personagem ficcional
 
-- **Observação:** durante a validação em vídeo das MASTERs V02 PHOTOREALISTIC (`2026-08-28`), o Flow bloqueou Dudu, Sr. Antônio e Beto com mensagem de possível violação de política sobre pessoas famosas, mesmo sendo personagens ficcionais originais com MASTER própria. Marcos, Dona Célia, Patrícia e Carol não sofreram esse bloqueio na mesma rodada, usando o mesmo tipo de referência (MASTER V02 PHOTOREALISTIC).
-- **Causa:** desconhecida. A causa interna do classificador do Flow não é observável a partir deste repositório; qualquer explicação (por exemplo, semelhança aparente com pessoa famosa) é hipótese, não fato, e não deve ser registrada como tal em nenhum documento.
-- **Solução (fallback validado):** reformular o contexto de compliance em linguagem simples e factual — personagem ficcional original, imagem de referência pertencente ao projeto, sem intenção de retratar pessoa real — mantendo, sem enfraquecer, o requisito de live-action photorealistic e evitando linguagem biométrica rígida (`EXACTLY the same person`, `absolute source of truth for identity`, `biometric identity`, `face cloning`) ou listas longas de negative constraints. Ver [ERR-008](../producao/erros/ERR-008-FLOW-FALSO-POSITIVO-PESSOA-FAMOSA.md) e [SOL-008](../producao/solucoes/SOL-008-CONTEXTO-FICCIONAL-COMPLIANCE-FLOW.md).
-- **Limite:** este fallback deve ser usado apenas quando esse bloqueio específico de "pessoa famosa" ocorrer. Não é uma obrigação universal para todo prompt; prompts sem esse bloqueio continuam seguindo o template enxuto padrão de [TEMPLATE-MESTRE-VIDEO.md](../prompts/templates/TEMPLATE-MESTRE-VIDEO.md).
-- **Status:** `VALIDADO` como procedimento de fallback nos três casos desta rodada (`2026-08-28`); a causa interna do classificador do Flow permanece desconhecida.
+- **Observação:** durante a validação em vídeo das MASTERs V02 PHOTOREALISTIC (`2026-08-28`), o Flow bloqueou Dudu, Sr. Antônio e Beto com mensagem de possível violação de política sobre pessoas famosas, mesmo sendo personagens ficcionais originais com MASTER própria. Marcos, Dona Célia, Patrícia e Carol não sofreram esse bloqueio na mesma rodada, usando o mesmo tipo de referência.
+- **Causa:** desconhecida. A causa interna do classificador do Flow não é observável a partir deste repositório; qualquer explicação é hipótese, não fato.
+- **Solução (fallback validado):** reformular o contexto de compliance em linguagem simples e factual — personagem ficcional original, imagem de referência pertencente ao projeto, sem intenção de retratar pessoa real — mantendo o requisito de live-action photorealistic e evitando linguagem biométrica rígida (`EXACTLY the same person`, `absolute source of truth for identity`, `biometric identity`, `face cloning`) ou listas longas de negative constraints. Ver [ERR-008](../producao/erros/ERR-008-FLOW-FALSO-POSITIVO-PESSOA-FAMOSA.md) e [SOL-008](../producao/solucoes/SOL-008-CONTEXTO-FICCIONAL-COMPLIANCE-FLOW.md).
+- **Limite:** usar apenas quando esse bloqueio específico ocorrer.
+- **Status:** `VALIDADO` como fallback nos três casos desta rodada.
 
-### LRN-015 — Vídeo contínuo multi-beat para microcenas encadeadas
+### LRN-015 — Arquitetura narrativa multi-beat para microcenas encadeadas
 
-- **Observação:** em `2026-08-29`, a geração de vídeo do Gemini permitiu ao usuário reunir duas microcenas consecutivas em um único vídeo de aproximadamente `20 segundos`: Marcos perguntando a Patrícia pela pasta e, em seguida, Dudu perguntando pela camiseta. Segundo avaliação direta do usuário, a transição entre os dois momentos ficou muito mais fluida do que a montagem de microclipes independentes.
-- **Validação adicional:** um segundo teste reuniu, num único prompt contínuo, a declaração da greve de Patrícia e a consequência imediata para Marcos procurando a chave reserva. O usuário avaliou o resultado como muito bom e aprovou a adoção do método para as próximas gerações.
-- **Solução:** antes de dividir automaticamente o roteiro em um vídeo por microcena, avaliar se duas ou mais microcenas podem ser organizadas como `beats` dentro de um único vídeo contínuo. Priorizar o formato multi-beat quando os momentos forem causal ou emocionalmente encadeados, compartilhem ambiente/bloco temporal/figurino e tenham atribuição de fala controlável.
-- **Regra de fala em multi-beat:** `LRN-011` continua válido. A exclusividade de fala pode ser aplicada por beat: em cada beat, deixar explícito quem fala e quem permanece silencioso. Não interpretar multi-beat como permissão para diálogo descontrolado ou sobreposição de vozes.
-- **Continuidade:** o prompt deve descrever a progressão cronológica e emocional entre os beats e preservar as mesmas regras já consolidadas de MASTER própria, `Photorealistic / Warm Cinematic Realism`, Character/Costume/Environment/Relationship Continuity, speaking, voice, lip sync e silêncio.
-- **Duração:** `20 segundos` é uma capacidade observada no teste do Gemini, não uma duração canônica nem universal. A duração deve ser definida na ferramenta disponível e não escrita como requisito fixo no corpo do prompt, salvo necessidade específica da plataforma.
-- **Fallback:** voltar a microclipes quando houver mudança grande de ambiente/tempo/figurino, excesso de personagens ou ações, risco alto de troca de fala/voz/lip sync, deriva visual/narrativa no vídeo longo, limitação da plataforma ou resultado inferior ao formato curto.
-- **Preservação de conhecimento:** este upgrade complementa, e não revoga, a pipeline anterior. Microclipes permanecem um método válido e um fallback importante.
-- **Evidência:** [TESTE-VIDEO-MULTIBEAT-GEMINI-S01E001-001.md](../producao/testes/TESTE-VIDEO-MULTIBEAT-GEMINI-S01E001-001.md).
-- **Status:** `VALIDADO COMO PADRÃO PREFERENCIAL CONDICIONAL` pela [DEC-018](DECISOES.md#dec-018).
+- **Observação:** em `2026-08-29`, testes de S01E001 mostraram que microcenas causalmente conectadas podem ganhar fluidez quando tratadas como uma sequência narrativa contínua. O primeiro arquivo final auditado contém dois momentos conectados e tem `20.010 s`; o usuário avaliou a transição como muito mais fluida.
+- **Correção metodológica:** o registro inicial inferiu cedo demais que `20 segundos` eram uma capacidade direta de uma única geração do Gemini. Depois, o usuário levantou a possibilidade de ter usado sequência/continuação. O binário confirma sua duração, mas **não permite determinar sozinho se a origem foi geração única, extensão, continuação ou sequência na interface**.
+- **Solução:** antes de dividir automaticamente o roteiro em um vídeo por microcena, avaliar se duas ou mais microcenas podem ser organizadas como beats de uma sequência contínua quando os momentos forem causal ou emocionalmente encadeados, compartilhem ambiente/bloco temporal/figurino e tenham atribuição de fala controlável.
+- **Regra de fala:** `LRN-011` continua válido. A exclusividade de fala pode ser aplicada por beat.
+- **Duração:** não transformar `20s` em regra universal nem assumir o mecanismo da ferramenta. Validar a duração/configuração e a operação real usadas.
+- **Fallback:** voltar a microclipes quando houver mudança grande de ambiente/tempo/figurino, excesso de personagens ou ações, risco alto de troca de fala/voz/lip sync, deriva visual/narrativa, limitação da plataforma ou resultado inferior.
+- **Status:** `VALIDADO COMO PRINCÍPIO NARRATIVO CONDICIONAL`; correção formal em [DEC-018](DECISOES.md#dec-018) / [DEC-019](DECISOES.md#dec-019).
+
+### LRN-016 — Todas as MASTERs citadas precisam estar anexadas
+
+- **Observação:** uma geração no Gemini retornou erro genérico quando nem todas as MASTERs dos personagens citados estavam anexadas.
+- **Validação:** após anexar o conjunto completo, a geração funcionou.
+- **Solução:** conferir todos os personagens citados e anexar a MASTER V02 de cada um, sem omissões.
+- **Limite:** não concluir que todo erro genérico do Gemini tem essa causa.
+- **Evidência:** [ERR-009](../producao/erros/ERR-009-GEMINI-MASTERS-AUSENTES-OU-FORA-DE-ORDEM.md) / [SOL-009](../producao/solucoes/SOL-009-GEMINI-MASTERS-COMPLETAS-E-ORDENADAS.md).
+- **Status:** `VALIDADO NESTA RODADA`.
+
+### LRN-017 — Ordem das MASTERs deve acompanhar a ordem dos nomes no prompt no Gemini
+
+- **Observação:** o usuário verificou que referências anexadas fora da sequência dos nomes no prompt podem levar o Gemini a inverter associação, papel ou fala.
+- **Solução:** no Gemini, alinhar 1:1 a ordem da frase de referências e a ordem dos anexos. Exemplo: `Carol, Marcos, Patrícia and Dudu` → anexar Carol, Marcos, Patrícia, Dudu nessa sequência.
+- **Escopo:** regra operacional específica do Gemini nesta rodada; não generalizar automaticamente para outras ferramentas.
+- **Status:** `VALIDADO NESTA RODADA` pela [DEC-019](DECISOES.md#dec-019).
+
+### LRN-018 — Diálogo emocional precisa caber na janela real do clipe
+
+- **Observação:** um teste com conteúdo demais em aproximadamente `10.005 s` cortou falas. Leitura rápida não é medida suficiente porque emoção, pausa e reação consomem tempo.
+- **Solução:** reduzir palavras para preservar interpretação, respiração e reação. Não acelerar artificialmente a fala para “caber”.
+- **Exemplo aprovado:** `Patrícia... eu achei que tava ajudando, sabe? Mas só agora percebi que fazia tempo que eu nem perguntava como tu tava. Me desculpa.`
+- **Status:** `VALIDADO` na versão final de S01E001.
+
+### LRN-019 — Linguagem falada e emoção específica
+
+- **Observação:** as falas finais melhoraram quando foram reescritas como conversa real de família brasileira, com interjeições, repetições, pequenas pausas, hesitações e emoção específica.
+- **Aplicação:** permitir formulações como `Mãe, mãe...`, `Chega! Chega, gente!`, `Tá...`, `Pronto!`, `sabe?` quando coerentes com personagem e momento.
+- **Direção de atuação:** explicitar urgência, irritação, vergonha, afeto, ironia ou arrependimento sem melodrama ou teatralidade exagerada.
+- **Status:** `VALIDADO` em S01E001.
+
+### LRN-020 — A duração deve servir ao beat
+
+- **Observação:** a versão final publicada usa um arquivo de `20.010 s` e quatro de `10.005 s`, totalizando montagem de `60.051333 s`.
+- **Solução:** não impor uma duração única apenas por uniformidade; escolher a configuração disponível conforme quantidade de fala, ação, pausa e reação.
+- **Limite:** essas durações não se tornam padrão canônico da série.
+- **Status:** `VALIDADO` pela versão final publicada de S01E001.
+
+### LRN-021 — Compressão narrativa pode melhorar foco sem apagar a fonte histórica
+
+- **Observação:** a fonte histórica tem 12 cenas/29 clipes; a versão publicada foi condensada para cinco arquivos e aproximadamente um minuto.
+- **Arco preservado:** `dependência da Patrícia → greve → consequência → solução prática insuficiente → percepção emocional → pedido de desculpas → pequeno aprendizado do Dudu`.
+- **Solução:** permitir remoção de subtramas quando a versão curta preserva causa e consequência, conflito central, virada, resolução e payoff.
+- **Preservação:** a fonte histórica permanece íntegra; a versão publicada é adaptação aprovada, não reescrita retroativa.
+- **Status:** `VALIDADO` pela [DEC-020](DECISOES.md#dec-020).
+
+### LRN-022 — Payoff silencioso pode ser mais forte que fala explicativa
+
+- **Observação:** no final de S01E001, Patrícia e Marcos apenas olham para Dudu; ele percebe sozinho que repetiu o padrão e decide procurar o carregador.
+- **Solução:** quando o episódio já estabeleceu a informação, preferir olhar, pausa, constrangimento e autocorreção a uma fala explicativa redundante.
+- **Status:** `VALIDADO` como recurso narrativo na versão publicada.
+
+### LRN-023 — Não registrar hipótese como regra antes de validar
+
+- **Observação:** a interpretação inicial sobre `20s em uma geração` foi promovida cedo demais. O usuário identificou a fragilidade e determinou que novos upgrades sejam validados antes de entrar como regra.
+- **Disciplina:** `HIPÓTESE → EM TESTE → VALIDADO → decisão/template`.
+- **Aplicação:** separar sempre fato observado de interpretação causal, especialmente em comportamento de interface, duração, extensão, sequência e classificadores de geração.
+- **Status:** `APROVADO` pela [DEC-019](DECISOES.md#dec-019).
+
+Detalhamento adicional desta rodada: [APRENDIZADOS-S01E001-VALIDACAO-FINAL-2026-08-29.md](APRENDIZADOS-S01E001-VALIDACAO-FINAL-2026-08-29.md).
 
 ## Estado dos casos conhecidos
 
@@ -135,10 +192,13 @@ Os registros detalhados ficam em [producao/testes/](../producao/testes/).
 
 ## Procedimento para novos aprendizados
 
-1. Criar o registro em `producao/testes/` antes da geração ou da avaliação.
-2. Registrar cada defeito em `producao/erros/`, distinguindo fato de hipótese.
-3. Registrar a correção em `producao/solucoes/` e vinculá-la ao erro.
-4. Só mover a conclusão para `producao/aprovados/` depois de aprovação explícita.
-5. Atualizar este documento quando o aprendizado for reutilizável.
-6. Criar uma decisão em `DECISOES.md` somente quando a regra se tornar permanente.
-7. Atualizar a ficha do personagem e o changelog quando houver impacto canônico.
+1. Registrar ideia ou suspeita como `HIPÓTESE`.
+2. Criar o registro em `producao/testes/` antes da geração ou avaliação quando aplicável.
+3. Registrar cada defeito em `producao/erros/`, distinguindo fato de hipótese.
+4. Registrar a correção em `producao/solucoes/` e vinculá-la ao erro.
+5. Um primeiro resultado positivo permanece `EM TESTE` se ainda houver dúvida sobre causa ou mecanismo.
+6. Só promover uma conclusão para `VALIDADO` após reprodução, inspeção objetiva ou confirmação suficiente.
+7. Só mover material para `producao/aprovados/` depois de aprovação explícita.
+8. Atualizar este documento quando o aprendizado for reutilizável.
+9. Criar uma decisão em `DECISOES.md` somente quando a regra se tornar permanente.
+10. Atualizar ficha, continuidade, changelog e publicação quando houver impacto canônico ou de produção.
