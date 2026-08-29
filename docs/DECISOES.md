@@ -154,6 +154,16 @@ As decisões DEC-007 a DEC-012 abaixo foram originalmente registradas, na mesma 
 - **Status:** `APROVADO`
 - **Evidência:** confirmação direta do usuário em `2026-08-29`; [REDES-SOCIAIS.md](REDES-SOCIAIS.md); [CHANGELOG-CRIATIVO.md](CHANGELOG-CRIATIVO.md)
 
+## DEC-018
+
+- **Data:** `2026-08-29`
+- **Decisão:** adotar como padrão preferencial condicional para novos vídeos da Família Silva a arquitetura de **vídeo contínuo multi-beat**, agrupando duas ou mais microcenas diretamente conectadas no mesmo vídeo quando a plataforma e a cena permitirem, em vez de dividir automaticamente cada microcena em um arquivo separado.
+- **Motivo:** teste realizado no Gemini com vídeo de aproximadamente `20 segundos` reuniu duas microcenas consecutivas (Marcos pedindo a pasta a Patrícia e Dudu pedindo a camiseta a Patrícia) e apresentou, segundo avaliação direta do usuário, transição muito mais fluida. Um segundo teste reuniu a declaração da greve de Patrícia e a consequência imediata para Marcos procurando a chave reserva, também aprovado pelo usuário como resultado de alta qualidade.
+- **Impacto:** o [TEMPLATE-MESTRE-VIDEO.md](../prompts/templates/TEMPLATE-MESTRE-VIDEO.md) passa a orientar a avaliação de `beats` narrativos antes da segmentação em microclipes. A exclusividade de fala pode ser controlada por beat, sem revogar `LRN-011`; todos os locks e continuidades anteriores permanecem válidos. Microclipes continuam sendo fallback para cenas complexas, mudanças grandes de ambiente/tempo/figurino, alto risco de troca de fala/voz/lip sync, deriva em vídeo longo ou limitações da plataforma. A duração de `20 segundos` é evidência de capacidade observada no Gemini, não uma duração canônica universal e não deve virar instrução fixa no corpo do prompt.
+- **Preservação:** esta decisão é um upgrade da pipeline e **não elimina nem substitui o conhecimento anterior**. As regras existentes de MASTER V02 própria, `Photorealistic / Warm Cinematic Realism`, prompt autossuficiente, simplificação controlada, continuidade visual, figurino, ambiente, relacionamento, fala, voz, lip sync e silêncio permanecem obrigatórias quando aplicáveis.
+- **Status:** `APROVADO`
+- **Evidência:** [LRN-015](APRENDIZADOS-DE-VIDEO.md#lrn-015--vídeo-contínuo-multi-beat-para-microcenas-encadeadas); [TESTE-VIDEO-MULTIBEAT-GEMINI-S01E001-001.md](../producao/testes/TESTE-VIDEO-MULTIBEAT-GEMINI-S01E001-001.md)
+
 ## Template de entrada
 
 ### DEC-XXX
