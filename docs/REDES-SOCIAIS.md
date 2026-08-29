@@ -31,6 +31,21 @@ A imagem institucional para os avatares desses perfis é `ASSET-SERIES-001` ([ma
 - **Hashtags finais confirmadas:** `#FamiliaSilva #HumorBrasileiro #FamiliaBrasileira #luisBoss #ComediaBrasileira`.
 - **Nota:** `#GreveDaPatricia`, sugerida inicialmente, foi substituída pelo usuário por `#luisBoss`, associada ao criador da série.
 
+#### Videoclipe — Tema oficial da Família Silva
+
+- **Data:** `2026-08-29`.
+- **Status:** `APROVADO / PUBLICADO`.
+- **Plataforma:** TikTok oficial `@familiasilvahumor`.
+- **Arquivo publicado:** `FAMILIA-SILVA-VIDEOCLIPE-OFICIAL-V01.mp4`.
+- **Duração auditada:** `177.258000 s` (~2 min 57 s).
+- **Formato técnico:** MP4, H.264, `720x1280`, `24 fps`, áudio AAC estéreo `48 kHz`.
+- **SHA-256:** `7c66249f3dd61a83bdb6e7e1a23f8a009b9d750d4d6ab6669f420a307a8dfc61`.
+- **Música utilizada:** `ASSET-SERIES-002` — `AUD-FAMILIA-SILVA-TEMA-V01.wav`, `CURRENT CANON / MASTER`.
+- **Registro de aprovação/publicação:** [APROVACAO-VIDEOCLIPE-TEMA-FAMILIA-SILVA-001.md](../producao/aprovados/APROVACAO-VIDEOCLIPE-TEMA-FAMILIA-SILVA-001.md).
+- **Descrição confirmada:** `A Família Silva agora tem música oficial 🎵😂 Entre confusão, conselho, bronca, risada e muito amor, essa família prova que casa cheia nunca é silenciosa. Esse é o tema oficial da série Família Silva. ❤️`
+- **Hashtags finais confirmadas:** `#FamiliaSilva #HumorBrasileiro #ComediaBrasileira #FamiliaBrasileira #luisBoss`.
+- **URL específica do post:** `PENDENTE / NÃO INFORMADA`.
+
 ## O que ainda não está definido
 
 Frequência oficial de postagem, calendário editorial, monetização e adoção de outras plataformas continuam `A DEFINIR`, salvo registros posteriores específicos.
