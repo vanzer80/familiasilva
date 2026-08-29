@@ -27,7 +27,7 @@ Detalhes, evidências e limitações estão em [APRENDIZADOS-DE-VIDEO.md](APREND
 - Cidade: `A DEFINIR`.
 - Casa principal: descrita em nível de episódio em [S01E001](../episodios/S01/S01E001-A-GREVE-DA-PATRICIA.md) (cozinha, sala, quarto de Marcos e Patrícia) — `PENDENTE DE PROMOÇÃO A CENÁRIO CANÔNICO REUTILIZÁVEL`.
 - Duração dos episódios (padrão da série): `A DEFINIR` — S01E001 tem duração histórica de aproximadamente 3min52s, o que não define um padrão obrigatório para a série.
-- Plataforma: `A DEFINIR`.
+- Plataforma: canal oficial no TikTok `CONFIGURADO` em `2026-08-29` — perfil `@familiasilvahumor` (ver [REDES-SOCIAIS.md](REDES-SOCIAIS.md) e [DEC-017](DECISOES.md#dec-017)). Distribuição em outras plataformas: `A DEFINIR`.
 - Público: `A DEFINIR`.
 - Voz de cada personagem: `A DEFINIR`.
 - MASTER V02 PHOTOREALISTIC de todos os sete personagens: `CURRENT CANON` desde `2026-08-28` ([DEC-015](DECISOES.md#dec-015)), resolvendo a pendência histórica específica de Patrícia; V01 preservada como `HISTORICAL` (ver [MANIFESTO-MESTRES.md](../assets/personagens/mestres/MANIFESTO-MESTRES.md)).

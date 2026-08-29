@@ -25,6 +25,7 @@ Não presuma que ausência de informação autoriza invenção.
 - [Template Mestre de Vídeo](prompts/templates/TEMPLATE-MESTRE-VIDEO.md) — única fonte executável para novos prompts de vídeo.
 - [Guia de Produção](docs/GUIA-DE-PRODUCAO.md) — fluxo de trabalho.
 - [Status de Produção](producao/STATUS.md) — estado operacional atual, pendências e blockers.
+- [Redes Sociais Oficiais](docs/REDES-SOCIAIS.md) — perfis e canais oficiais já configurados e os que faltam.
 
 ## Decisões audiovisuais vigentes
 

@@ -145,6 +145,15 @@ As decisões DEC-007 a DEC-012 abaixo foram originalmente registradas, na mesma 
 - **Status:** `APROVADO PARA USO EM PERFIS`
 - **Evidência:** [registro de aprovação](../producao/aprovados/APROVACAO-IMAGEM-PERFIL-FAMILIA-SILVA-001.md); [manifesto do asset](../assets/logos/perfis/README.md); [prompt executado](../prompts/imagem/PROMPT-SERIES-IMAGE-001.md)
 
+## DEC-017
+
+- **Data:** `2026-08-29`
+- **Decisão:** registrar `@familiasilvahumor` como o handle oficial e permanente do perfil da série Família Silva no TikTok, com status `CONFIGURADO`.
+- **Motivo:** o perfil foi criado e configurado nesta data, confirmado diretamente pelo usuário; fixar o handle evita ambiguidade futura sobre qual conta é a oficial e cria uma fonte de verdade única para os canais da série ([REDES-SOCIAIS.md](REDES-SOCIAIS.md)).
+- **Impacto:** o TikTok passa a constar como canal oficial já configurado em [REDES-SOCIAIS.md](REDES-SOCIAIS.md), [BIBLIA-DA-SERIE.md](BIBLIA-DA-SERIE.md) e [producao/STATUS.md](../producao/STATUS.md). A decisão limita-se ao handle e à existência do perfil: não define estratégia de conteúdo, frequência de postagem, monetização nem a adoção de outras plataformas, que permanecem `A DEFINIR`. Nenhum personagem, Character ID, MASTER, rendering, prompt, episódio, roteiro, regra de continuidade ou imagem institucional é alterado. A imagem de avatar dos perfis continua sendo `ASSET-SERIES-001` ([DEC-016](DECISOES.md#dec-016)).
+- **Status:** `APROVADO`
+- **Evidência:** confirmação direta do usuário em `2026-08-29`; [REDES-SOCIAIS.md](REDES-SOCIAIS.md); [CHANGELOG-CRIATIVO.md](CHANGELOG-CRIATIVO.md)
+
 ## Template de entrada
 
 ### DEC-XXX

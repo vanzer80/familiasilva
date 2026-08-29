@@ -21,6 +21,7 @@
 - Episódios: `S01E001` ("A Greve da Patrícia") `SOURCE_AVAILABLE — IMPORTED` em `2026-08-28` — roteiro completo, 12 cenas, 29 clipes, prompts originais e bíblia visual do episódio disponíveis; produção em vídeo clipe a clipe ainda não registrada (exceto Cena 2B, parcialmente documentada em `ERR-007`/`SOL-007`).
 - Cenários: casa principal descrita em nível de episódio (S01E001), `PENDENTE DE PROMOÇÃO A CENÁRIO CANÔNICO REUTILIZÁVEL` em `cenarios/oficiais/`.
 - Temporadas: `A DEFINIR`.
+- Canal oficial (TikTok): `CONFIGURADO` em `2026-08-29` — perfil `@familiasilvahumor` (ver [REDES-SOCIAIS.md](../docs/REDES-SOCIAIS.md) e [DEC-017](../docs/DECISOES.md#dec-017)). Demais plataformas e a estratégia de distribuição permanecem `A DEFINIR`.
 
 ## Próximas ações necessárias
 
@@ -29,7 +30,7 @@
 3. Promover cozinha, sala e quarto de Marcos/Patrícia (bíblia visual de S01E001) a cenários canônicos reutilizáveis (`LOC-00X`) em `cenarios/oficiais/`, se decidido que valem para toda a série.
 4. Gerar e registrar em `producao/testes/` os 29 clipes de S01E001, na ordem recomendada pela fonte histórica.
 5. Aprovar e registrar a voz de cada personagem separadamente.
-6. Definir cidade, época, duração padrão de episódio, plataforma e público.
+6. Definir cidade, época, duração padrão de episódio e público. Plataforma: o TikTok já está definido e configurado como canal oficial (`@familiasilvahumor`, `2026-08-29`); resta decidir se haverá distribuição em outras plataformas.
 7. Avaliar o arquivo `G:\Meu Drive\familia_silva\patricia_silva.png` (fotorrealista, blusa terracota, fora do pacote V02) encontrado na auditoria de `2026-08-28` — não importado; ver nota em `MANIFESTO-MESTRES.md`.
 8. Obter e importar o texto literal exato das falas finais dos 7 vídeos de apresentação (V02), alteradas manualmente pelo usuário antes da geração — hoje `PENDENTE DE IMPORTAÇÃO DA FONTE APROVADA` em cada `producao/testes/TESTE-VIDEO-*-002.md` (Dudu: `-001`).
 9. Confirmar (ou descartar) a correspondência entre os vídeos de apresentação aprovados e os arquivos nomeados por personagem em `G:\Meu Drive\familia_silva\videos\`, encontrados na auditoria de `2026-08-28` mas não vinculados formalmente a nenhum registro de teste.
