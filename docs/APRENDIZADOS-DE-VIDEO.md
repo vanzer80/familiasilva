@@ -5,6 +5,7 @@ Este documento consolida o que foi aprendido nos testes audiovisuais da Família
 - [DECISOES.md](DECISOES.md) define o que é permanente e aprovado.
 - [TEMPLATE-MESTRE-VIDEO.md](../prompts/templates/TEMPLATE-MESTRE-VIDEO.md) define como construir cada novo prompt.
 - [producao/](../producao/) preserva a evidência de testes, erros, soluções, aprovações e rejeições.
+- [APRENDIZADOS-EM-VALIDACAO.md](APRENDIZADOS-EM-VALIDACAO.md) é a camada anterior a este documento: guarda as observações e hipóteses de produção ainda `EM TESTE`. Um aprendizado só recebe um `LRN` aqui **depois** de ser marcado como `VALIDADO` lá.
 
 Hipóteses são identificadas como hipóteses. Campos sem evidência permanecem `A DEFINIR`.
 
@@ -191,6 +192,8 @@ Detalhamento adicional desta rodada: [APRENDIZADOS-S01E001-VALIDACAO-FINAL-2026-
 Os registros detalhados ficam em [producao/testes/](../producao/testes/).
 
 ## Procedimento para novos aprendizados
+
+Observações e hipóteses novas nascem em [APRENDIZADOS-EM-VALIDACAO.md](APRENDIZADOS-EM-VALIDACAO.md) (entradas `AV-0XX`) e só chegam a este documento como `LRN` depois de `VALIDADO`. O fluxo abaixo continua válido e é a versão detalhada desse mesmo caminho.
 
 1. Registrar ideia ou suspeita como `HIPÓTESE`.
 2. Criar o registro em `producao/testes/` antes da geração ou avaliação quando aplicável.

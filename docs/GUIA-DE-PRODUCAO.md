@@ -6,6 +6,7 @@
 - Decisões permanentes: [DECISOES.md](DECISOES.md).
 - Construção de prompts: [TEMPLATE-MESTRE-VIDEO.md](../prompts/templates/TEMPLATE-MESTRE-VIDEO.md).
 - Erros, acertos e correções: [APRENDIZADOS-DE-VIDEO.md](APRENDIZADOS-DE-VIDEO.md) e [producao/](../producao/).
+- Hipóteses e observações ainda em teste: [APRENDIZADOS-EM-VALIDACAO.md](APRENDIZADOS-EM-VALIDACAO.md) — camada anterior ao aprendizado consolidado.
 
 ## Princípios
 
@@ -59,7 +60,8 @@ Essa configuração é uma baseline de teste, não uma regra universal de episó
 4. Testar e registrar correções em [producao/solucoes/](../producao/solucoes/).
 5. Guardar rejeições úteis em [producao/rejeitados/](../producao/rejeitados/).
 6. Registrar aprovações explícitas em [producao/aprovados/](../producao/aprovados/).
-7. Atualizar continuidade, ficha, changelog e decisões somente quando aplicável.
+7. Registrar ou atualizar hipóteses ainda não validadas em [APRENDIZADOS-EM-VALIDACAO.md](APRENDIZADOS-EM-VALIDACAO.md) (`AV-0XX`); promovê-las a aprendizado/decisão/template só depois de `VALIDADO`.
+8. Atualizar continuidade, ficha, changelog e decisões somente quando aplicável.
 
 ## Convenção de IDs
 

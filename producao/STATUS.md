@@ -9,6 +9,7 @@
 - Rendering: `APROVADO` — `Photorealistic / Warm Cinematic Realism`.
 - Template mestre de vídeo: `APROVADO` e definido como fonte única.
 - Aprendizados: casos históricos, erros, soluções, aprovações e rejeições consolidados; aprendizados finais adicionais de S01E001 registrados em [APRENDIZADOS-S01E001-VALIDACAO-FINAL-2026-08-29.md](../docs/APRENDIZADOS-S01E001-VALIDACAO-FINAL-2026-08-29.md).
+- Aprendizados em validação: camada intermediária criada em `2026-08-30` — [APRENDIZADOS-EM-VALIDACAO.md](../docs/APRENDIZADOS-EM-VALIDACAO.md), com índice operacional no topo, campos `Decisão operacional atual` e trilha de promoção por entrada. Oito entradas da rodada do **Episódio 2** (`AV-001` a `AV-008`) registradas como `EM TESTE`; nenhuma promovida a `APRENDIZADOS-DE-VIDEO.md`, `DECISOES.md`, `CONTINUIDADE.md` ou template mestre. Uma nova sessão de produção deve ler esse arquivo (a partir do índice operacional) antes de gerar cena/prompt novo.
 - Visual de Carol: `APROVADO VISUALMENTE`.
 - Visual de Marcos, Dona Célia, Beto, Sr. Antônio e Dudu: `APROVADO / CANON VISUAL` (reconciliado pela [DEC-013](../docs/DECISOES.md#dec-013) em `2026-08-28`).
 - Visual de Patrícia: `APROVADO / CANON VISUAL` — MASTER V02 PHOTOREALISTIC ingerida em `2026-08-28`, resolvendo a pendência histórica.
@@ -32,7 +33,7 @@
 
 ## Próximas ações necessárias
 
-1. Para novos prompts, aplicar a disciplina `HIPÓTESE → EM TESTE → VALIDADO → decisão/template`; não promover comportamento de ferramenta antes de reprodução ou inspeção objetiva.
+1. Para novos prompts, aplicar a disciplina `HIPÓTESE → EM TESTE → VALIDADO → decisão/template`; não promover comportamento de ferramenta antes de reprodução ou inspeção objetiva. Consultar as hipóteses `EM TESTE` em [APRENDIZADOS-EM-VALIDACAO.md](../docs/APRENDIZADOS-EM-VALIDACAO.md) e atualizar as entradas `AV-0XX` com a evidência de cada nova cena do Episódio 2 (foco atual: `AV-001`, `AV-002`, `AV-005`, `AV-006`, `AV-008`). Antes de continuar a sequência do Episódio 2, verificar o último material aprovado e reconciliá-lo com o roteiro (`AV-008`).
 2. Em cenas Gemini com múltiplas referências, conferir todas as MASTERs e a ordem dos anexos antes de gerar.
 3. Continuar escrevendo falas com oralidade e emoção reais, dimensionando o texto para a duração com pausas/reação — não apenas por contagem de caracteres.
 4. Promover cozinha, sala e quarto de Marcos/Patrícia a cenários canônicos reutilizáveis (`LOC-00X`) se decidido que valem para toda a série.

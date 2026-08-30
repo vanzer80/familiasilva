@@ -9,6 +9,7 @@ Este repositório é a fonte de verdade documental do projeto Família Silva. A 
 - A fonte executável para todo novo prompt de vídeo é [prompts/templates/TEMPLATE-MESTRE-VIDEO.md](prompts/templates/TEMPLATE-MESTRE-VIDEO.md).
 - As decisões permanentes ficam em [docs/DECISOES.md](docs/DECISOES.md).
 - Erros, acertos, hipóteses e soluções validadas ficam em [docs/APRENDIZADOS-DE-VIDEO.md](docs/APRENDIZADOS-DE-VIDEO.md), no adendo [docs/APRENDIZADOS-S01E001-VALIDACAO-FINAL-2026-08-29.md](docs/APRENDIZADOS-S01E001-VALIDACAO-FINAL-2026-08-29.md) e nos registros de [producao/](producao/).
+- Observações e hipóteses de produção que ainda precisam de mais teste ficam em [docs/APRENDIZADOS-EM-VALIDACAO.md](docs/APRENDIZADOS-EM-VALIDACAO.md), a camada intermediária entre observação e regra oficial. Uma descoberta experimental entra **primeiro** ali; só depois de validada sobe para `APRENDIZADOS-DE-VIDEO.md`, `DECISOES.md` ou o template mestre. Uma IA que assumir uma nova sessão de produção deve consultar esse arquivo para recuperar as hipóteses atualmente `EM TESTE`.
 - Nenhum prompt pode depender de contexto, prompt ou vídeo anterior que a ferramenta de geração não recebeu. Cada prompt deve ser autossuficiente.
 
 ## Disciplina de validação
@@ -22,6 +23,8 @@ Aplicar obrigatoriamente a sequência aprovada em [DEC-019](docs/DECISOES.md#dec
 - Duração do arquivo final não prova, sozinha, se a origem foi geração única, extensão, continuação ou sequência na interface.
 - Quando houver dúvida sobre comportamento de ferramenta, registrar a dúvida explicitamente e testar antes de atualizar template/decisão.
 - Uma correção posterior deve preservar o histórico do erro documental, mas marcar claramente qual regra vigente o substitui.
+- Enquanto uma hipótese estiver `EM TESTE`, mantê-la em [docs/APRENDIZADOS-EM-VALIDACAO.md](docs/APRENDIZADOS-EM-VALIDACAO.md). Não copiá-la para `APRENDIZADOS-DE-VIDEO.md`, `DECISOES.md` ou `TEMPLATE-MESTRE-VIDEO.md` antes de `VALIDADO`. A força da evidência considera repetibilidade, diversidade de cenas/personagens, clareza de causa/efeito, ausência de explicação alternativa e impacto — não uma contagem fixa de testes. `VALIDADO` inicia a promoção mas ainda não altera o template; só `PROMOVIDO`, com destino explícito registrado, é regra oficial.
+- Ao assumir uma produção em andamento, seguir a ordem de [recuperação de contexto](docs/APRENDIZADOS-EM-VALIDACAO.md#recuperação-de-contexto-por-uma-nova-ia): cânone → aprendizados em validação → `AV` relevantes → roteiro/continuidade planejada → quando já houver sequência audiovisual produzida, verificar o estado realmente realizado no último material aprovado e reconciliá-lo com o roteiro antes de continuar (hipótese [AV-008](docs/APRENDIZADOS-EM-VALIDACAO.md#av-008--continuidade-realizada-tem-precedência-operacional-sobre-roteiro-planejado), `EM TESTE`).
 
 ## Proteção de cânone
 

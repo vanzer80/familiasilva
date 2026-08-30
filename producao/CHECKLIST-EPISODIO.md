@@ -62,6 +62,7 @@
 - [ ] Um primeiro resultado positivo não foi automaticamente promovido a regra permanente.
 - [ ] Comportamentos de interface/ferramenta foram reproduzidos ou objetivamente inspecionados antes de virar decisão/template.
 - [ ] Fatos observados e interpretação causal estão separados no registro.
+- [ ] Hipóteses e observações desta rodada foram registradas ou atualizadas em [../docs/APRENDIZADOS-EM-VALIDACAO.md](../docs/APRENDIZADOS-EM-VALIDACAO.md) (entradas `AV-0XX`), e nenhuma delas foi copiada para `APRENDIZADOS-DE-VIDEO.md`, `DECISOES.md` ou o template mestre antes de `VALIDADO`.
 
 ## Registro e aprovação
 

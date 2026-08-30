@@ -23,5 +23,8 @@ IDs sao permanentes e nao devem ser reutilizados. O numero sequencial deve usar 
 | Teste | `TEST-VIDEO-CHAR-001-001` | `TEST-VIDEO-CHAR-001-001` |
 | Erro | `ERR-001` | `ERR-001` |
 | Solução | `SOL-001` | `SOL-001` |
+| Aprendizado em validação | `AV-001` | `AV-001` |
 
 Nomes descritivos podem complementar o ID, por exemplo `CHAR-001-MARCOS.md`, sem substituir o ID permanente.
+
+Um `AV-0XX` ([APRENDIZADOS-EM-VALIDACAO.md](APRENDIZADOS-EM-VALIDACAO.md)) permanece com o mesmo número mesmo depois de promovido: ele não se transforma no número do `LRN`/`DEC` de destino; a entrada `AV` apenas registra o link para onde subiu.

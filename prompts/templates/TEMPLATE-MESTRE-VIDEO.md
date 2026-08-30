@@ -23,6 +23,8 @@ Aplicar a sequência aprovada em [DEC-019](../../docs/DECISOES.md#dec-019):
 
 Não promover um comportamento de ferramenta a regra permanente com base apenas em uma primeira impressão ou em um único resultado cuja causa/mecanismo ainda seja ambíguo.
 
+Hipóteses ainda `EM TESTE` ficam em [APRENDIZADOS-EM-VALIDACAO.md](../../docs/APRENDIZADOS-EM-VALIDACAO.md), não neste template. Consultá-las para não tratar uma hipótese aberta como regra fechada; elas só entram aqui depois de `VALIDADO` e da promoção correspondente.
+
 Exemplo importante de `2026-08-29`: existe um arquivo final de S01E001 auditado com `20.010 s`, mas o binário **não prova por si só** se sua origem foi geração única, extensão, continuação ou sequência na interface do Gemini. O benefício narrativo do multi-beat foi validado; a hipótese de “20s diretos em toda geração” não foi.
 
 Antes de segmentar um roteiro, aplicar [LRN-015](../../docs/APRENDIZADOS-DE-VIDEO.md#lrn-015--arquitetura-narrativa-multi-beat-para-microcenas-encadeadas): microcenas causal ou emocionalmente conectadas podem ser avaliadas como beats de uma sequência contínua **se a ferramenta, a duração real e a complexidade permitirem**. Isso complementa, e não revoga, a arquitetura de microclipes.

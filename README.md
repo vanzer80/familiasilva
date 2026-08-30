@@ -22,6 +22,7 @@ Não presuma que ausência de informação autoriza invenção.
 - [Decisões](docs/DECISOES.md) — decisões permanentes, reconciliações e supersessões.
 - [Continuidade](docs/CONTINUIDADE.md) — estado narrativo e eventos anteriores.
 - [Aprendizados de Vídeo](docs/APRENDIZADOS-DE-VIDEO.md) — erros, acertos, hipóteses e correções consolidadas.
+- [Aprendizados em Validação](docs/APRENDIZADOS-EM-VALIDACAO.md) — hipóteses e observações de produção ainda `EM TESTE`, antes de virarem regra oficial.
 - [Template Mestre de Vídeo](prompts/templates/TEMPLATE-MESTRE-VIDEO.md) — única fonte executável para novos prompts de vídeo.
 - [Guia de Produção](docs/GUIA-DE-PRODUCAO.md) — fluxo de trabalho.
 - [Status de Produção](producao/STATUS.md) — estado operacional atual, pendências e blockers.

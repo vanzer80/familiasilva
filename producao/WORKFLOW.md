@@ -12,7 +12,7 @@
 8. Registrar o teste antes ou imediatamente após a geração.
 9. Gerar imagem ou vídeo com as referências atuais anexadas.
 10. Aplicar [CHECKLIST-EPISODIO.md](CHECKLIST-EPISODIO.md).
-11. Registrar erros factuais e hipóteses separadamente.
+11. Registrar erros factuais e hipóteses separadamente. Hipóteses e observações que ainda precisam de mais teste vão para [../docs/APRENDIZADOS-EM-VALIDACAO.md](../docs/APRENDIZADOS-EM-VALIDACAO.md) como entrada `AV-0XX`.
 12. Testar e registrar soluções.
 13. Classificar a dimensão aprovada: visual, vocal, narrativa e/ou técnica.
 14. Editar e revisar o episódio final.
@@ -25,3 +25,4 @@
 - Prompt aprovado só vira mestre quando seu texto exato, referências, configuração e resultado estiverem recuperados.
 - Asset só vira MASTER quando for versionado, identificado e vinculado à ficha.
 - O cânone só muda depois de revisão, aprovação explícita e registro.
+- Uma entrada `AV-0XX` só sobe para `APRENDIZADOS-DE-VIDEO.md`, `DECISOES.md` ou o template mestre depois de marcada `VALIDADO`; ao subir, marcar a entrada original como `PROMOVIDO` com o link do destino.

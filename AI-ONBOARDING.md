@@ -54,7 +54,8 @@ Antes de executar qualquer tarefa relevante, leia nesta ordem:
 6. fichas e personalidades dos personagens relevantes em [personagens/oficiais/](personagens/oficiais/).
 7. [docs/CONTINUIDADE.md](docs/CONTINUIDADE.md) — continuidade narrativa e eventos anteriores.
 8. [docs/APRENDIZADOS-DE-VIDEO.md](docs/APRENDIZADOS-DE-VIDEO.md) — conhecimento consolidado de produção audiovisual.
-9. [producao/STATUS.md](producao/STATUS.md) — estado atual, blockers e pendências.
+9. [docs/APRENDIZADOS-EM-VALIDACAO.md](docs/APRENDIZADOS-EM-VALIDACAO.md) — hipóteses e observações de produção ainda `EM TESTE`, antes de virarem regra oficial.
+10. [producao/STATUS.md](producao/STATUS.md) — estado atual, blockers e pendências.
 
 Depois disso, leia as fontes específicas da tarefa.
 
@@ -204,9 +205,10 @@ Antes de gerar qualquer prompt, leia obrigatoriamente:
 3. [personagens/relacoes/RELACOES-FAMILIARES.md](personagens/relacoes/RELACOES-FAMILIARES.md);
 4. [assets/personagens/mestres/MANIFESTO-MESTRES.md](assets/personagens/mestres/MANIFESTO-MESTRES.md);
 5. [docs/APRENDIZADOS-DE-VIDEO.md](docs/APRENDIZADOS-DE-VIDEO.md);
-6. erros, soluções e testes relevantes em `producao/`;
-7. episódio/cena correspondente, quando existir;
-8. [docs/CONTINUIDADE.md](docs/CONTINUIDADE.md).
+6. [docs/APRENDIZADOS-EM-VALIDACAO.md](docs/APRENDIZADOS-EM-VALIDACAO.md) — para saber quais hipóteses estão `EM TESTE` nesta fase e não tratá-las como regra fechada;
+7. erros, soluções e testes relevantes em `producao/`;
+8. episódio/cena correspondente, quando existir;
+9. [docs/CONTINUIDADE.md](docs/CONTINUIDADE.md).
 
 ### Regras essenciais de vídeo
 
@@ -221,6 +223,7 @@ Antes de gerar qualquer prompt, leia obrigatoriamente:
 - Por padrão, não inserir duração fixa em segundos no texto operacional do prompt. Duração editorial/configuração de ferramenta é separada do conteúdo textual enviado ao gerador.
 - Evitar IDs, nomes internos de clipes, títulos administrativos, cabeçalhos técnicos e metadados desnecessários dentro do prompt final quando houver risco de aparecerem no vídeo.
 - Não usar `CHARACTER IDENTITY LOCK` ou `EXACTLY the same person` como instruções operacionais ativas.
+- Ao continuar uma sequência já em produção, antes de escrever a próxima cena verifique o **último material audiovisual aprovado disponível** e reconcilie-o com o roteiro planejado; em conflito factual, a continuidade realizada prevalece para o ponto de partida, e o roteiro segue orientando o arco futuro (hipótese [AV-008](docs/APRENDIZADOS-EM-VALIDACAO.md#av-008--continuidade-realizada-tem-precedência-operacional-sobre-roteiro-planejado), ainda `EM TESTE` — não é regra fechada).
 
 Antes de entregar qualquer prompt, use a checklist, os "Reference Examples — illustrative, not production-verified" e a seção "Erros conhecidos e como evitar regressões" ao final de [prompts/templates/TEMPLATE-MESTRE-VIDEO.md](prompts/templates/TEMPLATE-MESTRE-VIDEO.md). O bloco `SERIES RENDERING STYLE CONTINUITY` é obrigatório em todo prompt e nunca deve ser removido ou enfraquecido — nem mesmo como tentativa de corrigir um bloqueio do Flow; ver "Bloqueios do Flow" no template mestre.
 
@@ -310,6 +313,7 @@ Inclua, no mínimo:
 - `docs/TOM-E-HUMOR.md`;
 - `docs/CONTINUIDADE.md`;
 - `docs/APRENDIZADOS-DE-VIDEO.md`;
+- `docs/APRENDIZADOS-EM-VALIDACAO.md` quando o agente for continuar produção e precisar das hipóteses `EM TESTE`;
 - `personagens/relacoes/RELACOES-FAMILIARES.md`;
 - as fichas e personalidades dos personagens;
 - `prompts/templates/TEMPLATE-MESTRE-VIDEO.md` quando o agente gerar vídeos;
@@ -369,6 +373,7 @@ Uma IA com permissão de edição deve:
 - não apagar histórico válido;
 - não substituir silenciosamente decisões;
 - separar teste de aprovação;
+- registrar observações e hipóteses ainda não validadas em `docs/APRENDIZADOS-EM-VALIDACAO.md`, e não promovê-las a `docs/APRENDIZADOS-DE-VIDEO.md`, `docs/DECISOES.md` ou ao template mestre antes de `VALIDADO`;
 - registrar mudanças de cânone em `docs/DECISOES.md` quando aplicável;
 - atualizar `docs/CHANGELOG-CRIATIVO.md` para mudanças relevantes;
 - atualizar `producao/STATUS.md` quando o estado do projeto mudar;
