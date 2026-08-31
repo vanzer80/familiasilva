@@ -11,6 +11,7 @@ Este repositório é a fonte de verdade documental do projeto Família Silva. A 
 - Erros, acertos, hipóteses e soluções validadas ficam em [docs/APRENDIZADOS-DE-VIDEO.md](docs/APRENDIZADOS-DE-VIDEO.md), no adendo [docs/APRENDIZADOS-S01E001-VALIDACAO-FINAL-2026-08-29.md](docs/APRENDIZADOS-S01E001-VALIDACAO-FINAL-2026-08-29.md) e nos registros de [producao/](producao/).
 - Observações e hipóteses de produção que ainda precisam de mais teste ficam em [docs/APRENDIZADOS-EM-VALIDACAO.md](docs/APRENDIZADOS-EM-VALIDACAO.md), a camada intermediária entre observação e regra oficial. Uma descoberta experimental entra **primeiro** ali; só depois de validada sobe para `APRENDIZADOS-DE-VIDEO.md`, `DECISOES.md` ou o template mestre. Uma IA que assumir uma nova sessão de produção deve consultar esse arquivo para recuperar as hipóteses atualmente `EM TESTE`.
 - Nenhum prompt pode depender de contexto, prompt ou vídeo anterior que a ferramenta de geração não recebeu. Cada prompt deve ser autossuficiente.
+- Todo pedido de criação de um novo prompt de vídeo é entregue no formato de três blocos separados — `PROMPT DO VÍDEO`, `TEXTO DE CAPA` e `DESCRIÇÃO + 5 HASHTAGS` —, conforme a seção `Formato padrão de entrega` de [prompts/templates/TEMPLATE-MESTRE-VIDEO.md](prompts/templates/TEMPLATE-MESTRE-VIDEO.md) e [DEC-022](docs/DECISOES.md#dec-022). Capa e descrição são conteúdo final de publicação, não prompts, e ficam fora do texto enviado ao gerador.
 
 ## Disciplina de validação
 

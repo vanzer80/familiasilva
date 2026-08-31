@@ -193,6 +193,46 @@ Depois de preencher a estrutura acima, reescreva como prosa natural em inglês. 
 
 **H. Regra central.** Documentation may be detailed. The final generation prompt must be concise.
 
+## Formato padrão de entrega
+
+Vale quando o usuário **pede a criação de um novo prompt de vídeo** da Família Silva. Nesse caso, a resposta traz automaticamente três blocos separados, cada um em seu próprio bloco de código, prontos para copiar e colar.
+
+**Regra fundamental — ordem de construção.** Primeiro construa a cena e o prompt final seguindo todo o restante deste template. **Só depois**, a partir do conteúdo real daquela cena — personagens envolvidos, situação, diálogo, conflito ou mal-entendido, virada, payoff, tom —, escreva o texto de capa, a descrição e as hashtags. É proibido texto genérico que serviria para qualquer vídeo da série; os três materiais precisam refletir especificamente aquela cena e aquele diálogo.
+
+**Bloco 1 — `PROMPT DO VÍDEO`.** O prompt final produzido pelo restante deste template, em prosa natural, autossuficiente, sem cabeçalhos administrativos. **O prompt termina aqui.** Texto de capa, descrição e hashtags nunca entram no texto colado no gerador de vídeo — isso contraria `OUTPUT CLEANLINESS` e o erro conhecido nº 7.
+
+**Bloco 2 — `TEXTO DE CAPA`.** O texto final da chamada do vídeo, em português. **Não** é um prompt para gerar capa, **não** é descrição de uma imagem, **não** são instruções para outra IA — é a frase pronta para uso. Curto, chamativo, fácil de ler, coerente com humor familiar, desperta curiosidade sem entregar toda a piada, ligado diretamente à virada ou ao payoff daquela cena. Não confundir com a capa-**imagem** / thumbnail, que é um asset visual separado e segue seu próprio registro de aprovação em `producao/`.
+
+**Bloco 3 — `DESCRIÇÃO + 5 HASHTAGS`.** A legenda final de publicação, em português, tom natural da série, funcionando como legenda de rede social, sem explicar demais a piada. Emojis são permitidos. Ao final da própria descrição, **exatamente 5 hashtags** — nem mais, nem menos: `#FamiliaSilva` e `#luisBoss` fixas em toda entrega, mais 3 derivadas da cena (personagens, situação ou tema do vídeo). Não é um prompt para gerar descrição nem para gerar hashtags: é o conteúdo pronto para publicar.
+
+Esqueleto da entrega:
+
+```text
+[orientação curta sobre MASTERs / referências / ordem dos anexos, quando necessária]
+```
+
+```text
+PROMPT DO VÍDEO
+
+[prompt final pronto para copiar]
+```
+
+```text
+TEXTO DE CAPA
+
+[texto final da capa]
+```
+
+```text
+DESCRIÇÃO + 5 HASHTAGS
+
+[descrição final da cena]
+
+#FamiliaSilva #luisBoss #hashtag3 #hashtag4 #hashtag5
+```
+
+**Escopo.** Não forçar os três blocos em auditoria, análise técnica, pergunta sobre o projeto, revisão documental, diagnóstico de vídeo ou tarefa de repositório. Se o usuário pedir explicitamente outro formato, ou apenas um dos elementos, respeitar o pedido específico. Decisão registrada em [DEC-022](../../docs/DECISOES.md#dec-022).
+
 ## Arquitetura narrativa multi-beat
 
 O princípio multi-beat é **narrativo e condicional**. Antes de agrupar, verificar:
@@ -309,6 +349,7 @@ Após gerar, registrar:
 - [ ] Negative Constraints são curtas e específicas?
 - [ ] Qualquer afirmação nova sobre comportamento da ferramenta está marcada como hipótese/teste até validação suficiente?
 - [ ] O prompt foi comparado com [APRENDIZADOS-DE-VIDEO.md](../../docs/APRENDIZADOS-DE-VIDEO.md) e [APRENDIZADOS-S01E001-VALIDACAO-FINAL-2026-08-29.md](../../docs/APRENDIZADOS-S01E001-VALIDACAO-FINAL-2026-08-29.md)?
+- [ ] Sendo um pedido de novo prompt de vídeo, a entrega tem os três blocos separados (`PROMPT DO VÍDEO`, `TEXTO DE CAPA`, `DESCRIÇÃO + 5 HASHTAGS`), com capa e descrição derivadas desta cena, hashtags em número exato de 5 e nada disso dentro do prompt enviado ao gerador?
 
 ## Reference Examples — illustrative, not production-verified
 

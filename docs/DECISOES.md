@@ -195,6 +195,16 @@ As decisões DEC-007 a DEC-012 abaixo foram originalmente registradas, na mesma 
 - **Status:** `APROVADO`
 - **Evidência:** [APROVACAO-MUSICA-TEMA-FAMILIA-SILVA-001.md](../producao/aprovados/APROVACAO-MUSICA-TEMA-FAMILIA-SILVA-001.md); [registro da sessão](../producao/testes/TESTE-AUDIO-MUSICA-TEMA-SERIE-001.md); [manifesto de áudio](../assets/audio/README.md); arquivo experimental de origem em `C:\Users\vanze\OneDrive\Documentos\Downloads\Família Silva - Title Card Sting.wav`.
 
+## DEC-022
+
+- **Data:** `2026-08-31`
+- **Decisão:** todo pedido padrão de criação de um novo prompt de vídeo da Família Silva passa a gerar automaticamente três blocos de entrega separados, prontos para copiar e colar: (1) `PROMPT DO VÍDEO`; (2) `TEXTO DE CAPA` — o texto final da chamada; (3) `DESCRIÇÃO + 5 HASHTAGS` — a legenda final de publicação encerrada por exatamente cinco hashtags, sendo `#FamiliaSilva` e `#luisBoss` fixas e as outras três derivadas da cena.
+- **Motivo:** eliminar a necessidade de pedir manualmente capa, descrição e hashtags depois de cada vídeo e padronizar o fluxo de produção → publicação. Também corrige uma confusão recorrente: a IA vinha devolvendo *um prompt para gerar a capa* / *um prompt para gerar a descrição*, quando o que se quer é o texto final pronto para publicar.
+- **Impacto:** o texto de capa, a descrição e as hashtags são derivados da cena efetivamente construída e do seu diálogo, conflito, virada e payoff — não textos genéricos. São conteúdo final de publicação, **não** prompts para outras IAs. Somente o Bloco 1 pertence ao material colado no gerador de vídeo; capa e descrição ficam fora dele, coerente com `OUTPUT CLEANLINESS` do template. O `TEXTO DE CAPA` (texto) não se confunde com a capa-imagem / thumbnail, que continua sendo um asset visual separado com seu próprio registro de aprovação. Escopo limitado a pedidos de criação de prompt de vídeo — não se aplica a auditorias, análises, revisão documental, diagnóstico de vídeo ou tarefas de repositório, nem quando o usuário pede outro formato ou apenas um elemento. Nenhum ponto de cânone, personagem, relação, continuidade, MASTER, rendering ou aprendizado de geração é alterado. O [TEMPLATE-MESTRE-VIDEO.md](../prompts/templates/TEMPLATE-MESTRE-VIDEO.md) ganha a seção `## Formato padrão de entrega` e um item de checklist; o [AGENTS.md](../AGENTS.md) ganha um ponteiro.
+- **Natureza da decisão:** decisão operacional do usuário sobre o formato de entrega, não uma hipótese sobre comportamento de ferramenta. Não passa pelo ciclo `HIPÓTESE → EM TESTE → VALIDADO` de [DEC-019](DECISOES.md#dec-019) e não é registrada em [APRENDIZADOS-EM-VALIDACAO.md](APRENDIZADOS-EM-VALIDACAO.md).
+- **Status:** `APROVADO`
+- **Evidência:** decisão direta do usuário em `2026-08-31`; o padrão de cinco hashtags com `#FamiliaSilva` e `#luisBoss` já aparece nas duas publicações confirmadas em [REDES-SOCIAIS.md](REDES-SOCIAIS.md); `#luisBoss` como assinatura do criador em [BIBLIA-DA-SERIE.md](BIBLIA-DA-SERIE.md); [TEMPLATE-MESTRE-VIDEO.md](../prompts/templates/TEMPLATE-MESTRE-VIDEO.md).
+
 ## Template de entrada
 
 ### DEC-XXX
